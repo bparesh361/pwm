@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.comm.promo.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.comm.promo.fks.com/">
+
+<xs:element name="downloadCommArticleMcPromoRequest" type="tns:downloadCommArticleMcPromoRequest" />
+
+<xs:element name="downloadCommArticleMcPromoRequestResponse" type="tns:downloadCommArticleMcPromoRequestResponse" />
+
+<xs:element name="getAllArticleMchWise" type="tns:getAllArticleMchWise" />
+
+<xs:element name="getAllArticleMchWiseResponse" type="tns:getAllArticleMchWiseResponse" />
+
+<xs:element name="getAllCategoryFromMstPromo" type="tns:getAllCategoryFromMstPromo" />
+
+<xs:element name="getAllCategoryFromMstPromoResponse" type="tns:getAllCategoryFromMstPromoResponse" />
+
+<xs:element name="getAllMchCategFromPromo" type="tns:getAllMchCategFromPromo" />
+
+<xs:element name="getAllMchCategFromPromoResponse" type="tns:getAllMchCategFromPromoResponse" />
+
+<xs:element name="getAllSubCategegoryMch" type="tns:getAllSubCategegoryMch" />
+
+<xs:element name="getAllSubCategegoryMchResponse" type="tns:getAllSubCategegoryMchResponse" />
+
+<xs:element name="getAllZoneUserWise" type="tns:getAllZoneUserWise" />
+
+<xs:element name="getAllZoneUserWiseResponse" type="tns:getAllZoneUserWiseResponse" />
+
+<xs:element name="searchComm" type="tns:searchComm" />
+
+<xs:element name="searchCommResponse" type="tns:searchCommResponse" />
+
+<xs:complexType name="getAllZoneUserWise">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllZoneUserWiseResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mstZoneVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mstZoneVO">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0" />
+<xs:element name="isBlocked" type="xs:short" minOccurs="0" />
+<xs:element name="zonecode" type="xs:string" minOccurs="0" />
+<xs:element name="zonename" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllSubCategegoryMch">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllSubCategegoryMchResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllMchCategFromPromo">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllMchCategFromPromoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllArticleMchWise">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllArticleMchWiseResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchComm">
+<xs:sequence>
+<xs:element name="arg0" type="tns:commSearchReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="commSearchReq">
+<xs:sequence>
+<xs:element name="articleList" type="xs:string" minOccurs="0" />
+<xs:element name="categoryName" type="xs:string" minOccurs="0" />
+<xs:element name="endDate" type="xs:string" minOccurs="0" />
+<xs:element name="eventTypeId" type="xs:long" minOccurs="0" />
+<xs:element name="isStore" type="xs:boolean" />
+<xs:element name="mcList" type="xs:string" minOccurs="0" />
+<xs:element name="startDate" type="xs:string" minOccurs="0" />
+<xs:element name="startIndex" type="xs:int" />
+<xs:element name="storeId" type="xs:string" minOccurs="0" />
+<xs:element name="type" type="tns:commSearchType" minOccurs="0" />
+<xs:element name="zoneId" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchCommResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:commSearchResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="commSearchResp">
+<xs:sequence>
+<xs:element name="list" type="tns:commVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+<xs:element name="totalCount" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="commVO">
+<xs:sequence>
+<xs:element name="articleDesc" type="xs:string" minOccurs="0" />
+<xs:element name="articleNumber" type="xs:string" minOccurs="0" />
+<xs:element name="bonusBy" type="xs:string" minOccurs="0" />
+<xs:element name="cashierTriggerCode" type="xs:string" minOccurs="0" />
+<xs:element name="category" type="xs:string" minOccurs="0" />
+<xs:element name="city" type="xs:string" minOccurs="0" />
+<xs:element name="eventType" type="xs:string" minOccurs="0" />
+<xs:element name="mcCode" type="xs:string" minOccurs="0" />
+<xs:element name="mcDesc" type="xs:string" minOccurs="0" />
+<xs:element name="mstPromoId" type="xs:string" minOccurs="0" />
+<xs:element name="promoDetails" type="xs:string" minOccurs="0" />
+<xs:element name="promoType" type="xs:string" minOccurs="0" />
+<xs:element name="region" type="xs:string" minOccurs="0" />
+<xs:element name="site" type="xs:string" minOccurs="0" />
+<xs:element name="state" type="xs:string" minOccurs="0" />
+<xs:element name="subCategory" type="xs:string" minOccurs="0" />
+<xs:element name="transPromoId" type="xs:long" minOccurs="0" />
+<xs:element name="validFrom" type="xs:string" minOccurs="0" />
+<xs:element name="validTo" type="xs:string" minOccurs="0" />
+<xs:element name="zone" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="pk" type="xs:long" minOccurs="0" />
+<xs:element name="redirect" type="xs:boolean" />
+<xs:element name="respCode" type="tns:respCode" minOccurs="0" />
+<xs:element name="suggestedDate" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllCategoryFromMstPromo">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllCategoryFromMstPromoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="downloadCommArticleMcPromoRequest">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="downloadCommArticleMcPromoRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:downloadSubPromoResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="downloadSubPromoResp">
+<xs:sequence>
+<xs:element name="downloadFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="commSearchType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="VALIDITY_DATE" />
+<xs:enumeration value="EVENT_TYPE" />
+<xs:enumeration value="CATEGORY" />
+<xs:enumeration value="MC_TYPE" />
+<xs:enumeration value="ARTICLE_TYPE" />
+<xs:enumeration value="ZONE_TYPE" />
+<xs:enumeration value="ZONE_DATE" />
+<xs:enumeration value="ZONE_DATE_EVENT" />
+<xs:enumeration value="ZONE_DATE_EVENT_CATEGORY" />
+<xs:enumeration value="ZONE_DATE_EVENT_CATEGORY_MC" />
+<xs:enumeration value="ZONE_DATE_EVENT_CATEGORY_MC_ARTICLE" />
+<xs:enumeration value="ZONE_DATE_CATEGORY" />
+<xs:enumeration value="ZONE_DATE_CATEGORY_MC" />
+<xs:enumeration value="ZONE_DATE_CATEGORY_MC_ARTICLE" />
+<xs:enumeration value="ZONE_DATE_MC" />
+<xs:enumeration value="ZONE_DATE_MC_ARTICLE" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="respCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

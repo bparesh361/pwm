@@ -1,0 +1,23 @@
+162718,Promotion_Draft,Promotion_Submit,Parvez Patel,2014-07-21 00:00:00,Promotion submited.
+162718,Promotion_Submit,L1_Approve,Ravishankar Mahaseth,2014-07-21 00:00:00,Request is Approved By L1.
+162718,L1_Approve,Team_Member_Assigned,Manish Shah,2014-07-21 00:00:00,Request is assigned.
+162718,Team_Member_Assigned,Promo_Closed,Jatin Sutariya,2014-07-24 00:00:00,offer configure
+162731,Promotion_Draft,Promotion_Submit,Parvez Patel,2014-07-21 00:00:00,Promotion submited.
+162731,Promotion_Submit,L1_Approve,Ravishankar Mahaseth,2014-07-21 00:00:00,Request is Approved By L1.
+162731,L1_Approve,Team_Member_Assigned,Manish Shah,2014-07-21 00:00:00,Request is assigned.
+162731,Team_Member_Assigned,Promo_Closed,Jatin Sutariya,2014-07-24 00:00:00,offer configure
+165293,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-07-25 00:00:00,Promotion submited.
+165293,Promotion_Submit,L1_Approve,Ganesh M,2014-07-25 00:00:00,Request is Approved By L1.
+165293,L1_Approve,Team_Member_Assigned,Surendra KJ,2014-07-25 00:00:00,Request is assigned.
+165293,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+165293,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+165293,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+165293,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-07-28 00:00:00,
+169839,Promotion_Draft,Promotion_Submit,Parvez Patel,2014-07-28 00:00:00,Promotion submited.
+169839,Promotion_Submit,L1_Approve,Ravishankar Mahaseth,2014-07-28 00:00:00,L1 approved request by changing date.
+169839,L1_Approve,Team_Member_Assigned,Manish Shah,2014-07-28 00:00:00,Request is assigned.
+169839,Team_Member_Assigned,Promo_Closed,Jatin Sutariya,2014-07-29 00:00:00,offer configure
+169857,Promotion_Draft,Promotion_Submit,Parvez Patel,2014-07-28 00:00:00,Promotion submited.
+169857,Promotion_Submit,L1_Approve,Ravishankar Mahaseth,2014-07-28 00:00:00,L1 approved request by changing date.
+169857,L1_Approve,Team_Member_Assigned,Manish Shah,2014-07-28 00:00:00,Request is assigned.
+169857,Team_Member_Assigned,Promo_Closed,Jatin Sutariya,2014-07-29 00:00:00,offer configure

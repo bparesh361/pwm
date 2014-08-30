@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.ods.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.ods.fks.com/">
+
+<xs:element name="searchArticledtl" type="tns:searchArticledtl" />
+
+<xs:element name="searchArticledtlResponse" type="tns:searchArticledtlResponse" />
+
+<xs:element name="searchODSArticle" type="tns:searchODSArticle" />
+
+<xs:element name="searchODSArticleResponse" type="tns:searchODSArticleResponse" />
+
+<xs:element name="sendArticleMCFileForvalidate" type="tns:sendArticleMCFileForvalidate" />
+
+<xs:element name="sendArticleMCFileForvalidateResponse" type="tns:sendArticleMCFileForvalidateResponse" />
+
+<xs:complexType name="sendArticleMCFileForvalidate">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sendArticleMCFileForvalidateResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:validateArticleMCResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateArticleMCResp">
+<xs:sequence>
+<xs:element name="articleMCList" type="tns:validateArticleMCVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="errorFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateArticleMCVO">
+<xs:sequence>
+<xs:element name="articleCode" type="xs:string" minOccurs="0" />
+<xs:element name="articleDesc" type="xs:string" minOccurs="0" />
+<xs:element name="brandCode" type="xs:string" minOccurs="0" />
+<xs:element name="brandDesc" type="xs:string" minOccurs="0" />
+<xs:element name="errorMsg" type="xs:string" minOccurs="0" />
+<xs:element name="isErrorStatus" type="xs:boolean" />
+<xs:element name="mcCode" type="xs:string" minOccurs="0" />
+<xs:element name="mcDesc" type="xs:string" minOccurs="0" />
+<xs:element name="mrp" type="xs:string" minOccurs="0" />
+<xs:element name="qty" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="pk" type="xs:long" minOccurs="0" />
+<xs:element name="redirect" type="xs:boolean" />
+<xs:element name="respCode" type="tns:respCode" minOccurs="0" />
+<xs:element name="suggestedDate" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchArticledtl">
+<xs:sequence>
+<xs:element name="arg0" type="tns:articleSearchReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="articleSearchReq">
+<xs:sequence>
+<xs:element name="articleList" type="xs:string" minOccurs="0" />
+<xs:element name="articleSearchEnum" type="tns:articleSearchEnum" minOccurs="0" />
+<xs:element name="brandList" type="xs:string" minOccurs="0" />
+<xs:element name="isDownload" type="xs:boolean" />
+<xs:element name="MCList" type="xs:string" minOccurs="0" />
+<xs:element name="pageCount" type="xs:int" />
+<xs:element name="seasonCodeList" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchArticledtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:articleSearchResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="articleSearchResp">
+<xs:sequence>
+<xs:element name="articleMCList" type="tns:articleMCVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="endRange" type="xs:long" />
+<xs:element name="filePath" type="xs:string" minOccurs="0" />
+<xs:element name="nextPageCount" type="xs:int" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+<xs:element name="startRange" type="xs:long" />
+<xs:element name="totalRecordCount" type="xs:long" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="articleMCVO">
+<xs:sequence>
+<xs:element name="articleCode" type="xs:string" minOccurs="0" />
+<xs:element name="articleDesc" type="xs:string" minOccurs="0" />
+<xs:element name="brand" type="xs:string" minOccurs="0" />
+<xs:element name="mcCode" type="xs:string" minOccurs="0" />
+<xs:element name="mcDesc" type="xs:string" minOccurs="0" />
+<xs:element name="price" type="xs:string" minOccurs="0" />
+<xs:element name="seasonCode" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchODSArticle">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:long" minOccurs="0" />
+<xs:element name="arg2" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchODSArticleResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:validateArticleMCVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="respCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="articleSearchEnum">
+<xs:restriction base="xs:string">
+<xs:enumeration value="ARTICLE" />
+<xs:enumeration value="MC" />
+<xs:enumeration value="BRAND" />
+<xs:enumeration value="SEASON_CODE" />
+<xs:enumeration value="MC_BRAND" />
+<xs:enumeration value="MC_SEASON_CODE" />
+<xs:enumeration value="BRAND_SEASON_CODE" />
+<xs:enumeration value="MC_BRAND_SEASON_CODE" />
+<xs:enumeration value="PRICE" />
+<xs:enumeration value="SALES_ORG" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

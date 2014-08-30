@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://init.promo.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://init.promo.fks.com/">
+
+<xs:element name="Exception" type="tns:Exception" />
+
+<xs:element name="archiveProposalOtherFiles" type="tns:archiveProposalOtherFiles" />
+
+<xs:element name="archiveProposalOtherFilesResponse" type="tns:archiveProposalOtherFilesResponse" />
+
+<xs:element name="assignTeamMember" type="tns:assignTeamMember" />
+
+<xs:element name="assignTeamMemberList" type="tns:assignTeamMemberList" />
+
+<xs:element name="assignTeamMemberListResponse" type="tns:assignTeamMemberListResponse" />
+
+<xs:element name="assignTeamMemberResponse" type="tns:assignTeamMemberResponse" />
+
+<xs:element name="checkLeadTimeValidation" type="tns:checkLeadTimeValidation" />
+
+<xs:element name="checkLeadTimeValidationResponse" type="tns:checkLeadTimeValidationResponse" />
+
+<xs:element name="checkLeadTimeValidity" type="tns:checkLeadTimeValidity" />
+
+<xs:element name="checkLeadTimeValidityResponse" type="tns:checkLeadTimeValidityResponse" />
+
+<xs:element name="escalateL1HoldTransPromoRequest" type="tns:escalateL1HoldTransPromoRequest" />
+
+<xs:element name="escalateL1HoldTransPromoRequestResponse" type="tns:escalateL1HoldTransPromoRequestResponse" />
+
+<xs:element name="escalateL1PendingTransPromoRequest" type="tns:escalateL1PendingTransPromoRequest" />
+
+<xs:element name="escalateL1PendingTransPromoRequestResponse" type="tns:escalateL1PendingTransPromoRequestResponse" />
+
+<xs:element name="escalateL2HoldTransPromoRequest" type="tns:escalateL2HoldTransPromoRequest" />
+
+<xs:element name="escalateL2HoldTransPromoRequestResponse" type="tns:escalateL2HoldTransPromoRequestResponse" />
+
+<xs:element name="escalateL2PendingTransPromoRequest" type="tns:escalateL2PendingTransPromoRequest" />
+
+<xs:element name="escalateL2PendingTransPromoRequestResponse" type="tns:escalateL2PendingTransPromoRequestResponse" />
+
+<xs:element name="escalateL5HoldTransPromoRequest" type="tns:escalateL5HoldTransPromoRequest" />
+
+<xs:element name="escalateL5HoldTransPromoRequestResponse" type="tns:escalateL5HoldTransPromoRequestResponse" />
+
+<xs:element name="escalateL5PendingTransPromoRequest" type="tns:escalateL5PendingTransPromoRequest" />
+
+<xs:element name="escalateL5PendingTransPromoRequestResponse" type="tns:escalateL5PendingTransPromoRequestResponse" />
+
+<xs:element name="getCategoryListForLevel1Approver" type="tns:getCategoryListForLevel1Approver" />
+
+<xs:element name="getCategoryListForLevel1ApproverResponse" type="tns:getCategoryListForLevel1ApproverResponse" />
+
+<xs:element name="getCategoryListForLevel2Approver" type="tns:getCategoryListForLevel2Approver" />
+
+<xs:element name="getCategoryListForLevel2ApproverResponse" type="tns:getCategoryListForLevel2ApproverResponse" />
+
+<xs:element name="getDiffHoursWithHolidays" type="tns:getDiffHoursWithHolidays" />
+
+<xs:element name="getDiffHoursWithHolidaysForEscalation" type="tns:getDiffHoursWithHolidaysForEscalation" />
+
+<xs:element name="getDiffHoursWithHolidaysForEscalationResponse" type="tns:getDiffHoursWithHolidaysForEscalationResponse" />
+
+<xs:element name="getDiffHoursWithHolidaysResponse" type="tns:getDiffHoursWithHolidaysResponse" />
+
+<xs:element name="rejectTransPromo" type="tns:rejectTransPromo" />
+
+<xs:element name="rejectTransPromoList" type="tns:rejectTransPromoList" />
+
+<xs:element name="rejectTransPromoListResponse" type="tns:rejectTransPromoListResponse" />
+
+<xs:element name="rejectTransPromoResponse" type="tns:rejectTransPromoResponse" />
+
+<xs:element name="searchL1TeamMemberForL1ByPass" type="tns:searchL1TeamMemberForL1ByPass" />
+
+<xs:element name="searchL1TeamMemberForL1ByPassResponse" type="tns:searchL1TeamMemberForL1ByPassResponse" />
+
+<xs:element name="searchTeamMember" type="tns:searchTeamMember" />
+
+<xs:element name="searchTeamMemberResponse" type="tns:searchTeamMemberResponse" />
+
+<xs:complexType name="rejectTransPromo">
+<xs:sequence>
+<xs:element name="arg0" type="tns:rejectTransPromoReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rejectTransPromoReq">
+<xs:sequence>
+<xs:element name="empId" type="xs:long" minOccurs="0" />
+<xs:element name="reasonForRejection" type="xs:string" minOccurs="0" />
+<xs:element name="rejectionRemarks" type="xs:string" minOccurs="0" />
+<xs:element name="transPromoId" type="xs:long" minOccurs="0" />
+<xs:element name="transPromoIdList" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rejectTransPromoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="pk" type="xs:long" minOccurs="0" />
+<xs:element name="redirect" type="xs:boolean" />
+<xs:element name="respCode" type="tns:respCode" minOccurs="0" />
+<xs:element name="suggestedDate" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchTeamMember">
+<xs:sequence>
+<xs:element name="arg0" type="tns:searchTeamMemberReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchTeamMemberReq">
+<xs:sequence>
+<xs:element name="l2EmpId" type="xs:string" minOccurs="0" />
+<xs:element name="storeCode" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchTeamMemberResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchTeamMemberResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchTeamMemberResp">
+<xs:sequence>
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+<xs:element name="teamlist" type="tns:teamMember" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="teamMember">
+<xs:sequence>
+<xs:element name="empId" type="xs:long" minOccurs="0" />
+<xs:element name="empName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="escalateL5HoldTransPromoRequest">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="escalateL5HoldTransPromoRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchL1TeamMemberForL1ByPass">
+<xs:sequence>
+<xs:element name="arg0" type="tns:searchTeamMemberReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchL1TeamMemberForL1ByPassResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchTeamMemberResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryListForLevel1Approver">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryListForLevel1ApproverResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="escalateL2PendingTransPromoRequest">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="escalateL2PendingTransPromoRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="escalateL2HoldTransPromoRequest">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="escalateL2HoldTransPromoRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="assignTeamMember">
+<xs:sequence>
+<xs:element name="arg0" type="tns:assignTeamReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="assignTeamReq">
+<xs:sequence>
+<xs:element name="promoMgrId" type="xs:long" minOccurs="0" />
+<xs:element name="teamMemberId" type="xs:long" minOccurs="0" />
+<xs:element name="transPromoId" type="xs:long" minOccurs="0" />
+<xs:element name="transPromoIdList" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="assignTeamMemberResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDiffHoursWithHolidays">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDiffHoursWithHolidaysResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="escalateL5PendingTransPromoRequest">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="escalateL5PendingTransPromoRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryListForLevel2Approver">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryListForLevel2ApproverResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkLeadTimeValidity">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkLeadTimeValidityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="assignTeamMemberList">
+<xs:sequence>
+<xs:element name="arg0" type="tns:assignTeamReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="assignTeamMemberListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkLeadTimeValidation">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkLeadTimeValidationResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDiffHoursWithHolidaysForEscalation">
+<xs:sequence>
+<xs:element name="arg0" type="xs:dateTime" minOccurs="0" />
+<xs:element name="arg1" type="xs:dateTime" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="arg2" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDiffHoursWithHolidaysForEscalationResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="escalateL1PendingTransPromoRequest">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="escalateL1PendingTransPromoRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="archiveProposalOtherFiles">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="archiveProposalOtherFilesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="escalateL1HoldTransPromoRequest">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="escalateL1HoldTransPromoRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rejectTransPromoList">
+<xs:sequence>
+<xs:element name="arg0" type="tns:rejectTransPromoReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rejectTransPromoListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="respCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

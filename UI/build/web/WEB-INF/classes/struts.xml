@@ -1,0 +1,48 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.ui.theme" value="css_xhtml" />
+    <constant name="struts.multipart.maxSize" value="104857600" />
+  
+    <include file="master-mapping.xml"/>
+    <include file="other-master-mapping.xml"/>
+
+    <include file="login-mapping.xml"/>
+    <include file="proposal-mapping.xml"/>
+
+    <include file="promotion-mapping.xml"/>
+    <include file="approval-mapping.xml"/>
+    <include file="communication-mapping.xml"/>
+    <include file="reports-mapping.xml"/>
+    <!-- Configuration for the default package. -->
+    <package name="promoDefault" extends="struts-default">
+        <interceptors>
+            <interceptor name="securityManager" class="com.fks.ui.interceptors.SecurityManager"/>
+            <interceptor-stack name="defaultSecurityManager">
+                <interceptor-ref name="defaultStack"></interceptor-ref>
+                <interceptor-ref name="securityManager"></interceptor-ref>
+            </interceptor-stack>
+            <interceptor-stack name="tokenStack">
+                <interceptor-ref name="token" />
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="defaultSecurityManager" />
+        <default-action-ref name="showLoginPage"></default-action-ref>
+
+        <global-results>
+            <result name="exception">/jsp/error.jsp</result>
+            <result name="login" type="redirectAction">showLogin</result>
+        </global-results>
+
+        <action name="showLogin" class="com.fks.ui.login.action.PreLoginAction">
+            <result name="success">login.jsp</result>
+        </action>
+
+        <action name="showLoginPage" class="com.fks.ui.login.action.PreLoginAction" method="showLoginPage">
+            <result name="success">login.jsp</result>
+        </action>
+    </package>
+</struts>

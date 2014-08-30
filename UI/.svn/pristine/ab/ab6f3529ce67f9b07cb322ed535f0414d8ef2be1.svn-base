@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!-- Author: krutij -->
+<struts>
+    <package name="master-mapping" extends="promoDefault" namespace="/">
+
+  
+<!--     Master Action Start-->
+
+         <!--     Category MCH master  Action Start-->
+        <action name="categoryMCh_jsp" class="com.fks.ui.master.action.CategoryMCHMasterAction">
+            <result name="success">/jsp/master/categorymaster.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="blockMCDetail" class="com.fks.ui.master.action.CategoryMCHMasterAction" method="blockMCDetail">
+        </action>
+        <action name="getAllMCHdtl" class="com.fks.ui.master.action.CategoryMCHMasterAction" method="getMCHCategoryDtl">
+        </action>
+        <action name="downloadSampleCategory" class="com.fks.ui.master.action.CategoryMCHMasterAction" method="downloadSampleCategoryFile">
+        </action>
+        <action name="downloadMasterCategory" class="com.fks.ui.master.action.CategoryMCHMasterAction" method="downloadMasterCategoryFile">
+<!--            <result name="success">/jsp/master/categorymaster.jsp</result>
+            <result name="error">/jsp/error.jsp</result>-->
+        </action>
+
+        <action name="submitCategoryMaster" class="com.fks.ui.master.action.CategoryMCHMasterAction" method="uploadCategoryDtl">
+            <result name="success">/jsp/master/categorymaster.jsp</result>
+            <result name="input">/jsp/master/categorymaster.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+          <!--     Category MCH master  Action End-->
+
+           <!--     Organization master  Action Start-->
+        <action name="orgmaster_jsp" class="com.fks.ui.master.action.OrganizationMasterAction">
+            <result name="success">/jsp/master/org_master.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="blockUnblcokOrg" class="com.fks.ui.master.action.OrganizationMasterAction" method="blockUnblcokOrg">
+        </action>
+
+        <action name="getOrganizationDtl" class="com.fks.ui.master.action.OrganizationMasterAction" method="getOrganizationDtl">
+        </action>
+        <action name="downloadSampleOrgFile" class="com.fks.ui.master.action.OrganizationMasterAction" method="downloadSampleOrgFile">
+        </action>
+        <action name="downloadMasterOrgFile" class="com.fks.ui.master.action.OrganizationMasterAction" method="downlodMasterOrgFile">
+            <result name="success">/jsp/master/org_master.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="submitOrgMaster" class="com.fks.ui.master.action.OrganizationMasterAction" method="uploadOrganizationDtl">
+            <result name="success">/jsp/master/org_master.jsp</result>
+            <result name="input">/jsp/master/org_master.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+          <!--     Organization master  Action End-->
+          
+        <!--     Map role And Profile  Action Start-->
+        <action name="maproleProfile_jsp" class="com.fks.ui.master.action.MapRoleProfileLocationAction">
+            <result name="success">/jsp/master/mapRoleProfile.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="getAllProfiles" class="com.fks.ui.master.action.MapRoleProfileLocationAction" method="getAllProfiles">
+        </action>
+        <action name="getRoleLocationProfileDtl" class="com.fks.ui.master.action.MapRoleProfileLocationAction" method="getRoleLocationProfileDtl">
+        </action>
+        <action name="submitrolemapping" class="com.fks.ui.master.action.MapRoleProfileLocationAction" method="CreateUpdateRoleProfileMapping">
+            <result name="success">/jsp/master/mapRoleProfile.jsp</result>
+            <result name="input">/jsp/master/mapRoleProfile.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="flexBoxRoles" class="com.fks.ui.master.action.MapRoleProfileLocationAction" method="flexBoxRoles">
+        </action>
+
+        <!--     Map role And Profile  Action End-->
+        <!--     role Master Action Start-->
+        <action name="rolemaster_jsp" class="com.fks.ui.master.action.RoleMasterAction">
+            <result name="success">/jsp/master/rolemaster.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="getAllRoles" class="com.fks.ui.master.action.RoleMasterAction" method="getAllRoles">
+        </action>
+        <action name="submitUpdateRoleDetail" class="com.fks.ui.master.action.RoleMasterAction" method="submitUpdateRoleDetail">
+            <result name="success">/jsp/master/rolemaster.jsp</result>
+            <result name="input">/jsp/master/rolemaster.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <!--     role Master Action End-->
+        <action name="profilemodule_jsp" class="com.fks.ui.master.action.MapModuleProfileAction">
+            <result name="success">/jsp/master/mapmoduleProfile.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="getmodules" class="com.fks.ui.master.action.MapModuleProfileAction" method="getAllModules">
+        </action>
+        <action name="getProfileModule" class="com.fks.ui.master.action.MapModuleProfileAction" method="getProfileWiseModule">
+        </action>
+        <action name="submitprofilemodule" class="com.fks.ui.master.action.MapModuleProfileAction" method="submitProfileModuledtl">
+            <result name="success">/jsp/master/mapmoduleProfile.jsp</result>
+            <result name="input">/jsp/master/mapmoduleProfile.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+ <!--     Create User Master Action Start-->
+
+        <action name="createuser_jsp" class="com.fks.ui.user.action.CreateUserAction" method="CreateuserExecute">
+            <result name="success">/jsp/user/createuser.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="getorgdtlBysiteCode" class="com.fks.ui.user.action.CreateUserAction" method="getOrganizationDtl"></action>
+        <action name="validateUserById" class="com.fks.ui.user.action.CreateUserAction" method="validateUserId"></action>
+        <action name="getAllDeptForUser" class="com.fks.ui.user.action.CreateUserAction" method="getAllDepartment"></action>
+        <action name="getZoneBasedonFormat" class="com.fks.ui.user.action.CreateUserAction" method="getZoneBasedonFormat"></action>
+        <action name="getZoneDescBasedonZone" class="com.fks.ui.user.action.CreateUserAction" method="getZoneSiteDescbasedonSiteCode"></action>
+        <action name="getUserdetailforUpdate" class="com.fks.ui.user.action.CreateUserAction" method="getUserdetailforUpdate"></action>
+        <action name="submituserDtl" class="com.fks.ui.user.action.CreateUserAction" method="SubmitEmployeeDetail">
+            <result name="success">/jsp/user/createuser.jsp</result>
+            <result name="input">/jsp/user/createuser.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="redirect_userMch" class="com.fks.ui.user.action.CreateUserAction" method="redirecrUser" >
+            <result name="success" type="redirect" >mapuserMch_jsp</result>
+        </action>
+        <action name="updateUserDtl" class="com.fks.ui.user.action.CreateUserAction" method="userUpdatedetail">
+            <result name="success">/jsp/user/createuser.jsp</result>
+            <result name="input">/jsp/user/createuser.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+  <!--     Create User Master Action end-->
+ <!--     Search User Master Action Start-->
+        <action name="searchuser_jsp" class="com.fks.ui.user.action.SearchUserAction" method="viewSearchjsp" >
+            <result name="success">/jsp/user/searchEmployeDtl.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="getStoresForFlexbox" class="com.fks.ui.user.action.SearchUserAction" method="flexBoxStores"></action>
+        <action name="getEmployeeForFlexBox" class="com.fks.ui.user.action.SearchUserAction" method="flexBoxEmployess"></action>
+        <action name="getAllEmpSearch" class="com.fks.ui.user.action.SearchUserAction" method="SearchEmployeeDetails"></action>
+        <action name="getEmpSearchBy" class="com.fks.ui.user.action.SearchUserAction" method="SearchEmployeeDetails"></action>
+        <action name="deleteEmployee" class="com.fks.ui.user.action.SearchUserAction" method="BlockEmployee" >
+            <result name="success">/jsp/user/searchEmployeDtl.jsp</result>
+            <result name="input">/login.jsp</result>
+        </action>
+        <action name="downloadEmployeeMasterdtl" class="com.fks.ui.user.action.SearchUserAction" method="downloadEmployeeMasterData" >
+        </action>
+        <!--     workflow Master Action Start-->
+        <action name="workflow_jsp" class="com.fks.ui.master.action.WorkFlowMasterAction"  >
+            <result name="success">/jsp/master/workflow.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="downloadWorkflowMaster" class="com.fks.ui.master.action.WorkFlowMasterAction" method="downloadWorkflowMasterData" >
+        </action>
+        <action name="submitworkflow" class="com.fks.ui.master.action.WorkFlowMasterAction" method="submitWorkflowMasterdata" >
+            <result name="success">/jsp/master/workflow.jsp</result>
+            <result name="input">/jsp/master/workflow.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="getAllWorkflowDtl" class="com.fks.ui.master.action.WorkFlowMasterAction" method="getAllWorkflowData" ></action>
+
+         <!--     workflow Master Action End-->
+            <!--    Map User MCH Master Action Start-->
+        <action name="mapuserMch_jsp" class="com.fks.ui.user.action.MapUserMCHAction" method="viewuserMapjsp"  >
+            <result name="success">/jsp/user/mapUserMch.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="getUserProfile" class="com.fks.ui.user.action.MapUserMCHAction" method="getUserProfileDtl"  />
+        <action name="downloadF1UserFile" class="com.fks.ui.user.action.MapUserMCHAction" method="downloadUserMchF1File"  />
+        <action name="downloadF2UserFile" class="com.fks.ui.user.action.MapUserMCHAction" method="downloadUserMchF2File"  />
+        <action name="downloadF3UserFile" class="com.fks.ui.user.action.MapUserMCHAction" method="downloadUserMchF3File"  />
+        <action name="downloadF5UserFile" class="com.fks.ui.user.action.MapUserMCHAction" method="downloadUserMchF5File"  />
+        <action name="downloadUserMCHMappingFile" class="com.fks.ui.user.action.MapUserMCHAction" method="downloadUserMCHMappingFile"  />
+
+        <action name="submitUserMCH" class="com.fks.ui.user.action.MapUserMCHAction" method="uploadUserMCHdtl"  >
+            <result name="success">/jsp/user/mapUserMch.jsp</result>
+            <result name="input">/jsp/user/mapUserMch.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+            <!--    Map User MCH Master Action End-->
+    </package>
+</struts>
+

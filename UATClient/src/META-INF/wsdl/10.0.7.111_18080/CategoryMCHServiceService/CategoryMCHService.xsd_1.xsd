@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.master.promo.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.master.promo.fks.com/">
+
+<xs:element name="Exception" type="tns:Exception" />
+
+<xs:element name="blockUnblockMCH" type="tns:blockUnblockMCH" />
+
+<xs:element name="blockUnblockMCHResponse" type="tns:blockUnblockMCHResponse" />
+
+<xs:element name="getAllCategoryMCHdtl" type="tns:getAllCategoryMCHdtl" />
+
+<xs:element name="getAllCategoryMCHdtlResponse" type="tns:getAllCategoryMCHdtlResponse" />
+
+<xs:element name="getCategoryDtl" type="tns:getCategoryDtl" />
+
+<xs:element name="getCategoryDtlResponse" type="tns:getCategoryDtlResponse" />
+
+<xs:element name="getCategoryList" type="tns:getCategoryList" />
+
+<xs:element name="getCategoryListResponse" type="tns:getCategoryListResponse" />
+
+<xs:element name="getCategorySubCategoryDtl" type="tns:getCategorySubCategoryDtl" />
+
+<xs:element name="getCategorySubCategoryDtlResponse" type="tns:getCategorySubCategoryDtlResponse" />
+
+<xs:element name="getSubCategoryBycategory" type="tns:getSubCategoryBycategory" />
+
+<xs:element name="getSubCategoryBycategoryResponse" type="tns:getSubCategoryBycategoryResponse" />
+
+<xs:element name="getSubCategoryDtl" type="tns:getSubCategoryDtl" />
+
+<xs:element name="getSubCategoryDtlResponse" type="tns:getSubCategoryDtlResponse" />
+
+<xs:element name="getUserMCHDtlExcel" type="tns:getUserMCHDtlExcel" />
+
+<xs:element name="getUserMCHDtlExcelResponse" type="tns:getUserMCHDtlExcelResponse" />
+
+<xs:element name="getUserSubcategoryList" type="tns:getUserSubcategoryList" />
+
+<xs:element name="getUserSubcategoryListResponse" type="tns:getUserSubcategoryListResponse" />
+
+<xs:element name="submitCategoryMCHDetails" type="tns:submitCategoryMCHDetails" />
+
+<xs:element name="submitCategoryMCHDetailsResponse" type="tns:submitCategoryMCHDetailsResponse" />
+
+<xs:element name="submitWorkFlowDetail" type="tns:submitWorkFlowDetail" />
+
+<xs:element name="submitWorkFlowDetailResponse" type="tns:submitWorkFlowDetailResponse" />
+
+<xs:complexType name="getCategorySubCategoryDtl">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getCategorySubCategoryDtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:getCategoryResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryResp">
+<xs:sequence>
+<xs:element name="listCategory" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="listSubCategory" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="pk" type="xs:long" minOccurs="0" />
+<xs:element name="redirect" type="xs:boolean" />
+<xs:element name="respCode" type="tns:respCode" minOccurs="0" />
+<xs:element name="suggestedDate" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="blockUnblockMCH">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="blockUnblockMCHResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserSubcategoryList">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+<xs:element name="arg1" type="xs:boolean" />
+<xs:element name="arg2" type="xs:boolean" />
+<xs:element name="arg3" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserSubcategoryListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:userMCSubCategoryResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="userMCSubCategoryResp">
+<xs:sequence>
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+<xs:element name="subCategoryNameList" type="tns:mchVo" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mchVo">
+<xs:sequence>
+<xs:element name="categoryName" type="xs:string" minOccurs="0" />
+<xs:element name="createdBy" type="xs:string" minOccurs="0" />
+<xs:element name="isMCActive" type="xs:boolean" minOccurs="0" />
+<xs:element name="locationID" type="xs:long" minOccurs="0" />
+<xs:element name="locationName" type="xs:string" minOccurs="0" />
+<xs:element name="MCCode" type="xs:string" minOccurs="0" />
+<xs:element name="MCName" type="xs:string" minOccurs="0" />
+<xs:element name="subCategoryName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSubCategoryDtl">
+<xs:sequence>
+<xs:element name="arg0" type="tns:getCategorySubCategoryDtlReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategorySubCategoryDtlReq">
+<xs:sequence>
+<xs:element name="categoryName" type="xs:string" minOccurs="0" />
+<xs:element name="userId" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSubCategoryDtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:getCategoryResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryList">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getCategoryListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:userMCSubCategoryResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryDtl">
+<xs:sequence>
+<xs:element name="arg0" type="tns:getCategorySubCategoryDtlReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCategoryDtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:getCategoryResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserMCHDtlExcel">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getUserMCHDtlExcelResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllCategoryMCHdtl">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllCategoryMCHdtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mchVo" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitCategoryMCHDetails">
+<xs:sequence>
+<xs:element name="arg0" type="tns:mchVo" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitCategoryMCHDetailsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitWorkFlowDetail">
+<xs:sequence>
+<xs:element name="arg0" type="tns:mchVo" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitWorkFlowDetailResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:submitWorkflowResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitWorkflowResp">
+<xs:sequence>
+<xs:element name="filePath" type="xs:string" minOccurs="0" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSubCategoryBycategory">
+<xs:sequence>
+<xs:element name="arg0" type="tns:getCategorySubCategoryDtlReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSubCategoryBycategoryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:getCategoryResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="respCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: ajitn -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+    <package name="promotion-mapping" extends="promoDefault" namespace="/">
+        <action name="initiatePromotion_action" class="com.fks.ui.initiation.action.PromotionInitiateAction" >
+            <result name="success">/jsp/promo_initiation/initiateproposal.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="fillpromoFlex" class="com.fks.ui.initiation.action.PromotionInitiateAction"  method="fillAllPromotionUserWise"/>
+        <action name="fillsubcategroy" class="com.fks.ui.initiation.action.PromotionInitiateAction"  method="fillsubCategoryCategoryWise"/>
+        <action name="fillsubcategroyExigency" class="com.fks.ui.approval.action.BusinessExigencyApprovalAction"  method="fillsubCategoryCategoryWise"/>
+        <action name="fillcategroy" class="com.fks.ui.initiation.action.PromotionInitiateAction"  method="fillCategoryData"/>
+        <action name="getPromoidWiseData" class="com.fks.ui.initiation.action.PromotionInitiateAction"  method="getPromotionDtlPromoIDWise"/>
+        <action name="submitPromotionReq" class="com.fks.ui.initiation.action.PromotionInitiateAction" method="submitPromotionInitiation" >
+            <result name="success">/jsp/promo_initiation/initiateproposal.jsp</result>
+            <result name="input">/jsp/promo_initiation/initiateproposal.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="getAllPromotiondtl_initiator" class="com.fks.ui.initiation.action.PromotionInitiateAction"  method="getAllPromotionDetail"/>
+        <action name="getAllPromotiondtl_initiator_org" class="com.fks.ui.initiation.action.PromotionInitiateAction"  method="getAllPromotionDetailforOrg"/>
+        <action name="getPromotiondtl_promoIdwise" class="com.fks.ui.initiation.action.PromotionInitiateAction"  method="getPromotiondtlPromoIdWise"/>
+        <action name="redirect_promotype" class="com.fks.ui.initiation.action.PromotionInitiateAction" method="redirectPromotiontype" >
+            <result name="bxgypromo" type="redirect">buyxgety_action</result>
+            <result name="bxgydisc" type="redirect">buyxgetyDiscount_action</result>
+            <result name="bxgy" type="redirect">bxgysingle_ation</result>
+            <result name="flat" type="redirect">flatDiscount_action</result>
+            <result name="power" type="redirect">powerpricing_action</result>
+            <result name="ticketsize" type="redirect">billticketsize_action</result>
+            <result name="ticketsizepool" type="redirect">poolrewardticketsize_action</result>
+            <result name="input">/jsp/promo_initiation/initiateproposal.jsp</result>
+        </action>
+        <action name="viewPromointiate_action" class="com.fks.ui.initiation.action.CreateSubPromoAction" >
+            <result name="success">/jsp/promo_initiation/createSubPromo.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="fillSetBySetNo" class="com.fks.ui.initiation.action.CreateSubPromoAction" method="fillSet" >
+        </action>
+
+        <action name="subPromoFileUpload_action" class="com.fks.ui.initiation.action.CreateSubPromoAction" method="uploadFile" >
+            <result name="success">/jsp/promo_initiation/createSubPromo.jsp</result>
+            <result name="input">/jsp/promo_initiation/createSubPromo.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="createSubPromo" class="com.fks.ui.initiation.action.CreateSubPromoAction" method="createSubPromo" >
+            <result name="success">/jsp/promo_initiation/createSubPromo.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+
+        <action name="buyxgety_action" class="com.fks.ui.initiation.action.BuyXGetYAction" >
+            <result name="success">/jsp/promo_initiation/bxGypromotion.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="uploadbxgyxarticle_action" class="com.fks.ui.initiation.action.BuyXGetYAction" method="uploadXArticleFile" >
+            <result name="success">/jsp/promo_initiation/bxGypromotion.jsp</result>
+            <result name="input">/jsp/promo_initiation/bxGypromotion.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="uploadbxgyYarticle_action" class="com.fks.ui.initiation.action.BuyXGetYAction" method="uploadYArticleFile" >
+            <result name="success">/jsp/promo_initiation/bxGypromotion.jsp</result>
+            <result name="input">/jsp/promo_initiation/bxGypromotion.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="uploadbxgyZarticle_action" class="com.fks.ui.initiation.action.BuyXGetYAction" method="uploadZArticleFile" >
+            <result name="success">/jsp/promo_initiation/bxGypromotion.jsp</result>
+            <result name="input">/jsp/promo_initiation/bxGypromotion.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="uploadbxgySet4article_action" class="com.fks.ui.initiation.action.BuyXGetYAction" method="uploadSet4ArticleFile" >
+            <result name="success">/jsp/promo_initiation/bxGypromotion.jsp</result>
+            <result name="input">/jsp/promo_initiation/bxGypromotion.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="uploadbxgySet5article_action" class="com.fks.ui.initiation.action.BuyXGetYAction" method="uploadSet5ArticleFile" >
+            <result name="success">/jsp/promo_initiation/bxGypromotion.jsp</result>
+            <result name="input">/jsp/promo_initiation/bxGypromotion.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="submitBXGXDtl" class="com.fks.ui.initiation.action.BuyXGetYAction" method="createArticleInitiate" >
+            <result name="success">/jsp/promo_initiation/bxGypromotion.jsp</result>
+            <result name="input">/jsp/promo_initiation/bxGypromotion.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="buyxgetyDiscount_action" class="com.fks.ui.initiation.action.BuyXGetYAtDiscountAction" >
+            <result name="success">/jsp/promo_initiation/bxGyalldisc.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="uploadbxgyDiscxarticle_action" class="com.fks.ui.initiation.action.BuyXGetYAtDiscountAction" method="uploadXArticleFile" >
+            <result name="success">/jsp/promo_initiation/bxGyalldisc.jsp</result>
+            <result name="input">/jsp/promo_initiation/bxGyalldisc.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="uploadbxgyDiscYarticle_action" class="com.fks.ui.initiation.action.BuyXGetYAtDiscountAction" method="uploadYArticleFile" >
+            <result name="success">/jsp/promo_initiation/bxGyalldisc.jsp</result>
+            <result name="input">/jsp/promo_initiation/bxGyalldisc.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="uploadbxgyDiscZarticle_action" class="com.fks.ui.initiation.action.BuyXGetYAtDiscountAction" method="uploadZArticleFile" >
+            <result name="success">/jsp/promo_initiation/bxGyalldisc.jsp</result>
+            <result name="input">/jsp/promo_initiation/bxGyalldisc.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="uploadbxgyDiscSet4article_action" class="com.fks.ui.initiation.action.BuyXGetYAtDiscountAction" method="uploadSet4ArticleFile" >
+            <result name="success">/jsp/promo_initiation/bxGyalldisc.jsp</result>
+            <result name="input">/jsp/promo_initiation/bxGyalldisc.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="uploadbxgyDiscSet5article_action" class="com.fks.ui.initiation.action.BuyXGetYAtDiscountAction" method="uploadSet5ArticleFile" >
+            <result name="success">/jsp/promo_initiation/bxGyalldisc.jsp</result>
+            <result name="input">/jsp/promo_initiation/bxGyalldisc.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="submitBXGXDiscDtl" class="com.fks.ui.initiation.action.BuyXGetYAtDiscountAction" method="createArticleInitiate" >
+            <result name="success">/jsp/promo_initiation/bxGyalldisc.jsp</result>
+            <result name="input">/jsp/promo_initiation/bxGyalldisc.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="flatDiscount_action" class="com.fks.ui.initiation.action.FlatDiscountAction" >
+            <result name="success">/jsp/promo_initiation/flatdiscount.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="powerpricing_action" class="com.fks.ui.initiation.action.PowerPricingAction" >
+            <result name="success">/jsp/promo_initiation/powerpricing.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="billticketsize_action" class="com.fks.ui.initiation.action.BillLevelTicketSizeAction" >
+            <result name="success">/jsp/promo_initiation/billTicketsize.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="poolrewardticketsize_action" class="com.fks.ui.initiation.action.PoolRewardTicketAction" >
+            <result name="success">/jsp/promo_initiation/poolRewardticket.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="organizationdtl_action" class="com.fks.ui.initiation.action.OrganizationAction" >
+            <result name="success">/jsp/promo_initiation/organizationDtl.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        
+        <action name="fetchzoneBasedOnFormat" class="com.fks.ui.initiation.action.OrganizationAction"  method="getZoneBasedonFormat"/>
+        <action name="getStateBasedOnZoneAndFormat" class="com.fks.ui.initiation.action.OrganizationAction"  method="getstateBasedonZoneAndFormat"/>
+        <action name="getRegionBasedOnstateAndFormat" class="com.fks.ui.initiation.action.OrganizationAction"  method="getRegionBasedOnstateAndFormat"/>
+        <action name="getCityBasedOnRegionAndFormat" class="com.fks.ui.initiation.action.OrganizationAction"  method="getCitybasedonRegionAndformat"/>
+        <action name="getStoreBasedOnCityAndFormat" class="com.fks.ui.initiation.action.OrganizationAction"  method="getStorebasedonCityAndFormat"/>
+        <action name="getAllFormatExceptZoneAndHo" class="com.fks.ui.initiation.action.OrganizationAction"  method="getAllFormatExceptZoneAndHo"/>
+
+        <action name="submitOrgnizationdtl" class="com.fks.ui.initiation.action.OrganizationAction" method="saveSubmitOragnizationdetail">
+            <result name="success">/jsp/promo_initiation/organizationDtl.jsp</result>
+            <result name="input">/jsp/promo_initiation/organizationDtl.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+
+        <action name="bxgysingle_ation" class="com.fks.ui.initiation.action.BxGyAction" >
+            <result name="success">/jsp/promo_initiation/buyxgety.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="createbxgysingle_action" class="com.fks.ui.initiation.action.BxGyAction" method="createbxgydetail" >
+            <result name="success">/jsp/promo_initiation/buyxgety.jsp</result>
+            <result name="input">/jsp/promo_initiation/buyxgety.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="viewInitiationDahsboard_action" class="com.fks.ui.initiation.action.InitiataionDashboard" >
+            <result name="success">/jsp/promo_initiation/dashboard/initiationdashboard.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="getallPromoreq_dashboard" class="com.fks.ui.initiation.action.InitiataionDashboard" method="getAllPromoDetailDashboard" >
+        </action>
+      
+        <action name="deletePromoRequest" class="com.fks.ui.initiation.action.InitiataionDashboard" method="deleteSubRequest" >
+            <result name="success">/jsp/promo_initiation/dashboard/initiationdashboard.jsp</result>
+            <result name="input">/jsp/promo_initiation/dashboard/initiationdashboard.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="createCopyRequest" class="com.fks.ui.initiation.action.InitiataionDashboard" method="createCopyofSubRequest" >
+            <result name="success">/jsp/promo_initiation/dashboard/initiationdashboard.jsp</result>
+            <result name="input">/jsp/promo_initiation/dashboard/initiationdashboard.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="updatePromoHeaderRedirect" class="com.fks.ui.initiation.action.InitiataionDashboard" method="updateHeaderRequest" >
+            <result name="updatepromo" type="redirect">initiatePromotion_action</result>
+            <result name="input">/jsp/promo_initiation/dashboard/initiationdashboard.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="viewcreateSubPromoFile" class="com.fks.ui.initiation.action.CreateSubPromotionUsingFile"  >
+            <result name="success">/jsp/promo_initiation/createSubPromoFile.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="createSubPromoFile" class="com.fks.ui.initiation.action.CreateSubPromotionUsingFile" method="submitSubpromoUsingFile"  >
+         <interceptor-ref name="fileUpload"/>
+            <result name="success">/jsp/promo_initiation/createSubPromoFile.jsp</result>
+            <result name="input">/jsp/promo_initiation/createSubPromoFile.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+            
+        </action>
+
+
+        <action name="StorePromoFileAction" class="com.fks.ui.promostore.action.StorePromotionUsingFile" method="submitStorepromoUsingFile"  >
+             <interceptor-ref name="fileUpload"/>
+            <result name="input">/jsp/promo_initiation/organizationDtl.jsp</result>
+            <result name="success">/jsp/promo_initiation/organizationDtl.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+      </action>
+
+
+        <action name="updateSubPromoFileUpload" class="com.fks.ui.initiation.action.InitiataionDashboard" method="updateSubPromoWithFileUpload" >
+            <result name="success">/jsp/promo_initiation/dashboard/initiationdashboard.jsp</result>
+            <result name="input">/jsp/promo_initiation/dashboard/initiationdashboard.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        
+    </package>
+</struts>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.master.promo.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.master.promo.fks.com/">
+
+<xs:element name="getAllOrganizationDtl" type="tns:getAllOrganizationDtl" />
+
+<xs:element name="getAllOrganizationDtlResponse" type="tns:getAllOrganizationDtlResponse" />
+
+<xs:element name="getOrganizationDtlBySiteCode" type="tns:getOrganizationDtlBySiteCode" />
+
+<xs:element name="getOrganizationDtlBySiteCodeResponse" type="tns:getOrganizationDtlBySiteCodeResponse" />
+
+<xs:element name="submitOrganizationDtl" type="tns:submitOrganizationDtl" />
+
+<xs:element name="submitOrganizationDtlResponse" type="tns:submitOrganizationDtlResponse" />
+
+<xs:element name="updateStoreDetail" type="tns:updateStoreDetail" />
+
+<xs:element name="updateStoreDetailResponse" type="tns:updateStoreDetailResponse" />
+
+<xs:complexType name="submitOrganizationDtl">
+<xs:sequence>
+<xs:element name="arg0" type="tns:storeVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="storeVO">
+<xs:sequence>
+<xs:element name="city" type="xs:string" minOccurs="0" />
+<xs:element name="createdByID" type="xs:long" minOccurs="0" />
+<xs:element name="createdByName" type="xs:string" minOccurs="0" />
+<xs:element name="format" type="xs:string" minOccurs="0" />
+<xs:element name="isStoreBlocked" type="xs:boolean" minOccurs="0" />
+<xs:element name="locationID" type="xs:long" minOccurs="0" />
+<xs:element name="locationName" type="xs:string" minOccurs="0" />
+<xs:element name="region" type="xs:string" minOccurs="0" />
+<xs:element name="state" type="xs:string" minOccurs="0" />
+<xs:element name="storeClass" type="xs:string" minOccurs="0" />
+<xs:element name="storeDesc" type="xs:string" minOccurs="0" />
+<xs:element name="storeID" type="xs:string" minOccurs="0" />
+<xs:element name="zoneCode" type="xs:string" minOccurs="0" />
+<xs:element name="zoneId" type="xs:long" minOccurs="0" />
+<xs:element name="zoneName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitOrganizationDtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:submitOrganizationResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitOrganizationResp">
+<xs:sequence>
+<xs:element name="filePath" type="xs:string" minOccurs="0" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="pk" type="xs:long" minOccurs="0" />
+<xs:element name="redirect" type="xs:boolean" />
+<xs:element name="respCode" type="tns:respCode" minOccurs="0" />
+<xs:element name="suggestedDate" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getOrganizationDtlBySiteCode">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getOrganizationDtlBySiteCodeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:getOrgDtlResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getOrgDtlResp">
+<xs:sequence>
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+<xs:element name="storeVO" type="tns:storeVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStoreDetail">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStoreDetailResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllOrganizationDtl">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllOrganizationDtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:storeVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="respCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: ajitn -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+    <package name="communication-mapping" extends="promoDefault" namespace="/">
+
+        <action name="viewcommunication_action" class="com.fks.ui.communication.action.PromoCommunicationAction" >
+            <result name="success">/jsp/promo_communication/promocommunication.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+       <action name="getCommunicationGrid" class="com.fks.ui.communication.action.PromoCommunicationAction" method="getPromotionCommunicationGridData" />
+
+       <action name="getMchCategoryWise" class="com.fks.ui.communication.action.PromoCommunicationAction" method="getMcBasedonCategory" />
+        <action name="getMchSubCategoryWise" class="com.fks.ui.communication.action.PromoCommunicationAction" method="getMcBasedonSubCategory" />
+       <action name="getArticleMchWise" class="com.fks.ui.communication.action.PromoCommunicationAction" method="getArticleBasedonMCH" />
+       <action name="getZoneBasedonUser" class="com.fks.ui.communication.action.PromoCommunicationAction" method="getZoneBasedonUser" />
+       <action name="downloadArticleMcComm" class="com.fks.ui.communication.action.PromoCommunicationAction" method="downloadArticleMcCommunicationFile" />
+       
+    </package>
+</struts>

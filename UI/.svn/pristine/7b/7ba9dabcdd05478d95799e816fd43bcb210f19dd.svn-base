@@ -1,0 +1,22 @@
+# define the root logger with two appenders writing to console and file
+log4j.rootLogger = INFO, CONSOLE
+
+#define the appender named CONSOLE
+log4j.appender.CONSOLE=org.apache.log4j.ConsoleAppender
+log4j.appender.CONSOLE.conversionPattern=%m%n
+
+#set the layout for the appender CONSOLE
+log4j.appender.CONSOLE.layout=org.apache.log4j.PatternLayout
+
+# define category
+
+log4j.category.com.fks.ui.common.action=INFO,MasterLogger
+
+
+# *****  is set to be a RollingFileAppender.
+log4j.appender.MasterLogger=org.apache.log4j.RollingFileAppender
+log4j.appender.MasterLogger.File=${com.sun.aas.instanceRoot}/logs/UI/MasterUI.log
+log4j.appender.MasterLogger.MaxFileSize=100KB
+log4j.appender.MasterLogger.MaxBackupIndex=50
+log4j.appender.MasterLogger.layout=org.apache.log4j.PatternLayout
+log4j.appender.MasterLogger.layout.ConversionPattern=%d %p %t %c - %m%n

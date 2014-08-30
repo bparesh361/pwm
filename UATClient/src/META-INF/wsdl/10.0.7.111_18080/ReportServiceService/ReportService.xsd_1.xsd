@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.reports.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.reports.fks.com/">
+
+<xs:element name="deletePendingStoreProposalEmailID" type="tns:deletePendingStoreProposalEmailID" />
+
+<xs:element name="deletePendingStoreProposalEmailIDResponse" type="tns:deletePendingStoreProposalEmailIDResponse" />
+
+<xs:element name="getAllEmailIdsForStorePendingUserMapping" type="tns:getAllEmailIdsForStorePendingUserMapping" />
+
+<xs:element name="getAllEmailIdsForStorePendingUserMappingResponse" type="tns:getAllEmailIdsForStorePendingUserMappingResponse" />
+
+<xs:element name="getAllReportsRequestList" type="tns:getAllReportsRequestList" />
+
+<xs:element name="getAllReportsRequestListResponse" type="tns:getAllReportsRequestListResponse" />
+
+<xs:element name="storeProposalPendingAutomatedReport" type="tns:storeProposalPendingAutomatedReport" />
+
+<xs:element name="storeProposalPendingAutomatedReportResponse" type="tns:storeProposalPendingAutomatedReportResponse" />
+
+<xs:element name="submitReportRequest" type="tns:submitReportRequest" />
+
+<xs:element name="submitReportRequestResponse" type="tns:submitReportRequestResponse" />
+
+<xs:element name="submitStoreUserMappingForPendingReport" type="tns:submitStoreUserMappingForPendingReport" />
+
+<xs:element name="submitStoreUserMappingForPendingReportResponse" type="tns:submitStoreUserMappingForPendingReportResponse" />
+
+<xs:complexType name="getAllReportsRequestList">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+<xs:element name="arg1" type="tns:reportTypeEnum" minOccurs="0" />
+<xs:element name="arg2" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllReportsRequestListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reportsRequest" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reportsRequest">
+<xs:sequence>
+<xs:element name="categoryName" type="xs:string" minOccurs="0" />
+<xs:element name="createdBy" type="xs:long" minOccurs="0" />
+<xs:element name="createdDate" type="xs:string" minOccurs="0" />
+<xs:element name="event" type="xs:string" minOccurs="0" />
+<xs:element name="filePath" type="xs:string" minOccurs="0" />
+<xs:element name="fromDate" type="xs:string" minOccurs="0" />
+<xs:element name="initiatedFrom" type="xs:string" minOccurs="0" />
+<xs:element name="problemType" type="xs:string" minOccurs="0" />
+<xs:element name="proposalNo" type="xs:string" minOccurs="0" />
+<xs:element name="remarks" type="xs:string" minOccurs="0" />
+<xs:element name="reportCriteriaEnum" type="tns:reportCriteriaEnum" minOccurs="0" />
+<xs:element name="reportReqId" type="xs:string" minOccurs="0" />
+<xs:element name="reportStatus" type="xs:string" minOccurs="0" />
+<xs:element name="reportTypeEnum" type="tns:reportTypeEnum" minOccurs="0" />
+<xs:element name="startIndex" type="xs:int" />
+<xs:element name="status" type="xs:string" minOccurs="0" />
+<xs:element name="subCategoryName" type="xs:string" minOccurs="0" />
+<xs:element name="taskTypeID" type="xs:string" minOccurs="0" />
+<xs:element name="ticketNo" type="xs:string" minOccurs="0" />
+<xs:element name="toDate" type="xs:string" minOccurs="0" />
+<xs:element name="vendorBacked" type="xs:string" minOccurs="0" />
+<xs:element name="zone" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="storeProposalPendingAutomatedReport">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="storeProposalPendingAutomatedReportResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="submitStoreUserMappingForPendingReport">
+<xs:sequence>
+<xs:element name="arg0" type="tns:reportEmailVo" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reportEmailVo">
+<xs:sequence>
+<xs:element name="emailId" type="xs:string" minOccurs="0" />
+<xs:element name="reportTypeEmailID" type="xs:string" minOccurs="0" />
+<xs:element name="reportTypeEnum" type="tns:reportTypeEnum" minOccurs="0" />
+<xs:element name="reportTypeId" type="xs:string" minOccurs="0" />
+<xs:element name="zoneId" type="xs:string" minOccurs="0" />
+<xs:element name="zoneName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitStoreUserMappingForPendingReportResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reportsResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reportsResp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="reportFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="respCode" type="tns:reportsRespCode" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitReportRequest">
+<xs:sequence>
+<xs:element name="arg0" type="tns:reportsRequest" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitReportRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reportsResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deletePendingStoreProposalEmailID">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deletePendingStoreProposalEmailIDResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reportsResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllEmailIdsForStorePendingUserMapping">
+<xs:sequence>
+<xs:element name="arg0" type="tns:reportTypeEnum" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllEmailIdsForStorePendingUserMappingResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reportEmailVo" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="reportTypeEnum">
+<xs:restriction base="xs:string">
+<xs:enumeration value="PROMOTION_LIFE_CYCLE_ARTICLE_MC_RPT" />
+<xs:enumeration value="STORE_PROPOSAL_RPT" />
+<xs:enumeration value="PROMOTION_LIFE_CYCLE_RPT" />
+<xs:enumeration value="INTERNAL_TASK_RPT" />
+<xs:enumeration value="PROMO_TEAM_DASHBOARD_RPT" />
+<xs:enumeration value="STORE_PROPOSAL_PENDING_AUTOMATED_RPT" />
+<xs:enumeration value="VENDOR_BACKED_PROMO_RPT" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="reportCriteriaEnum">
+<xs:restriction base="xs:string">
+<xs:enumeration value="TICKET_NO" />
+<xs:enumeration value="INITIATION_DATE_CATEGORY" />
+<xs:enumeration value="INITIATION_DATE_CATEGORY_EVENT" />
+<xs:enumeration value="INITIATION_DATE_SUB_CATEGORY" />
+<xs:enumeration value="INITIATION_DATE_CATEGORY_TICKET_NO" />
+<xs:enumeration value="INITIATION_DATE_CATEGORY_STATUS" />
+<xs:enumeration value="PROPOSAL_SEARCH_DATE" />
+<xs:enumeration value="PROPOSAL_SEARCH_DATE_ZONE" />
+<xs:enumeration value="PROPOSAL_SEARCH_DATE_PROPOSAL_NO" />
+<xs:enumeration value="PROPOSAL_SEARCH_DATE_PROBLEM_TYPE" />
+<xs:enumeration value="TASK_ASSIGNED_DATE" />
+<xs:enumeration value="TASK_ASSIGNED_DATE_TASK_TYPE" />
+<xs:enumeration value="INITIATION_DATE" />
+<xs:enumeration value="INITIATION_DATE_ZONE" />
+<xs:enumeration value="INITIATION_DATE_EVENT" />
+<xs:enumeration value="INITIATION_DATE_CATEGORY_VENDOR_BACKED_ALL" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="reportsRespCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

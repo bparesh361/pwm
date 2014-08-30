@@ -1,0 +1,251 @@
+120315,Promotion_Draft,Promotion_Submit,Deepak Kumar. V,2014-05-10 00:00:00,Promotion submited.
+120315,Promotion_Submit,L1_Approve,Promo Admin L1,2014-05-12 00:00:00,Request is Approved By L1.
+120315,L1_Approve,Team_Member_Assigned,Pravin Revadekar,2014-05-12 00:00:00,Request is assigned.
+120315,Team_Member_Assigned,Promo_Closed,Niraj Dubey,2014-05-16 00:00:00,OFFER VALID FROM 02.06.2014 TO 24.08.2014. 20000 M COUPON GENERATED & GIVEN TO ZONE.
+162741,Promotion_Draft,Promotion_Submit,Parvez Patel,2014-07-21 00:00:00,Promotion submited.
+162741,Promotion_Submit,L1_Approve,Ravishankar Mahaseth,2014-07-21 00:00:00,L1 approved request by changing date.
+162741,L1_Approve,Team_Member_Assigned,Manish Shah,2014-07-21 00:00:00,Request is assigned.
+162741,Team_Member_Assigned,Promo_Closed,Jatin Sutariya,2014-07-24 00:00:00,offer configure
+162743,Promotion_Draft,Promotion_Submit,Parvez Patel,2014-07-21 00:00:00,Promotion submited.
+162743,Promotion_Submit,L1_Approve,Ravishankar Mahaseth,2014-07-21 00:00:00,L1 approved request by changing date.
+162743,L1_Approve,Team_Member_Assigned,Manish Shah,2014-07-21 00:00:00,Request is assigned.
+162743,Team_Member_Assigned,Promo_Closed,Jatin Sutariya,2014-07-24 00:00:00,offer configure
+164302,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-07-25 00:00:00,Promotion submited.
+164302,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-07-25 00:00:00,Request is assigned to Business Exigency by L1.
+164302,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-07-25 00:00:00,Request is approved By Business Exigency.
+164302,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-07-25 00:00:00,Request is assigned.
+164302,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164302,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164302,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164302,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-07-28 00:00:00,
+164306,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-07-25 00:00:00,Promotion submited.
+164306,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-07-25 00:00:00,Request is assigned to Business Exigency by L1.
+164306,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-07-25 00:00:00,Request is approved By Business Exigency.
+164306,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-07-25 00:00:00,Request is assigned.
+164306,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164306,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164306,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164306,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-07-28 00:00:00,
+164310,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-07-25 00:00:00,Promotion submited.
+164310,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-07-25 00:00:00,Request is assigned to Business Exigency by L1.
+164310,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-07-25 00:00:00,Request is approved By Business Exigency.
+164310,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-07-25 00:00:00,Request is assigned.
+164310,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164310,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164310,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164310,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-07-28 00:00:00,
+164314,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-07-25 00:00:00,Promotion submited.
+164314,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-07-25 00:00:00,Request is assigned to Business Exigency by L1.
+164314,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-07-25 00:00:00,Request is approved By Business Exigency.
+164314,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-07-25 00:00:00,Request is assigned.
+164314,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164314,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164314,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164314,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-07-28 00:00:00,
+164316,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-07-25 00:00:00,Promotion submited.
+164316,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-07-25 00:00:00,Request is assigned to Business Exigency by L1.
+164316,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-07-25 00:00:00,Request is approved By Business Exigency.
+164316,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-07-25 00:00:00,Request is assigned.
+164316,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164316,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164316,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164316,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-07-28 00:00:00,
+164319,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-07-25 00:00:00,Promotion submited.
+164319,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-07-25 00:00:00,Request is assigned to Business Exigency by L1.
+164319,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-07-25 00:00:00,Request is approved By Business Exigency.
+164319,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-07-25 00:00:00,Request is assigned.
+164319,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164319,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164319,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+164319,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-07-28 00:00:00,
+165332,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-07-25 00:00:00,Promotion submited.
+165332,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-07-25 00:00:00,Request is assigned to Business Exigency by L1.
+165332,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-07-25 00:00:00,Request is approved By Business Exigency.
+165332,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-07-25 00:00:00,Request is assigned.
+165332,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+165332,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+165332,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-07-28 00:00:00,
+165340,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-07-25 00:00:00,Promotion submited.
+165340,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-07-25 00:00:00,Request is assigned to Business Exigency by L1.
+165340,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-07-25 00:00:00,Request is approved By Business Exigency.
+165340,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-07-25 00:00:00,Request is assigned.
+165340,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+165340,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+165340,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-07-28 00:00:00,
+165348,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-07-25 00:00:00,Promotion submited.
+165348,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-07-25 00:00:00,Request is assigned to Business Exigency by L1.
+165348,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-07-25 00:00:00,Request is approved By Business Exigency.
+165348,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-07-25 00:00:00,Request is assigned.
+165348,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+165348,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+165348,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-07-28 00:00:00,
+165353,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-07-25 00:00:00,Promotion submited.
+165353,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-07-25 00:00:00,Request is assigned to Business Exigency by L1.
+165353,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-07-25 00:00:00,Request is approved By Business Exigency.
+165353,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-07-25 00:00:00,Request is assigned.
+165353,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+165353,Team_Member_Hold,Team_Member_Hold,Rajkumar N,2014-07-25 00:00:00,Request is on Hold by promo executor.
+165353,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-07-28 00:00:00,
+165709,Promotion_Draft,Promotion_Submit,Mini K Varkey,2014-07-25 00:00:00,Promotion submited.
+165709,Promotion_Submit,L1_Approve,Prasad Kln,2014-07-25 00:00:00,Request is Approved By L1.
+165709,L1_Approve,Team_Member_Assigned,Surendra KJ,2014-07-25 00:00:00,Request is assigned.
+165709,Team_Member_Assigned,Team_Member_Hold,Kamalakanta Khatua,2014-07-25 00:00:00,Request is on Hold by promo executor.
+165709,Team_Member_Hold,Promo_Closed,Kamalakanta Khatua,2014-07-28 00:00:00,
+168627,Promotion_Draft,Promotion_Submit,Siddharth Jain,2014-07-26 00:00:00,Promotion submited.
+168627,Promotion_Submit,L1_Approve,Bharat Khare,2014-07-26 00:00:00,Request is Approved By L1.
+168627,L1_Approve,Team_Member_Assigned,Nitin Anand,2014-07-28 00:00:00,Request is assigned.
+168627,Team_Member_Assigned,Promo_Closed,Abhay Tiwari,2014-07-31 00:00:00,Rs 21 Off
+168628,Promotion_Draft,Promotion_Submit,Siddharth Jain,2014-07-26 00:00:00,Promotion submited.
+168628,Promotion_Submit,L1_Approve,Bharat Khare,2014-07-26 00:00:00,Request is Approved By L1.
+168628,L1_Approve,Team_Member_Assigned,Nitin Anand,2014-07-28 00:00:00,Request is assigned.
+168628,Team_Member_Assigned,Promo_Closed,Abhay Tiwari,2014-07-31 00:00:00,RS 25 Off
+168635,Promotion_Draft,Promotion_Submit,Siddharth Jain,2014-07-26 00:00:00,Promotion submited.
+168635,Promotion_Submit,L1_Approve,Bharat Khare,2014-07-26 00:00:00,Request is Approved By L1.
+168635,L1_Approve,Team_Member_Assigned,Nitin Anand,2014-07-28 00:00:00,Request is assigned.
+168635,Team_Member_Assigned,Promo_Closed,Abhay Tiwari,2014-07-31 00:00:00,Rs 40 Off
+168637,Promotion_Draft,Promotion_Submit,Siddharth Jain,2014-07-26 00:00:00,Promotion submited.
+168637,Promotion_Submit,L1_Approve,Bharat Khare,2014-07-26 00:00:00,Request is Approved By L1.
+168637,L1_Approve,Team_Member_Assigned,Nitin Anand,2014-07-28 00:00:00,Request is assigned.
+168637,Team_Member_Assigned,Promo_Closed,Abhay Tiwari,2014-07-31 00:00:00,Rs 41 Off
+169544,Promotion_Draft,Promotion_Submit,Sanjay Khemani,2014-07-28 00:00:00,Promotion submited.
+169544,Promotion_Submit,L1_Approve,Purvesh Rajpara,2014-07-28 00:00:00,Request is Approved By L1.
+169544,L1_Approve,Team_Member_Assigned,Manish Shah,2014-07-28 00:00:00,Request is assigned.
+169544,Team_Member_Assigned,Promo_Closed,Jatin Sutariya,2014-07-29 00:00:00,offer configure
+169830,Promotion_Draft,Promotion_Submit,Parvez Patel,2014-07-28 00:00:00,Promotion submited.
+169830,Promotion_Submit,L1_Approve,Ravishankar Mahaseth,2014-07-28 00:00:00,L1 approved request by changing date.
+169830,L1_Approve,Team_Member_Assigned,Manish Shah,2014-07-28 00:00:00,Request is assigned.
+169830,Team_Member_Assigned,Promo_Closed,Jatin Sutariya,2014-07-29 00:00:00,offer configure
+169866,Promotion_Draft,Promotion_Submit,Parvez Patel,2014-07-28 00:00:00,Promotion submited.
+169866,Promotion_Submit,L1_Approve,Ravishankar Mahaseth,2014-07-28 00:00:00,L1 approved request by changing date.
+169866,L1_Approve,Team_Member_Assigned,Manish Shah,2014-07-28 00:00:00,Request is assigned.
+169866,Team_Member_Assigned,Promo_Closed,Jatin Sutariya,2014-07-29 00:00:00,offer configure
+169878,Promotion_Draft,Promotion_Submit,Parvez Patel,2014-07-28 00:00:00,Promotion submited.
+169878,Promotion_Submit,L1_Approve,Ravishankar Mahaseth,2014-07-28 00:00:00,L1 approved request by changing date.
+169878,L1_Approve,Team_Member_Assigned,Manish Shah,2014-07-28 00:00:00,Request is assigned.
+169878,Team_Member_Assigned,Promo_Closed,Jatin Sutariya,2014-07-29 00:00:00,offer configure
+171131,Promotion_Draft,Promotion_Submit,Balu Ransing,2014-07-29 00:00:00,Promotion submited.
+171131,Promotion_Submit,L1_Approve,Prasad Butte,2014-07-29 00:00:00,Request is Approved By L1.
+171131,L1_Approve,Team_Member_Assigned,Mahesh Khadilkar,2014-07-30 00:00:00,Request is assigned.
+171131,Team_Member_Assigned,Promo_Closed,Rohidas Chavan,2014-08-07 00:00:00,
+171158,Promotion_Draft,Promotion_Submit,Balu Ransing,2014-07-29 00:00:00,Promotion submited.
+171158,Promotion_Submit,L1_Approve,Prasad Butte,2014-07-29 00:00:00,Request is Approved By L1.
+171158,L1_Approve,Team_Member_Assigned,Mahesh Khadilkar,2014-07-30 00:00:00,Request is assigned.
+171158,Team_Member_Assigned,Promo_Closed,Rohidas Chavan,2014-08-07 00:00:00,
+171159,Promotion_Draft,Promotion_Submit,Balu Ransing,2014-07-29 00:00:00,Promotion submited.
+171159,Promotion_Submit,L1_Approve,Prasad Butte,2014-07-29 00:00:00,Request is Approved By L1.
+171159,L1_Approve,Team_Member_Assigned,Mahesh Khadilkar,2014-07-30 00:00:00,Request is assigned.
+171159,Team_Member_Assigned,Promo_Closed,Rohidas Chavan,2014-08-07 00:00:00,
+174977,Promotion_Draft,Promotion_Submit,Gitika Agarwal,2014-07-31 00:00:00,Promotion submited.
+174977,Promotion_Submit,L1_Reject,Bharat Khare,2014-07-31 00:00:00,others
+174977,L1_Reject,L1_Reject,Bharat Khare,2014-07-31 00:00:00,reject
+174978,Promotion_Draft,Promotion_Submit,Gitika Agarwal,2014-07-31 00:00:00,Promotion submited.
+174978,Promotion_Submit,L1_Reject,Bharat Khare,2014-07-31 00:00:00,others
+174978,L1_Reject,L1_Reject,Bharat Khare,2014-07-31 00:00:00,reject
+174979,Promotion_Draft,Promotion_Submit,Gitika Agarwal,2014-07-31 00:00:00,Promotion submited.
+174979,Promotion_Submit,L1_Reject,Bharat Khare,2014-07-31 00:00:00,others
+174979,L1_Reject,L1_Reject,Bharat Khare,2014-07-31 00:00:00,reject
+174980,Promotion_Draft,Promotion_Submit,Gitika Agarwal,2014-07-31 00:00:00,Promotion submited.
+174980,Promotion_Submit,L1_Reject,Bharat Khare,2014-07-31 00:00:00,others
+174980,L1_Reject,L1_Reject,Bharat Khare,2014-07-31 00:00:00,reject
+175068,Promotion_Draft,Promotion_Submit,Gitika Agarwal,2014-07-31 00:00:00,Promotion submited.
+175068,Promotion_Submit,L1_Business_Exigency _Pending,Bharat Khare,2014-07-31 00:00:00,Request is assigned to Business Exigency by L1.
+175068,L1_Business_Exigency _Pending,Business_Exigency_Reject,Preeti Nandrajog,2014-07-31 00:00:00,Request is rejected By Business Exigency.
+175069,Promotion_Draft,Promotion_Submit,Gitika Agarwal,2014-07-31 00:00:00,Promotion submited.
+175069,Promotion_Submit,L1_Business_Exigency _Pending,Bharat Khare,2014-07-31 00:00:00,Request is assigned to Business Exigency by L1.
+175069,L1_Business_Exigency _Pending,Business_Exigency_Reject,Preeti Nandrajog,2014-07-31 00:00:00,Request is rejected By Business Exigency.
+175070,Promotion_Draft,Promotion_Submit,Gitika Agarwal,2014-07-31 00:00:00,Promotion submited.
+175070,Promotion_Submit,L1_Business_Exigency _Pending,Bharat Khare,2014-07-31 00:00:00,Request is assigned to Business Exigency by L1.
+175070,L1_Business_Exigency _Pending,Business_Exigency_Reject,Preeti Nandrajog,2014-07-31 00:00:00,Request is rejected By Business Exigency.
+175071,Promotion_Draft,Promotion_Submit,Gitika Agarwal,2014-07-31 00:00:00,Promotion submited.
+175071,Promotion_Submit,L1_Business_Exigency _Pending,Bharat Khare,2014-07-31 00:00:00,Request is assigned to Business Exigency by L1.
+175071,L1_Business_Exigency _Pending,Business_Exigency_Reject,Preeti Nandrajog,2014-07-31 00:00:00,Request is rejected By Business Exigency.
+179160,Promotion_Draft,Promotion_Submit,Balu Ransing,2014-08-01 00:00:00,Promotion submited.
+179160,Promotion_Submit,L1_Business_Exigency _Pending,Prasad Butte,2014-08-01 00:00:00,Request is assigned to Business Exigency by L1.
+179160,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-08-01 00:00:00,Request is approved By Business Exigency.
+179160,Business_Exigency_Approve,Team_Member_Assigned,Mahesh Khadilkar,2014-08-02 00:00:00,Request is assigned.
+179160,Team_Member_Assigned,Promo_Closed,Abdul Mistry,2014-08-02 00:00:00,
+179166,Promotion_Draft,Promotion_Submit,Balu Ransing,2014-08-01 00:00:00,Promotion submited.
+179166,Promotion_Submit,L1_Business_Exigency _Pending,Prasad Butte,2014-08-01 00:00:00,Request is assigned to Business Exigency by L1.
+179166,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-08-01 00:00:00,Request is approved By Business Exigency.
+179166,Business_Exigency_Approve,Team_Member_Assigned,Mahesh Khadilkar,2014-08-02 00:00:00,Request is assigned.
+179166,Team_Member_Assigned,Promo_Closed,Abdul Mistry,2014-08-02 00:00:00,
+179172,Promotion_Draft,Promotion_Submit,Balu Ransing,2014-08-01 00:00:00,Promotion submited.
+179172,Promotion_Submit,L1_Business_Exigency _Pending,Prasad Butte,2014-08-01 00:00:00,Request is assigned to Business Exigency by L1.
+179172,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-08-01 00:00:00,Request is approved By Business Exigency.
+179172,Business_Exigency_Approve,Team_Member_Assigned,Mahesh Khadilkar,2014-08-02 00:00:00,Request is assigned.
+179172,Team_Member_Assigned,Promo_Closed,Abdul Mistry,2014-08-02 00:00:00,
+179253,Promotion_Draft,Promotion_Submit,Balu Ransing,2014-08-02 00:00:00,Promotion submited.
+179253,Promotion_Submit,L1_Business_Exigency _Pending,Prasad Butte,2014-08-02 00:00:00,Request is assigned to Business Exigency by L1.
+179253,L1_Business_Exigency _Pending,Business_Exigency_Reject,Preeti Nandrajog,2014-08-02 00:00:00,Request is rejected By Business Exigency.
+180564,Promotion_Draft,Promotion_Submit,Milan Ananta Patil,2014-08-08 00:00:00,Promotion submited.
+180564,Promotion_Submit,L1_Approve,Upasna Kapur,2014-08-08 00:00:00,Request is Approved By L1.
+180564,L1_Approve,Team_Member_Assigned,Krishna Singh,2014-08-12 00:00:00,Request is assigned.
+180564,Team_Member_Assigned,Promo_Closed,Rupesh Pande,2014-08-22 00:00:00,
+180565,Promotion_Draft,Promotion_Submit,Milan Ananta Patil,2014-08-08 00:00:00,Promotion submited.
+180565,Promotion_Submit,L1_Approve,Upasna Kapur,2014-08-08 00:00:00,Request is Approved By L1.
+180565,L1_Approve,Team_Member_Assigned,Krishna Singh,2014-08-12 00:00:00,Request is assigned.
+180565,Team_Member_Assigned,Promo_Closed,Rupesh Pande,2014-08-22 00:00:00,
+180566,Promotion_Draft,Promotion_Submit,Milan Ananta Patil,2014-08-08 00:00:00,Promotion submited.
+180566,Promotion_Submit,L1_Approve,Upasna Kapur,2014-08-08 00:00:00,Request is Approved By L1.
+180566,L1_Approve,Team_Member_Assigned,Krishna Singh,2014-08-12 00:00:00,Request is assigned.
+180566,Team_Member_Assigned,Promo_Closed,Rupesh Pande,2014-08-22 00:00:00,
+180567,Promotion_Draft,Promotion_Submit,Milan Ananta Patil,2014-08-08 00:00:00,Promotion submited.
+180567,Promotion_Submit,L1_Approve,Upasna Kapur,2014-08-08 00:00:00,Request is Approved By L1.
+180567,L1_Approve,Team_Member_Assigned,Krishna Singh,2014-08-12 00:00:00,Request is assigned.
+180567,Team_Member_Assigned,Promo_Closed,Rupesh Pande,2014-08-22 00:00:00,
+181295,Promotion_Draft,Promotion_Submit,Ratnesh Singh,2014-08-13 00:00:00,Promotion submited.
+181295,Promotion_Submit,L1_Business_Exigency _Pending,Vishal Chamatkar,2014-08-13 00:00:00,Request is assigned to Business Exigency by L1.
+181295,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-08-13 00:00:00,Request is approved By Business Exigency.
+181295,Business_Exigency_Approve,Team_Member_Assigned,Sanjay Mazumdar,2014-08-13 00:00:00,Request is assigned.
+181295,Team_Member_Assigned,Promo_Closed,Debabrata Bhattacharjee,2014-08-18 00:00:00,EZ 21 RS OFF ASSORTED FB CHATT
+181296,Promotion_Draft,Promotion_Submit,Ratnesh Singh,2014-08-13 00:00:00,Promotion submited.
+181296,Promotion_Submit,L1_Business_Exigency _Pending,Vishal Chamatkar,2014-08-13 00:00:00,Request is assigned to Business Exigency by L1.
+181296,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-08-13 00:00:00,Request is approved By Business Exigency.
+181296,Business_Exigency_Approve,Team_Member_Assigned,Sanjay Mazumdar,2014-08-13 00:00:00,Request is assigned.
+181296,Team_Member_Assigned,Promo_Closed,Debabrata Bhattacharjee,2014-08-18 00:00:00,EZ 25 RS OFF ASSORTED FB CHATT
+181301,Promotion_Draft,Promotion_Submit,Ratnesh Singh,2014-08-13 00:00:00,Promotion submited.
+181301,Promotion_Submit,L1_Business_Exigency _Pending,Vishal Chamatkar,2014-08-13 00:00:00,Request is assigned to Business Exigency by L1.
+181301,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-08-13 00:00:00,Request is approved By Business Exigency.
+181301,Business_Exigency_Approve,Team_Member_Assigned,Sanjay Mazumdar,2014-08-13 00:00:00,Request is assigned.
+181301,Team_Member_Assigned,Promo_Closed,Debabrata Bhattacharjee,2014-08-18 00:00:00,EZ 40 RS OFF ASSORTED FB CHATT
+181302,Promotion_Draft,Promotion_Submit,Ratnesh Singh,2014-08-13 00:00:00,Promotion submited.
+181302,Promotion_Submit,L1_Business_Exigency _Pending,Vishal Chamatkar,2014-08-13 00:00:00,Request is assigned to Business Exigency by L1.
+181302,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-08-13 00:00:00,Request is approved By Business Exigency.
+181302,Business_Exigency_Approve,Team_Member_Assigned,Sanjay Mazumdar,2014-08-13 00:00:00,Request is assigned.
+181302,Team_Member_Assigned,Promo_Closed,Debabrata Bhattacharjee,2014-08-18 00:00:00,EZ 41 RS OFF ASSORTED FB CHATT
+182873,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-08-16 00:00:00,Promotion submited.
+182873,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-08-16 00:00:00,Request is assigned to Business Exigency by L1.
+182873,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-08-16 00:00:00,Request is approved By Business Exigency.
+182873,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-08-17 00:00:00,Request is assigned.
+182873,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-08-17 00:00:00,Request is on Hold by promo executor.
+182873,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-08-18 00:00:00,
+182877,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-08-16 00:00:00,Promotion submited.
+182877,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-08-16 00:00:00,Request is assigned to Business Exigency by L1.
+182877,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-08-16 00:00:00,Request is approved By Business Exigency.
+182877,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-08-17 00:00:00,Request is assigned.
+182877,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-08-17 00:00:00,Request is on Hold by promo executor.
+182877,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-08-18 00:00:00,
+182881,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-08-16 00:00:00,Promotion submited.
+182881,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-08-16 00:00:00,Request is assigned to Business Exigency by L1.
+182881,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-08-16 00:00:00,Request is approved By Business Exigency.
+182881,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-08-17 00:00:00,Request is assigned.
+182881,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-08-17 00:00:00,Request is on Hold by promo executor.
+182881,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-08-18 00:00:00,
+182887,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-08-16 00:00:00,Promotion submited.
+182887,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-08-16 00:00:00,Request is assigned to Business Exigency by L1.
+182887,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-08-16 00:00:00,Request is approved By Business Exigency.
+182887,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-08-17 00:00:00,Request is assigned.
+182887,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-08-17 00:00:00,Request is on Hold by promo executor.
+182887,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-08-18 00:00:00,
+182888,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-08-16 00:00:00,Promotion submited.
+182888,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-08-16 00:00:00,Request is assigned to Business Exigency by L1.
+182888,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-08-16 00:00:00,Request is approved By Business Exigency.
+182888,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-08-17 00:00:00,Request is assigned.
+182888,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-08-17 00:00:00,Request is on Hold by promo executor.
+182888,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-08-18 00:00:00,
+182892,Promotion_Draft,Promotion_Submit,Lohith Vemagal,2014-08-16 00:00:00,Promotion submited.
+182892,Promotion_Submit,L1_Business_Exigency _Pending,Ganesh M,2014-08-16 00:00:00,Request is assigned to Business Exigency by L1.
+182892,L1_Business_Exigency _Pending,Business_Exigency_Approve,Preeti Nandrajog,2014-08-16 00:00:00,Request is approved By Business Exigency.
+182892,Business_Exigency_Approve,Team_Member_Assigned,Surendra KJ,2014-08-17 00:00:00,Request is assigned.
+182892,Team_Member_Assigned,Team_Member_Hold,Rajkumar N,2014-08-17 00:00:00,Request is on Hold by promo executor.
+182892,Team_Member_Hold,Promo_Closed,Rajkumar N,2014-08-18 00:00:00,

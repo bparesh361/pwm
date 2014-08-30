@@ -1,0 +1,70 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: nehabha -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+    <package name="approval-mapping" extends="promoDefault" namespace="/">
+
+        <!--Level 1 approval-->
+        <!--veiw page-->
+        <action name="viewlevel1approval_action" class="com.fks.ui.approval.action.Level1ApprovalAction" >
+            <result name="success">/jsp/promo_approval/level1.jsp</result>
+            <result name="input">/jsp/promo_approval/level1.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <!--Load the grid-->
+        <action name="getAllPromotiondtl" class="com.fks.ui.approval.action.Level1ApprovalAction"  method="getAllTransPromotionDetail"/>
+
+<!--        <action name="HoldAppRejTransPromoreq" class="com.fks.ui.approval.action.Level1ApprovalAction"  method="holdAppRejTransPromoreq" />-->
+         <!--download the file-->
+        <action name="downloadPromontiondtl" class="com.fks.ui.approval.action.Level1ApprovalAction"  method="downloadPromontiondtl" />
+         <!--validating the date-->
+        <action name="validatedate" class="com.fks.ui.approval.action.Level1ApprovalAction"  method="validatedate" />
+        <action name="approveSingleL1Request" class="com.fks.ui.approval.action.Level1ApprovalAction"  method="approveRejectHoldSingleL1Request" />
+
+        <action name="level1ApproverejHoldAction" class="com.fks.ui.approval.action.Level1ApprovalAction" method="approveHoldRejectTransPromoRequest" >
+            <result name="success">/jsp/promo_approval/level1.jsp</result>
+            <result name="input">/jsp/promo_approval/level1.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <!--Level 2 approval-->
+        <!--veiw page-->
+        <action name="viewlevel2approval_action" class="com.fks.ui.approval.action.Level2ApprovalAction" >
+            <result name="success">/jsp/promo_approval/level2.jsp</result>
+            <result name="input">/jsp/promo_approval/level2.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <!--Load the grid-->
+        <action name="getAllPromotiondtl2" class="com.fks.ui.approval.action.Level2ApprovalAction"  method="getAllTransPromotionDetail2"/>
+
+        <action name="getAllL1Promotiondtl2" class="com.fks.ui.approval.action.Level2ApprovalAction"  method="getAllL1ByPassTransPromotionDetail"/>
+        <action name="approveSingleL2Request" class="com.fks.ui.approval.action.Level2ApprovalAction"  method="approveRejectHoldSingleL2Request" />
+        <action name="HoldAppRejTransPromoreq2" class="com.fks.ui.approval.action.Level2ApprovalAction"  method="holdAppRejTransPromoreq2" >
+            <result name="success">/jsp/promo_approval/level2.jsp</result>
+            <result name="input">/jsp/promo_approval/level2.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+<!--        <action name="HoldAppRejTransPromoreq2" class="com.fks.ui.approval.action.Level2ApprovalAction"  method="holdAppRejTransPromoreq2" />-->
+
+        <action name="fillL1TeamMember" class="com.fks.ui.approval.action.Level2ApprovalAction"  method="fillL1TeamMembers"/>
+         <!--Business exigency approval-->
+        <!--veiw page-->
+        <action name="viewbusinessexigencyapproval_action" class="com.fks.ui.approval.action.BusinessExigencyApprovalAction" >
+            <result name="success">/jsp/promo_approval/businessExigency.jsp</result>
+            <result name="input">/jsp/promo_approval/businessExigency.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+         <!--Load the grid-->
+        <action name="getAllPromotiondtlBusinessExigency" class="com.fks.ui.approval.action.BusinessExigencyApprovalAction"  method="getAllTransPromotionDetailforBusinessExigency"/>
+        <action name="HoldAppRejTransPromoreqBusinessExigency" class="com.fks.ui.approval.action.BusinessExigencyApprovalAction"  method="holdAppRejTransPromoreqBusinessExigency" >
+            <result name="success">/jsp/promo_approval/businessExigency.jsp</result>
+            <result name="input">/jsp/promo_approval/businessExigency.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+    </package>
+</struts>

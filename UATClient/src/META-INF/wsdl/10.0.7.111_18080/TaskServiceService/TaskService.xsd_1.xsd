@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://task.promo.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://task.promo.fks.com/">
+
+<xs:element name="closePromotionByFile" type="tns:closePromotionByFile" />
+
+<xs:element name="closePromotionByFileResponse" type="tns:closePromotionByFileResponse" />
+
+<xs:element name="creatTask" type="tns:creatTask" />
+
+<xs:element name="creatTaskResponse" type="tns:creatTaskResponse" />
+
+<xs:element name="getAllTeamMembers" type="tns:getAllTeamMembers" />
+
+<xs:element name="getAllTeamMembersResponse" type="tns:getAllTeamMembersResponse" />
+
+<xs:element name="searchTask" type="tns:searchTask" />
+
+<xs:element name="searchTaskResponse" type="tns:searchTaskResponse" />
+
+<xs:element name="statusChangeTransPromoByTeamMember" type="tns:statusChangeTransPromoByTeamMember" />
+
+<xs:element name="statusChangeTransPromoByTeamMemberList" type="tns:statusChangeTransPromoByTeamMemberList" />
+
+<xs:element name="statusChangeTransPromoByTeamMemberListResponse" type="tns:statusChangeTransPromoByTeamMemberListResponse" />
+
+<xs:element name="statusChangeTransPromoByTeamMemberResponse" type="tns:statusChangeTransPromoByTeamMemberResponse" />
+
+<xs:element name="updateTask" type="tns:updateTask" />
+
+<xs:element name="updateTaskResponse" type="tns:updateTaskResponse" />
+
+<xs:complexType name="closePromotionByFile">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="closePromotionByFileResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:filePromoCloseResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="filePromoCloseResp">
+<xs:sequence>
+<xs:element name="promoCloseEmailIDList">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="entry" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="key" minOccurs="0" type="xs:long" />
+<xs:element name="value" minOccurs="0" type="xs:long" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="promoCloseList" type="tns:promoCloseVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="promoCloseVO">
+<xs:sequence>
+<xs:element name="line" type="xs:string" minOccurs="0" />
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="pk" type="xs:long" minOccurs="0" />
+<xs:element name="redirect" type="xs:boolean" />
+<xs:element name="respCode" type="tns:respCode" minOccurs="0" />
+<xs:element name="suggestedDate" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="statusChangeTransPromoByTeamMemberList">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="arg1" type="xs:string" minOccurs="0" />
+<xs:element name="arg2" type="xs:string" minOccurs="0" />
+<xs:element name="arg3" type="xs:string" minOccurs="0" />
+<xs:element name="arg4" type="xs:string" minOccurs="0" />
+<xs:element name="arg5" type="xs:string" minOccurs="0" />
+<xs:element name="arg6" type="xs:long" minOccurs="0" />
+<xs:element name="arg7" type="xs:string" minOccurs="0" />
+<xs:element name="arg8" type="xs:string" minOccurs="0" />
+<xs:element name="arg9" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="statusChangeTransPromoByTeamMemberListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllTeamMembers">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllTeamMembersResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:teamMemberVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="teamMemberVO">
+<xs:sequence>
+<xs:element name="empCode" type="xs:string" minOccurs="0" />
+<xs:element name="empId" type="xs:string" minOccurs="0" />
+<xs:element name="empName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateTask">
+<xs:sequence>
+<xs:element name="arg0" type="tns:updateTaskReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateTaskReq">
+<xs:sequence>
+<xs:element name="headerFile" type="xs:string" minOccurs="0" />
+<xs:element name="statusId" type="xs:long" minOccurs="0" />
+<xs:element name="taskId" type="xs:long" minOccurs="0" />
+<xs:element name="type" type="tns:taskUpdateType" minOccurs="0" />
+<xs:element name="updateEmpId" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateTaskResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="creatTask">
+<xs:sequence>
+<xs:element name="arg0" type="tns:taskVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="taskVO">
+<xs:sequence>
+<xs:element name="assignedId" type="xs:long" minOccurs="0" />
+<xs:element name="assignedName" type="xs:string" minOccurs="0" />
+<xs:element name="createdBy" type="xs:long" minOccurs="0" />
+<xs:element name="createdByName" type="xs:string" minOccurs="0" />
+<xs:element name="filePath" type="xs:string" minOccurs="0" />
+<xs:element name="headerFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="isHO" type="xs:boolean" />
+<xs:element name="mstTaskId" type="xs:long" minOccurs="0" />
+<xs:element name="mstTaskName" type="xs:string" minOccurs="0" />
+<xs:element name="promoCount" type="xs:int" />
+<xs:element name="remarks" type="xs:string" minOccurs="0" />
+<xs:element name="reqId" type="xs:long" minOccurs="0" />
+<xs:element name="status" type="xs:string" minOccurs="0" />
+<xs:element name="statusCode" type="xs:long" minOccurs="0" />
+<xs:element name="taskAssignedDate" type="xs:string" minOccurs="0" />
+<xs:element name="taskUpdatedDate" type="xs:string" minOccurs="0" />
+<xs:element name="zoneName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="creatTaskResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="statusChangeTransPromoByTeamMember">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+<xs:element name="arg1" type="xs:string" minOccurs="0" />
+<xs:element name="arg2" type="xs:string" minOccurs="0" />
+<xs:element name="arg3" type="xs:string" minOccurs="0" />
+<xs:element name="arg4" type="xs:boolean" minOccurs="0" />
+<xs:element name="arg5" type="xs:string" minOccurs="0" />
+<xs:element name="arg6" type="xs:long" minOccurs="0" />
+<xs:element name="arg7" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="statusChangeTransPromoByTeamMemberResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchTask">
+<xs:sequence>
+<xs:element name="arg0" type="tns:searchTaskReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchTaskReq">
+<xs:sequence>
+<xs:element name="assignerId" type="xs:long" minOccurs="0" />
+<xs:element name="creatorId" type="xs:long" minOccurs="0" />
+<xs:element name="startIndex" type="xs:int" />
+<xs:element name="type" type="tns:searchTaskType" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchTaskResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchTaskTypeResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchTaskTypeResp">
+<xs:sequence>
+<xs:element name="list" type="tns:taskVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+<xs:element name="totalCount" type="xs:long" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="respCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="taskUpdateType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="STATUS_UPDATE" />
+<xs:enumeration value="HEADER_FILE_UPLOAD" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="searchTaskType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="BY_ASSIGNER_ID" />
+<xs:enumeration value="BY_CREATOR_ID" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="TransPromoService">
+      <implementation-class>com.fks.promo.init.TransPromoService</implementation-class>
+    </service>
+    <service name="OrganizationMasterService">
+      <implementation-class>com.fks.promo.master.service.OrganizationMasterService</implementation-class>
+    </service>
+    <service name="OtherMasterService">
+      <implementation-class>com.fks.promo.master.service.OtherMasterService</implementation-class>
+    </service>
+    <service name="RoleMasterService">
+      <implementation-class>com.fks.promo.master.service.RoleMasterService</implementation-class>
+    </service>
+    <service name="TaskService">
+      <implementation-class>com.fks.promo.task.TaskService</implementation-class>
+    </service>
+    <service name="UserMasterService">
+      <implementation-class>com.fks.promo.master.service.UserMasterService</implementation-class>
+    </service>
+    <service name="PromoStoreUploadService">
+      <implementation-class>com.fks.pwm.phase3.PromoStoreUploadService</implementation-class>
+    </service>
+    <service name="CommonPromotionService">
+      <implementation-class>com.fks.promo.init.CommonPromotionService</implementation-class>
+    </service>
+    <service name="SearchPromotionService">
+      <implementation-class>com.fks.promo.init.SearchPromotionService</implementation-class>
+    </service>
+    <service name="ApprRejHoldPromotionReqService">
+      <implementation-class>com.fks.promotion.approval.service.ApprRejHoldPromotionReqService</implementation-class>
+    </service>
+    <service name="PromotionInitiateService">
+      <implementation-class>com.fks.promotion.service.PromotionInitiateService</implementation-class>
+    </service>
+    <service name="CommService">
+      <implementation-class>com.fks.promo.comm.service.CommService</implementation-class>
+    </service>
+    <service name="PromotionProposalService">
+      <implementation-class>com.fks.promotion.service.PromotionProposalService</implementation-class>
+    </service>
+    <service name="ProposalSearch">
+      <implementation-class>com.fks.promotion.service.ProposalSearch</implementation-class>
+    </service>
+    <service name="CategoryMCHService">
+      <implementation-class>com.fks.promo.master.service.CategoryMCHService</implementation-class>
+    </service>
+    <service name="ODSService">
+      <implementation-class>com.fks.ods.service.ODSService</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

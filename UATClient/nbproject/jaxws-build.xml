@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        -->
+<project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-TaskService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TaskService"/>
+        <property name="wsdl-TaskService" location="xml-resources/web-service-references/TaskService/wsdl/10.0.7.111_18080/TaskServiceService/TaskService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TaskService" destdir="${build.generated.dir}/jax-wsCache/TaskService" wsdl="${wsdl-TaskService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/TaskServiceService/TaskService?wsdl" xendorsed="true">
+            <depends file="${wsdl-TaskService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TaskService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TaskService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TaskService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TaskService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promo/task"/>
+    </target>
+    <target name="wsimport-client-UserMasterService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/UserMasterService"/>
+        <property name="wsdl-UserMasterService" location="xml-resources/web-service-references/UserMasterService/wsdl/10.0.7.111_18080/UserMasterServiceService/UserMasterService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/UserMasterService" destdir="${build.generated.dir}/jax-wsCache/UserMasterService" wsdl="${wsdl-UserMasterService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/UserMasterServiceService/UserMasterService?wsdl" xendorsed="true">
+            <depends file="${wsdl-UserMasterService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/UserMasterService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/UserMasterService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-UserMasterService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/UserMasterService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promo/master/service"/>
+    </target>
+    <target name="wsimport-client-CommonPromotionService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CommonPromotionService"/>
+        <property name="wsdl-CommonPromotionService" location="xml-resources/web-service-references/CommonPromotionService/wsdl/10.0.7.111_18080/CommonPromotionServiceService/CommonPromotionService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CommonPromotionService" destdir="${build.generated.dir}/jax-wsCache/CommonPromotionService" wsdl="${wsdl-CommonPromotionService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/CommonPromotionServiceService/CommonPromotionService?wsdl" xendorsed="true">
+            <depends file="${wsdl-CommonPromotionService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CommonPromotionService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CommonPromotionService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CommonPromotionService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/CommonPromotionService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promo/init"/>
+    </target>
+    <target name="wsimport-client-SearchPromotionService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/SearchPromotionService"/>
+        <property name="wsdl-SearchPromotionService" location="xml-resources/web-service-references/SearchPromotionService/wsdl/10.0.7.111_18080/SearchPromotionServiceService/SearchPromotionService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SearchPromotionService" destdir="${build.generated.dir}/jax-wsCache/SearchPromotionService" wsdl="${wsdl-SearchPromotionService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/SearchPromotionServiceService/SearchPromotionService?wsdl" xendorsed="true">
+            <depends file="${wsdl-SearchPromotionService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/SearchPromotionService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/SearchPromotionService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-SearchPromotionService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/SearchPromotionService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promo/init"/>
+    </target>
+    <target name="wsimport-client-ApprRejHoldPromotionReqService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ApprRejHoldPromotionReqService"/>
+        <property name="wsdl-ApprRejHoldPromotionReqService" location="xml-resources/web-service-references/ApprRejHoldPromotionReqService/wsdl/10.0.7.111_18080/ApprRejHoldPromotionReqServiceService/ApprRejHoldPromotionReqService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ApprRejHoldPromotionReqService" destdir="${build.generated.dir}/jax-wsCache/ApprRejHoldPromotionReqService" wsdl="${wsdl-ApprRejHoldPromotionReqService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/ApprRejHoldPromotionReqServiceService/ApprRejHoldPromotionReqService?wsdl" xendorsed="true">
+            <depends file="${wsdl-ApprRejHoldPromotionReqService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ApprRejHoldPromotionReqService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ApprRejHoldPromotionReqService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ApprRejHoldPromotionReqService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ApprRejHoldPromotionReqService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promotion/approval/service"/>
+    </target>
+    <target name="wsimport-client-PromotionInitiateService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/PromotionInitiateService"/>
+        <property name="wsdl-PromotionInitiateService" location="xml-resources/web-service-references/PromotionInitiateService/wsdl/10.0.7.111_18080/PromotionInitiateServiceService/PromotionInitiateService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/PromotionInitiateService" destdir="${build.generated.dir}/jax-wsCache/PromotionInitiateService" wsdl="${wsdl-PromotionInitiateService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/PromotionInitiateServiceService/PromotionInitiateService?wsdl" xendorsed="true">
+            <depends file="${wsdl-PromotionInitiateService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/PromotionInitiateService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/PromotionInitiateService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-PromotionInitiateService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/PromotionInitiateService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promotion/service"/>
+    </target>
+    <target name="wsimport-client-CommService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CommService"/>
+        <property name="wsdl-CommService" location="xml-resources/web-service-references/CommService/wsdl/10.0.7.111_18080/CommServiceService/CommService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CommService" destdir="${build.generated.dir}/jax-wsCache/CommService" wsdl="${wsdl-CommService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/CommServiceService/CommService?wsdl" xendorsed="true">
+            <depends file="${wsdl-CommService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CommService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CommService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CommService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/CommService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promo/comm/service"/>
+    </target>
+    <target name="wsimport-client-PromotionProposalService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/PromotionProposalService"/>
+        <property name="wsdl-PromotionProposalService" location="xml-resources/web-service-references/PromotionProposalService/wsdl/10.0.7.111_18080/PromotionProposalServiceService/PromotionProposalService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/PromotionProposalService" destdir="${build.generated.dir}/jax-wsCache/PromotionProposalService" wsdl="${wsdl-PromotionProposalService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/PromotionProposalServiceService/PromotionProposalService?wsdl" xendorsed="true">
+            <depends file="${wsdl-PromotionProposalService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/PromotionProposalService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/PromotionProposalService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-PromotionProposalService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/PromotionProposalService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promotion/service"/>
+    </target>
+    <target name="wsimport-client-ProposalSearch" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ProposalSearch"/>
+        <property name="wsdl-ProposalSearch" location="xml-resources/web-service-references/ProposalSearch/wsdl/10.0.7.111_18080/ProposalSearchService/ProposalSearch.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ProposalSearch" destdir="${build.generated.dir}/jax-wsCache/ProposalSearch" wsdl="${wsdl-ProposalSearch}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/ProposalSearchService/ProposalSearch?wsdl" xendorsed="true">
+            <depends file="${wsdl-ProposalSearch}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ProposalSearch"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ProposalSearch">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ProposalSearch" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ProposalSearch"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promotion/service"/>
+    </target>
+    <target name="wsimport-client-CategoryMCHService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CategoryMCHService"/>
+        <property name="wsdl-CategoryMCHService" location="xml-resources/web-service-references/CategoryMCHService/wsdl/10.0.7.111_18080/CategoryMCHServiceService/CategoryMCHService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CategoryMCHService" destdir="${build.generated.dir}/jax-wsCache/CategoryMCHService" wsdl="${wsdl-CategoryMCHService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/CategoryMCHServiceService/CategoryMCHService?wsdl" xendorsed="true">
+            <depends file="${wsdl-CategoryMCHService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CategoryMCHService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CategoryMCHService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CategoryMCHService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/CategoryMCHService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promo/master/service"/>
+    </target>
+    <target name="wsimport-client-ODSService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ODSService"/>
+        <property name="wsdl-ODSService" location="xml-resources/web-service-references/ODSService/wsdl/10.0.7.111_18080/ODSServiceService/ODSService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ODSService" destdir="${build.generated.dir}/jax-wsCache/ODSService" wsdl="${wsdl-ODSService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/ODSServiceService/ODSService?wsdl" xendorsed="true">
+            <depends file="${wsdl-ODSService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ODSService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ODSService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ODSService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ODSService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/ods/service"/>
+    </target>
+    <target name="wsimport-client-DownloadArticleService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DownloadArticleService"/>
+        <property name="wsdl-DownloadArticleService" location="xml-resources/web-service-references/DownloadArticleService/wsdl/10.0.7.111_18080/DownloadArticleServiceService/DownloadArticleService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DownloadArticleService" destdir="${build.generated.dir}/jax-wsCache/DownloadArticleService" wsdl="${wsdl-DownloadArticleService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/DownloadArticleServiceService/DownloadArticleService?wsdl" xendorsed="true">
+            <depends file="${wsdl-DownloadArticleService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DownloadArticleService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DownloadArticleService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-DownloadArticleService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/DownloadArticleService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/article/service"/>
+    </target>
+    <target name="wsimport-client-ReportService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ReportService"/>
+        <property name="wsdl-ReportService" location="xml-resources/web-service-references/ReportService/wsdl/10.0.7.111_18080/ReportServiceService/ReportService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ReportService" destdir="${build.generated.dir}/jax-wsCache/ReportService" wsdl="${wsdl-ReportService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/ReportServiceService/ReportService?wsdl" xendorsed="true">
+            <depends file="${wsdl-ReportService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ReportService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ReportService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ReportService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ReportService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/reports/service"/>
+    </target>
+    <target name="wsimport-client-TransPromoService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/TransPromoService"/>
+        <property name="wsdl-TransPromoService" location="xml-resources/web-service-references/TransPromoService/wsdl/10.0.7.111_18080/TransPromoServiceService/TransPromoService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/TransPromoService" destdir="${build.generated.dir}/jax-wsCache/TransPromoService" wsdl="${wsdl-TransPromoService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/TransPromoServiceService/TransPromoService?wsdl" xendorsed="true">
+            <depends file="${wsdl-TransPromoService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/TransPromoService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/TransPromoService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-TransPromoService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/TransPromoService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promo/init"/>
+    </target>
+    <target name="wsimport-client-OrganizationMasterService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/OrganizationMasterService"/>
+        <property name="wsdl-OrganizationMasterService" location="xml-resources/web-service-references/OrganizationMasterService/wsdl/10.0.7.111_18080/OrganizationMasterServiceService/OrganizationMasterService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/OrganizationMasterService" destdir="${build.generated.dir}/jax-wsCache/OrganizationMasterService" wsdl="${wsdl-OrganizationMasterService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/OrganizationMasterServiceService/OrganizationMasterService?wsdl" xendorsed="true">
+            <depends file="${wsdl-OrganizationMasterService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/OrganizationMasterService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/OrganizationMasterService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-OrganizationMasterService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/OrganizationMasterService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promo/master/service"/>
+    </target>
+    <target name="wsimport-client-OtherMasterService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/OtherMasterService"/>
+        <property name="wsdl-OtherMasterService" location="xml-resources/web-service-references/OtherMasterService/wsdl/10.0.7.111_18080/OtherMasterServiceService/OtherMasterService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/OtherMasterService" destdir="${build.generated.dir}/jax-wsCache/OtherMasterService" wsdl="${wsdl-OtherMasterService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/OtherMasterServiceService/OtherMasterService?wsdl" xendorsed="true">
+            <depends file="${wsdl-OtherMasterService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/OtherMasterService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/OtherMasterService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-OtherMasterService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/OtherMasterService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promo/master/service"/>
+    </target>
+    <target name="wsimport-client-RoleMasterService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/RoleMasterService"/>
+        <property name="wsdl-RoleMasterService" location="xml-resources/web-service-references/RoleMasterService/wsdl/10.0.7.111_18080/RoleMasterServiceService/RoleMasterService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/RoleMasterService" destdir="${build.generated.dir}/jax-wsCache/RoleMasterService" wsdl="${wsdl-RoleMasterService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://10.0.7.111:18080/RoleMasterServiceService/RoleMasterService?wsdl" xendorsed="true">
+            <depends file="${wsdl-RoleMasterService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/RoleMasterService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/RoleMasterService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-RoleMasterService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/RoleMasterService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/fks/promo/master/service"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-TaskService, wsimport-client-UserMasterService, wsimport-client-CommonPromotionService, wsimport-client-SearchPromotionService, wsimport-client-ApprRejHoldPromotionReqService, wsimport-client-PromotionInitiateService, wsimport-client-CommService, wsimport-client-PromotionProposalService, wsimport-client-ProposalSearch, wsimport-client-CategoryMCHService, wsimport-client-ODSService, wsimport-client-DownloadArticleService, wsimport-client-ReportService, wsimport-client-TransPromoService, wsimport-client-OrganizationMasterService, wsimport-client-OtherMasterService, wsimport-client-RoleMasterService"/>
+</project>

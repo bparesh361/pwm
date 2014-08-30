@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.promotion.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.promotion.fks.com/">
+
+<xs:element name="SaveSubmitPromoOrganizationDtl" type="tns:SaveSubmitPromoOrganizationDtl" />
+
+<xs:element name="SaveSubmitPromoOrganizationDtlResponse" type="tns:SaveSubmitPromoOrganizationDtlResponse" />
+
+<xs:element name="StatusChangedFromDraftOrSubmitOrganizationDtl" type="tns:StatusChangedFromDraftOrSubmitOrganizationDtl" />
+
+<xs:element name="StatusChangedFromDraftOrSubmitOrganizationDtlResponse" type="tns:StatusChangedFromDraftOrSubmitOrganizationDtlResponse" />
+
+<xs:element name="SubmitPromotionDetail" type="tns:SubmitPromotionDetail" />
+
+<xs:element name="SubmitPromotionDetailResponse" type="tns:SubmitPromotionDetailResponse" />
+
+<xs:element name="deletePromotionRequest" type="tns:deletePromotionRequest" />
+
+<xs:element name="deletePromotionRequestResponse" type="tns:deletePromotionRequestResponse" />
+
+<xs:element name="getAllFormatExceptZoneAndHo" type="tns:getAllFormatExceptZoneAndHo" />
+
+<xs:element name="getAllFormatExceptZoneAndHoResponse" type="tns:getAllFormatExceptZoneAndHoResponse" />
+
+<xs:element name="getAllPromotionRequestdtl" type="tns:getAllPromotionRequestdtl" />
+
+<xs:element name="getAllPromotionRequestdtlResponse" type="tns:getAllPromotionRequestdtlResponse" />
+
+<xs:element name="getCityBasedOnFormatAndRegion" type="tns:getCityBasedOnFormatAndRegion" />
+
+<xs:element name="getCityBasedOnFormatAndRegionResponse" type="tns:getCityBasedOnFormatAndRegionResponse" />
+
+<xs:element name="getPromoReqDtlPromoIDwise" type="tns:getPromoReqDtlPromoIDwise" />
+
+<xs:element name="getPromoReqDtlPromoIDwiseResponse" type="tns:getPromoReqDtlPromoIDwiseResponse" />
+
+<xs:element name="getRegionBasedOnFormatAndState" type="tns:getRegionBasedOnFormatAndState" />
+
+<xs:element name="getRegionBasedOnFormatAndStateResponse" type="tns:getRegionBasedOnFormatAndStateResponse" />
+
+<xs:element name="getStateBasedOnFormatAndZone" type="tns:getStateBasedOnFormatAndZone" />
+
+<xs:element name="getStateBasedOnFormatAndZoneResponse" type="tns:getStateBasedOnFormatAndZoneResponse" />
+
+<xs:element name="getStoreBasedOnFormatAndCity" type="tns:getStoreBasedOnFormatAndCity" />
+
+<xs:element name="getStoreBasedOnFormatAndCityResponse" type="tns:getStoreBasedOnFormatAndCityResponse" />
+
+<xs:element name="getZoneBasedOnFormat" type="tns:getZoneBasedOnFormat" />
+
+<xs:element name="getZoneBasedOnFormatResponse" type="tns:getZoneBasedOnFormatResponse" />
+
+<xs:complexType name="getAllFormatExceptZoneAndHo">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllFormatExceptZoneAndHoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:organizationDtlResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="organizationDtlResp">
+<xs:sequence>
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+<xs:element name="stateRegionCityList" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="storeVOList" type="tns:commonPromoVo" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="zoneList" type="tns:commonPromoVo" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="pk" type="xs:long" minOccurs="0" />
+<xs:element name="redirect" type="xs:boolean" />
+<xs:element name="respCode" type="tns:respCode" minOccurs="0" />
+<xs:element name="suggestedDate" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="commonPromoVo">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0" />
+<xs:element name="name" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllPromotionRequestdtl">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllPromotionRequestdtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:promotionVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="promotionVO">
+<xs:sequence>
+<xs:element name="campaignId" type="xs:long" minOccurs="0" />
+<xs:element name="campaignName" type="xs:string" minOccurs="0" />
+<xs:element name="category" type="xs:string" minOccurs="0" />
+<xs:element name="categorySub" type="xs:string" minOccurs="0" />
+<xs:element name="createdDate" type="xs:string" minOccurs="0" />
+<xs:element name="createdEmpName" type="xs:string" minOccurs="0" />
+<xs:element name="empCode" type="xs:string" minOccurs="0" />
+<xs:element name="empId" type="xs:long" minOccurs="0" />
+<xs:element name="errorFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="errorFilePathRemarks" type="xs:string" minOccurs="0" />
+<xs:element name="eventId" type="xs:long" minOccurs="0" />
+<xs:element name="eventName" type="xs:string" minOccurs="0" />
+<xs:element name="mktgId" type="xs:long" minOccurs="0" />
+<xs:element name="mktgName" type="xs:string" minOccurs="0" />
+<xs:element name="operationCode" type="xs:int" />
+<xs:element name="promoType" type="xs:string" minOccurs="0" />
+<xs:element name="reasonRejection" type="xs:string" minOccurs="0" />
+<xs:element name="rejectRemarks" type="xs:string" minOccurs="0" />
+<xs:element name="remarks" type="xs:string" minOccurs="0" />
+<xs:element name="reqId" type="xs:string" minOccurs="0" />
+<xs:element name="reqName" type="xs:string" minOccurs="0" />
+<xs:element name="statusID" type="xs:long" minOccurs="0" />
+<xs:element name="statusName" type="xs:string" minOccurs="0" />
+<xs:element name="subCategory" type="xs:string" minOccurs="0" />
+<xs:element name="subCategorySub" type="xs:string" minOccurs="0" />
+<xs:element name="transPromoId" type="xs:long" minOccurs="0" />
+<xs:element name="updatedDate" type="xs:string" minOccurs="0" />
+<xs:element name="uploadFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="vendorBacked" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deletePromotionRequest">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+<xs:element name="arg1" type="xs:long" minOccurs="0" />
+<xs:element name="arg2" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deletePromotionRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SubmitPromotionDetail">
+<xs:sequence>
+<xs:element name="arg0" type="tns:promotionVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SubmitPromotionDetailResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRegionBasedOnFormatAndState">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:string" minOccurs="0" />
+<xs:element name="arg2" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRegionBasedOnFormatAndStateResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:organizationDtlResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getZoneBasedOnFormat">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:string" minOccurs="0" />
+<xs:element name="arg2" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getZoneBasedOnFormatResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:organizationDtlResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStateBasedOnFormatAndZone">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStateBasedOnFormatAndZoneResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:organizationDtlResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SaveSubmitPromoOrganizationDtl">
+<xs:sequence>
+<xs:element name="arg0" type="tns:submitPromoOrgdtlReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitPromoOrgdtlReq">
+<xs:sequence>
+<xs:element name="empID" type="xs:long" minOccurs="0" />
+<xs:element name="listCity" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="listFormat" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="listMstZoneVo" type="tns:mstZoneVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="listMstZoneVo1" type="tns:commonPromoVo" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="listRegion" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="listState" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="listStoreVo" type="tns:storeVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="listStoreVo1" type="tns:commonPromoVo" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="mstPromoID" type="xs:long" minOccurs="0" />
+<xs:element name="status" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mstZoneVO">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0" />
+<xs:element name="isBlocked" type="xs:short" minOccurs="0" />
+<xs:element name="zonecode" type="xs:string" minOccurs="0" />
+<xs:element name="zonename" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="storeVO">
+<xs:sequence>
+<xs:element name="city" type="xs:string" minOccurs="0" />
+<xs:element name="createdByID" type="xs:long" minOccurs="0" />
+<xs:element name="createdByName" type="xs:string" minOccurs="0" />
+<xs:element name="format" type="xs:string" minOccurs="0" />
+<xs:element name="isStoreBlocked" type="xs:boolean" minOccurs="0" />
+<xs:element name="locationID" type="xs:long" minOccurs="0" />
+<xs:element name="locationName" type="xs:string" minOccurs="0" />
+<xs:element name="region" type="xs:string" minOccurs="0" />
+<xs:element name="state" type="xs:string" minOccurs="0" />
+<xs:element name="storeClass" type="xs:string" minOccurs="0" />
+<xs:element name="storeDesc" type="xs:string" minOccurs="0" />
+<xs:element name="storeID" type="xs:string" minOccurs="0" />
+<xs:element name="zoneCode" type="xs:string" minOccurs="0" />
+<xs:element name="zoneId" type="xs:long" minOccurs="0" />
+<xs:element name="zoneName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SaveSubmitPromoOrganizationDtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCityBasedOnFormatAndRegion">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:string" minOccurs="0" />
+<xs:element name="arg2" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCityBasedOnFormatAndRegionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:organizationDtlResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStoreBasedOnFormatAndCity">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:string" minOccurs="0" />
+<xs:element name="arg2" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStoreBasedOnFormatAndCityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:organizationDtlResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromoReqDtlPromoIDwise">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromoReqDtlPromoIDwiseResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:getPromotionReqResponse" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPromotionReqResponse">
+<xs:sequence>
+<xs:element name="promotionVO" type="tns:promotionVO" minOccurs="0" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="StatusChangedFromDraftOrSubmitOrganizationDtl">
+<xs:sequence>
+<xs:element name="arg0" type="tns:submitPromoOrgdtlReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="StatusChangedFromDraftOrSubmitOrganizationDtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="respCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

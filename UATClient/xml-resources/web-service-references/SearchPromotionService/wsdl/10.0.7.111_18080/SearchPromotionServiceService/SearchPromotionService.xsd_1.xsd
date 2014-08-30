@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://init.promo.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://init.promo.fks.com/">
+
+<xs:element name="getAllPromotionRequestdtl" type="tns:getAllPromotionRequestdtl" />
+
+<xs:element name="getAllPromotionRequestdtlResponse" type="tns:getAllPromotionRequestdtlResponse" />
+
+<xs:complexType name="getAllPromotionRequestdtl">
+<xs:sequence>
+<xs:element name="arg0" type="tns:searchPromotionReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchPromotionReq">
+<xs:sequence>
+<xs:element name="promoDashboardCriteria" type="tns:searchPromoDashboardCriteria" minOccurs="0" />
+<xs:element name="promoDashboardEnum" type="tns:searchPromoDashboardEnum" minOccurs="0" />
+<xs:element name="startIdex" type="xs:int" />
+<xs:element name="statusId" type="xs:long" minOccurs="0" />
+<xs:element name="type" type="tns:promoSearchType" minOccurs="0" />
+<xs:element name="userId" type="xs:long" minOccurs="0" />
+<xs:element name="zoneId" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchPromoDashboardCriteria">
+<xs:sequence>
+<xs:element name="endDate" type="xs:string" minOccurs="0" />
+<xs:element name="eventId" type="xs:long" minOccurs="0" />
+<xs:element name="marketingTypeId" type="xs:long" minOccurs="0" />
+<xs:element name="promotionTypeId" type="xs:long" minOccurs="0" />
+<xs:element name="startDate" type="xs:string" minOccurs="0" />
+<xs:element name="statusId" type="xs:long" minOccurs="0" />
+<xs:element name="subCategoryName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllPromotionRequestdtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchPromotionResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchPromotionResp">
+<xs:sequence>
+<xs:element name="list" type="tns:promotionVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+<xs:element name="totalCount" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="promotionVO">
+<xs:sequence>
+<xs:element name="campaignId" type="xs:long" minOccurs="0" />
+<xs:element name="campaignName" type="xs:string" minOccurs="0" />
+<xs:element name="category" type="xs:string" minOccurs="0" />
+<xs:element name="categorySub" type="xs:string" minOccurs="0" />
+<xs:element name="createdDate" type="xs:string" minOccurs="0" />
+<xs:element name="createdEmpName" type="xs:string" minOccurs="0" />
+<xs:element name="empCode" type="xs:string" minOccurs="0" />
+<xs:element name="empId" type="xs:long" minOccurs="0" />
+<xs:element name="errorFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="errorFilePathRemarks" type="xs:string" minOccurs="0" />
+<xs:element name="eventId" type="xs:long" minOccurs="0" />
+<xs:element name="eventName" type="xs:string" minOccurs="0" />
+<xs:element name="mktgId" type="xs:long" minOccurs="0" />
+<xs:element name="mktgName" type="xs:string" minOccurs="0" />
+<xs:element name="operationCode" type="xs:int" />
+<xs:element name="promoType" type="xs:string" minOccurs="0" />
+<xs:element name="reasonRejection" type="xs:string" minOccurs="0" />
+<xs:element name="rejectRemarks" type="xs:string" minOccurs="0" />
+<xs:element name="remarks" type="xs:string" minOccurs="0" />
+<xs:element name="reqId" type="xs:string" minOccurs="0" />
+<xs:element name="reqName" type="xs:string" minOccurs="0" />
+<xs:element name="statusID" type="xs:long" minOccurs="0" />
+<xs:element name="statusName" type="xs:string" minOccurs="0" />
+<xs:element name="subCategory" type="xs:string" minOccurs="0" />
+<xs:element name="subCategorySub" type="xs:string" minOccurs="0" />
+<xs:element name="transPromoId" type="xs:long" minOccurs="0" />
+<xs:element name="updatedDate" type="xs:string" minOccurs="0" />
+<xs:element name="uploadFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="vendorBacked" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="pk" type="xs:long" minOccurs="0" />
+<xs:element name="redirect" type="xs:boolean" />
+<xs:element name="respCode" type="tns:respCode" minOccurs="0" />
+<xs:element name="suggestedDate" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="searchPromoDashboardEnum">
+<xs:restriction base="xs:string">
+<xs:enumeration value="PROMOTION_TYPE" />
+<xs:enumeration value="MARKETING_TYPE" />
+<xs:enumeration value="EVENT" />
+<xs:enumeration value="DATE" />
+<xs:enumeration value="ALL" />
+<xs:enumeration value="CATEGORY_DATE" />
+<xs:enumeration value="DATE_EVENT" />
+<xs:enumeration value="DATE_MARKETING_TYPE" />
+<xs:enumeration value="DATE_PROMOTION_TPYE" />
+<xs:enumeration value="SUB_CATEGORY_DATE" />
+<xs:enumeration value="SUB_CATEGORY_DATE_EVENT_TYPE" />
+<xs:enumeration value="SUB_CATEGORY_DATE_MARKETTING_TYPE" />
+<xs:enumeration value="SUB_CATEGORY_DATE_PROMO_TYPE" />
+<xs:enumeration value="STATUS_DATE" />
+<xs:enumeration value="STATUS_DATE_EVENT_TYPE" />
+<xs:enumeration value="STATUS_DATE_MARKETTING_TYPE" />
+<xs:enumeration value="STATUS_DATE_PROMO_TYPE" />
+<xs:enumeration value="STATUS_DATE_SUB_CATEGORY" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="promoSearchType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="STATUS_USER" />
+<xs:enumeration value="ZONE_STATUS" />
+<xs:enumeration value="ALL" />
+<xs:enumeration value="ORGANIZATION_DATA" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="respCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

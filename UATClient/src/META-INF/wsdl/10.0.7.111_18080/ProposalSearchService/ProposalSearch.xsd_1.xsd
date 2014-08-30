@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.promotion.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.promotion.fks.com/">
+
+<xs:element name="deleteProposal" type="tns:deleteProposal" />
+
+<xs:element name="deleteProposalResponse" type="tns:deleteProposalResponse" />
+
+<xs:element name="getAllProposals" type="tns:getAllProposals" />
+
+<xs:element name="getAllProposalsResponse" type="tns:getAllProposalsResponse" />
+
+<xs:complexType name="getAllProposals">
+<xs:sequence>
+<xs:element name="arg0" type="tns:searchProposalReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchProposalReq">
+<xs:sequence>
+<xs:element name="endDate" type="xs:string" minOccurs="0" />
+<xs:element name="id" type="xs:string" minOccurs="0" />
+<xs:element name="searchType" type="tns:proposalSearchType" minOccurs="0" />
+<xs:element name="startDate" type="xs:string" minOccurs="0" />
+<xs:element name="startIndex" type="xs:int" />
+<xs:element name="statusId" type="xs:string" minOccurs="0" />
+<xs:element name="userId" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllProposalsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchProposalResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchProposalResp">
+<xs:sequence>
+<xs:element name="list" type="tns:proposalVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+<xs:element name="totalCount" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="proposalVO">
+<xs:sequence>
+<xs:element name="articleList" type="tns:articleMCVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="category" type="xs:string" minOccurs="0" />
+<xs:element name="contactNo" type="xs:string" minOccurs="0" />
+<xs:element name="date" type="xs:string" minOccurs="0" />
+<xs:element name="department" type="xs:string" minOccurs="0" />
+<xs:element name="deptId" type="xs:string" minOccurs="0" />
+<xs:element name="empId" type="xs:string" minOccurs="0" />
+<xs:element name="errorFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="fileName" type="xs:string" minOccurs="0" />
+<xs:element name="filePath" type="xs:string" minOccurs="0" />
+<xs:element name="initiatorRemarks" type="xs:string" minOccurs="0" />
+<xs:element name="isSaveDraft" type="xs:string" minOccurs="0" />
+<xs:element name="otherFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="proEnum" type="tns:proposalEnum" minOccurs="0" />
+<xs:element name="problemTypeDesc" type="xs:string" minOccurs="0" />
+<xs:element name="problemTypeId" type="xs:string" minOccurs="0" />
+<xs:element name="promoDesc" type="xs:string" minOccurs="0" />
+<xs:element name="promoType" type="xs:string" minOccurs="0" />
+<xs:element name="promotionTypeName" type="xs:string" minOccurs="0" />
+<xs:element name="proposalId" type="xs:string" minOccurs="0" />
+<xs:element name="remarks" type="xs:string" minOccurs="0" />
+<xs:element name="siteCode" type="xs:string" minOccurs="0" />
+<xs:element name="siteDesc" type="xs:string" minOccurs="0" />
+<xs:element name="solutionDesc" type="xs:string" minOccurs="0" />
+<xs:element name="status" type="xs:string" minOccurs="0" />
+<xs:element name="statusId" type="xs:string" minOccurs="0" />
+<xs:element name="subCategory" type="xs:string" minOccurs="0" />
+<xs:element name="userName" type="xs:string" minOccurs="0" />
+<xs:element name="zoneId" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="articleMCVO">
+<xs:sequence>
+<xs:element name="articleCode" type="xs:string" minOccurs="0" />
+<xs:element name="articleDesc" type="xs:string" minOccurs="0" />
+<xs:element name="brand" type="xs:string" minOccurs="0" />
+<xs:element name="mcCode" type="xs:string" minOccurs="0" />
+<xs:element name="mcDesc" type="xs:string" minOccurs="0" />
+<xs:element name="price" type="xs:string" minOccurs="0" />
+<xs:element name="seasonCode" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="pk" type="xs:long" minOccurs="0" />
+<xs:element name="redirect" type="xs:boolean" />
+<xs:element name="respCode" type="tns:respCode" minOccurs="0" />
+<xs:element name="suggestedDate" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteProposal">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteProposalResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="proposalSearchType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="ALL" />
+<xs:enumeration value="ID" />
+<xs:enumeration value="ZONE" />
+<xs:enumeration value="STATUS" />
+<xs:enumeration value="DATE" />
+<xs:enumeration value="DATE_ZONE" />
+<xs:enumeration value="DATE_ZONE_STATUS" />
+<xs:enumeration value="ZONE_STATUS" />
+<xs:enumeration value="USER" />
+<xs:enumeration value="USER_STATUS" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="proposalEnum">
+<xs:restriction base="xs:string">
+<xs:enumeration value="MANUAL_ENTRY" />
+<xs:enumeration value="UPLOAD_FILE" />
+<xs:enumeration value="UPLOAD_UPDATE_FILE" />
+<xs:enumeration value="UPDATE_PROPOSAL_WITHOUT_FILE" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="respCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

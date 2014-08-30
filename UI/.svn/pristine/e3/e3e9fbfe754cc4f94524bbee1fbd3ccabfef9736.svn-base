@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: krutij -->
+<struts>
+    <package name="login-mapping" extends="promoDefault" namespace="/">
+
+        <action name="doLogin" class="com.fks.ui.login.action.UserLoginAction" method="userAuthenticate">
+            <result name="success">jsp/menu/welcome.jsp</result>
+            <result name="input">login.jsp</result>
+            <result name="changepass">/jsp/user/changepass.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="logout" class="com.fks.ui.login.action.UserLoginAction" method="logoutAction" >
+            <result name="success">login.jsp</result>
+        </action>
+
+        <action name="forgotpassword" class="com.fks.ui.login.action.ForgotPassword">
+            <result name="success">/jsp/user/forgotpassword.jsp</result>
+        </action>
+
+        <action name="forgotpasswordreq" class="com.fks.ui.login.action.ForgotPassword" method="ajaxresetPassword" />
+
+        <action name="changePassword" class="com.fks.ui.login.action.ChangePasswordAction">
+            <result name="success">/jsp/user/changepass.jsp</result>
+        </action>
+
+	<!-- Page Submit Action  -->
+        <action name="changePasswordSubmit" class="com.fks.ui.login.action.ChangePasswordAction" method="changePassword">
+<!--		<interceptor-ref name="jsonValidationWorkflowStack"/>-->
+            <result name="success">login.jsp</result>
+            <result name="input">/jsp/user/changepass.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="donothing" class="com.fks.ui.login.action.UserLoginAction" method="donothing"/>
+         <action name="welcome" class="com.fks.ui.login.action.UserLoginAction" method="callwelcome">
+         <result name="success">jsp/menu/welcome.jsp</result>
+         </action>
+    </package>
+</struts>
+

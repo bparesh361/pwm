@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: ajitn -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+    <package name="proposal-mapping" extends="promoDefault" namespace="/">
+<!--        <action name="viewproposal_action" class="com.fks.ui.proposal.action.TestAction" >
+            <result name="success">/jsp/promo_proposal/Test.jsp</result>
+            <result name="input">/jsp/promo_proposal/Test.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>-->
+<!--        <action name="testSubmit_action" class="com.fks.ui.proposal.action.TestAction" method="submitTest">
+            <result name="success">/jsp/promo_proposal/Test.jsp</result>
+            <result name="input">/jsp/promo_proposal/Test.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>-->
+        <action name="viewproposal_action" class="com.fks.ui.proposal.action.ProposalAction" >
+            <result name="success">/jsp/promo_proposal/createproposal.jsp</result>
+            <result name="input">/jsp/promo_proposal/createproposal.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="createManualProposal_action" class="com.fks.ui.proposal.action.ProposalAction" method="createManualProposal">
+<!--            <interceptor-ref name="basicStack"/>
+            <interceptor-ref name="fileUpload">
+                <param name="maximumSize">5242880</param>
+            </interceptor-ref> 
+            <interceptor-ref name="validation"/>
+            <interceptor-ref name="workflow"/>-->
+            <result name="success">/jsp/promo_proposal/createproposal.jsp</result>
+            <result name="input">/jsp/promo_proposal/createproposal.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="uploadProposalArticle_action" class="com.fks.ui.proposal.action.ProposalAction" method="uploadProposalArticle">
+            <result name="success">/jsp/promo_proposal/createproposal.jsp</result>
+            <result name="input">/jsp/promo_proposal/createproposal.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+            <result name="viewDashboard" type="redirect">proposal_jsp</result>
+        </action>
+
+        <action name="createFlatDiscount_action" class="com.fks.ui.initiation.action.FlatDiscountAction" method="createFlatDiscount" >
+            <result name="success">/jsp/promo_initiation/flatdiscount.jsp</result>
+            <result name="input">/jsp/promo_initiation/flatdiscount.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="createPowerPricing_action" class="com.fks.ui.initiation.action.PowerPricingAction" method="createPowePrice" >
+            <result name="success">/jsp/promo_initiation/powerpricing.jsp</result>
+            <result name="input">/jsp/promo_initiation/powerpricing.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="createBillLevelTicket_action" class="com.fks.ui.initiation.action.BillLevelTicketSizeAction" method="createBillLevelTicketSize" >
+            <result name="success">/jsp/promo_initiation/billTicketsize.jsp</result>
+            <result name="input">/jsp/promo_initiation/billTicketsize.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+
+          <!-- Action for Proposal View / Edit Page -->
+        <action name="proposal_jsp" class="com.fks.ui.proposal.action.ProposalAction" method="viewProposalSearchPage">
+            <result name="success">/jsp/promo_proposal/proposalsearch.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="getAllProposalByUser" class="com.fks.ui.proposal.action.SearchProposalAction" method="getAllProposalByUser">
+        </action>
+        <action name="updateProposalStatus" class="com.fks.ui.proposal.action.SearchProposalAction" method="updateProposalStatus">
+            <result name="success">/jsp/promo_proposal/proposalsearch.jsp</result>
+            <result name="login">/jsp/promo_proposal/proposalsearch.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="downloadProposalArticleInfo" class="com.fks.ui.proposal.action.SearchProposalAction" method="downloadProposalArticleInfo">
+        </action>
+
+        <action name="downloadProposalInfo" class="com.fks.ui.proposal.action.SearchProposalAction" method="downloadProposalInfo">
+        </action>
+	       <!-- Action for Proposal Dashboard Page -->
+        <action name="proposal_dashboard_jsp" class="com.fks.ui.proposal.action.ProposalDashBoardAction">
+            <result name="success">/jsp/promo_proposal/proposaldashboard.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="getAllProposalDashboardByStatus" class="com.fks.ui.proposal.action.ProposalDashBoardAction" method="getAllProposalDashboardByStatus">
+        </action>
+        <action name="searchProposalDashboardByDate" class="com.fks.ui.proposal.action.ProposalDashBoardAction" method="searchProposalDashboardByDate">
+        </action>
+        <action name="deleteProposal" class="com.fks.ui.proposal.action.ProposalDashBoardAction" method="deleteProposal">
+            <result name="success">/jsp/promo_proposal/proposalsearch.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="deleteProposalDashboard" class="com.fks.ui.proposal.action.ProposalDashBoardAction" method="deleteProposal">
+            <result name="success">/jsp/promo_proposal/proposaldashboard.jsp</result>
+            <result name="input">/jsp/promo_proposal/proposaldashboard.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="acceptProposalDashboard" class="com.fks.ui.proposal.action.ProposalDashBoardAction" method="acceptProposal">
+            <result name="success">/jsp/promo_proposal/proposaldashboard.jsp</result>
+            <result name="input">/jsp/promo_proposal/proposaldashboard.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+
+        <action name="rejectProposalDashboard" class="com.fks.ui.proposal.action.ProposalDashBoardAction" method="rejectProposal">
+            <result name="success">/jsp/promo_proposal/proposaldashboard.jsp</result>
+            <result name="input">/jsp/promo_proposal/proposaldashboard.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+
+        <action name="uploadTicketPoolXArticleFile_action" class="com.fks.ui.initiation.action.PoolRewardTicketAction" method="uploadTicketPoolXArticleFile" >
+            <result name="success">/jsp/promo_initiation/poolRewardticket.jsp</result>
+            <result name="input">/jsp/promo_initiation/poolRewardticket.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="uploadTicketPoolYArticleFile_action" class="com.fks.ui.initiation.action.PoolRewardTicketAction" method="uploadTicketPoolYArticleFile" >
+            <result name="success">/jsp/promo_initiation/poolRewardticket.jsp</result>
+            <result name="input">/jsp/promo_initiation/poolRewardticket.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="createPoolTicket_action" class="com.fks.ui.initiation.action.PoolRewardTicketAction" method="createPoolTicketSize" >
+            <result name="success">/jsp/promo_initiation/poolRewardticket.jsp</result>
+            <result name="input">/jsp/promo_initiation/poolRewardticket.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+<!--        <action name="createPoolTicket_action" class="com.fks.ui.initiation.action.TicketSizePoolRewardAction" method="createPoolTicketSize" >
+            <result name="success">/jsp/promo_initiation/ticketsizpoolReward.jsp</result>
+            <result name="input">/jsp/promo_initiation/ticketsizpoolReward.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>-->
+        <action name="viewPromoExecuteApproval_action" class="com.fks.ui.execution.action.PromoManagerAprrovalAction">
+            <result name="success">/jsp/promo_execution/executePromoApproval.jsp</result>
+            <result name="input">/jsp/promo_execution/executePromoApproval.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="promoExecuteApprovalDtl_action" class="com.fks.ui.execution.action.PromoManagerAprrovalAction" method="getAllTransPromotionDetail"/>
+
+        <action name="promoExecuteApprReject_action" class="com.fks.ui.execution.action.PromoManagerAprrovalAction" method="promoManagerApproveReject">
+            <result name="success">/jsp/promo_execution/executePromoApproval.jsp</result>
+            <result name="input">/jsp/promo_execution/executePromoApproval.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="fillTeamMembers_action" class="com.fks.ui.execution.action.PromoManagerAprrovalAction" method="fillTeamMembers"/>
+
+        <action name="viewPromoExecuteDashboard_action" class="com.fks.ui.execution.action.ExecutePromoDashboardAction">
+            <result name="success">/jsp/promo_execution/executePromoDashboard.jsp</result>
+            <result name="input">/jsp/promo_execution/executePromoDashboard.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="promoExecuteDasboardDtl_action" class="com.fks.ui.execution.action.ExecutePromoDashboardAction" method="getAllTransPromotionDetail"/>
+
+        <action name="viewTaskCreation_action" class="com.fks.ui.task.action.TaskAction">
+            <result name="success">/jsp/task/task_creation.jsp</result>
+            <result name="input">/jsp/task/task_creation.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="createTaskCreation_action" class="com.fks.ui.task.action.TaskAction" method="createTask">
+            <result name="success">/jsp/task/task_creation.jsp</result>
+            <result name="input">/jsp/task/task_creation.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="viewInwardTask_action" class="com.fks.ui.task.action.InwardOutwardTaskAction" method="viewInwardTask">
+            <result name="success">/jsp/task/inward_task.jsp</result>
+            <result name="input">/jsp/task/inward_task.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="inwardTaskDasboardDtl_action" class="com.fks.ui.task.action.InwardOutwardTaskAction" method="viewInwardDashboardDtl"/>
+
+        <action name="updateTask_action" class="com.fks.ui.task.action.InwardOutwardTaskAction" method="updateTask">
+            <result name="success">/jsp/task/inward_task.jsp</result>
+            <result name="input">/jsp/task/inward_task.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="viewOutwardTask_action" class="com.fks.ui.task.action.InwardOutwardTaskAction" method="viewOutwardTask">
+            <result name="success">/jsp/task/outward_task.jsp</result>
+            <result name="input">/jsp/task/outward_task.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="outwardTaskDasboardDtl_action" class="com.fks.ui.task.action.InwardOutwardTaskAction" method="viewOutwardDashboardDtl"/>
+
+        <action name="viewPromoSetup_action" class="com.fks.ui.execution.action.PromoSetupApprovalAction">
+            <result name="success">/jsp/promo_setup/promoSetupApproval.jsp</result>
+            <result name="input">/jsp/promo_setup/promoSetupApproval.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="viewPromoSetupDashboard_action" class="com.fks.ui.execution.action.PromoSetupApprovalAction" method="getAllTransPromotionDetail"/>
+
+        <action name="submitPromoSetup_action" class="com.fks.ui.execution.action.PromoSetupApprovalAction" method="submitPromoSetup">
+            <result name="success">/jsp/promo_setup/promoSetupApproval.jsp</result>
+            <result name="input">/jsp/promo_setup/promoSetupApproval.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="submitFilePromoSetup_action" class="com.fks.ui.execution.action.PromoSetupApprovalAction" method="submitPromoSetupUsingFile">
+            <result name="success">/jsp/promo_setup/promoSetupApproval.jsp</result>
+            <result name="input">/jsp/promo_setup/promoSetupApproval.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="getErrorFileOfPromoClose" class="com.fks.ui.execution.action.PromoSetupApprovalAction" method="downloadPromoSetupErrorFile"/>
+        <action name="PromoCloseSample" class="com.fks.ui.execution.action.PromoSetupApprovalAction" method="downloadPromoSetupSampleFile"/>
+    </package>
+</struts>

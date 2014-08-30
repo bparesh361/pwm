@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.approval.promotion.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.approval.promotion.fks.com/">
+
+<xs:element name="Exception" type="tns:Exception" />
+
+<xs:element name="createBusinessExigencyApprRejHoldReq" type="tns:createBusinessExigencyApprRejHoldReq" />
+
+<xs:element name="createBusinessExigencyApprRejHoldReqList" type="tns:createBusinessExigencyApprRejHoldReqList" />
+
+<xs:element name="createBusinessExigencyApprRejHoldReqListResponse" type="tns:createBusinessExigencyApprRejHoldReqListResponse" />
+
+<xs:element name="createBusinessExigencyApprRejHoldReqResponse" type="tns:createBusinessExigencyApprRejHoldReqResponse" />
+
+<xs:element name="createL1ApprRejHoldReq" type="tns:createL1ApprRejHoldReq" />
+
+<xs:element name="createL1ApprRejHoldReqList" type="tns:createL1ApprRejHoldReqList" />
+
+<xs:element name="createL1ApprRejHoldReqListResponse" type="tns:createL1ApprRejHoldReqListResponse" />
+
+<xs:element name="createL1ApprRejHoldReqResponse" type="tns:createL1ApprRejHoldReqResponse" />
+
+<xs:element name="createL2ApprRejHoldReq" type="tns:createL2ApprRejHoldReq" />
+
+<xs:element name="createL2ApprRejHoldReqList" type="tns:createL2ApprRejHoldReqList" />
+
+<xs:element name="createL2ApprRejHoldReqListResponse" type="tns:createL2ApprRejHoldReqListResponse" />
+
+<xs:element name="createL2ApprRejHoldReqResponse" type="tns:createL2ApprRejHoldReqResponse" />
+
+<xs:complexType name="createL1ApprRejHoldReqList">
+<xs:sequence>
+<xs:element name="arg0" type="tns:promotionApprRejHoldReq" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="promotionApprRejHoldReq">
+<xs:sequence>
+<xs:element name="empId" type="xs:long" minOccurs="0" />
+<xs:element name="fromDate" type="xs:string" minOccurs="0" />
+<xs:element name="isApproved" type="xs:boolean" minOccurs="0" />
+<xs:element name="isChangedate" type="xs:boolean" minOccurs="0" />
+<xs:element name="isHold" type="xs:boolean" minOccurs="0" />
+<xs:element name="isRejected" type="xs:boolean" minOccurs="0" />
+<xs:element name="reasonForRejection" type="xs:string" minOccurs="0" />
+<xs:element name="rejectionRemarks" type="xs:string" minOccurs="0" />
+<xs:element name="statusType" type="tns:promotionStatusType" minOccurs="0" />
+<xs:element name="toDate" type="xs:string" minOccurs="0" />
+<xs:element name="transPromoId" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createL1ApprRejHoldReqListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:promotionApprRejHoldRes" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="promotionApprRejHoldRes">
+<xs:sequence>
+<xs:element name="isLeadTimeFailed" type="xs:boolean" minOccurs="0" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+<xs:element name="suggestedTime" type="xs:string" minOccurs="0" />
+<xs:element name="transPromoId" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="pk" type="xs:long" minOccurs="0" />
+<xs:element name="redirect" type="xs:boolean" />
+<xs:element name="respCode" type="tns:respCode" minOccurs="0" />
+<xs:element name="suggestedDate" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createBusinessExigencyApprRejHoldReq">
+<xs:sequence>
+<xs:element name="arg0" type="tns:promotionApprRejHoldReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createBusinessExigencyApprRejHoldReqResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:promotionApprRejHoldRes" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createL2ApprRejHoldReqList">
+<xs:sequence>
+<xs:element name="arg0" type="tns:promotionApprRejHoldReq" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createL2ApprRejHoldReqListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:promotionApprRejHoldRes" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createBusinessExigencyApprRejHoldReqList">
+<xs:sequence>
+<xs:element name="arg0" type="tns:promotionApprRejHoldReq" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createBusinessExigencyApprRejHoldReqListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:promotionApprRejHoldRes" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createL1ApprRejHoldReq">
+<xs:sequence>
+<xs:element name="arg0" type="tns:promotionApprRejHoldReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createL1ApprRejHoldReqResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:promotionApprRejHoldRes" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createL2ApprRejHoldReq">
+<xs:sequence>
+<xs:element name="arg0" type="tns:promotionApprRejHoldReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createL2ApprRejHoldReqResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:promotionApprRejHoldRes" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="promotionStatusType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="HOLD" />
+<xs:enumeration value="APPROVED" />
+<xs:enumeration value="REJECTED" />
+<xs:enumeration value="BUSINESSEXIGENCY" />
+<xs:enumeration value="CHANGEDATE" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="respCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

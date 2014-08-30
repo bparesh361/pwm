@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: krutij -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+    <package name="reports-mapping" extends="promoDefault" namespace="/">
+        
+        <action name="viewArticleMcWisePromoLifecycle" class="com.fks.ui.reports.action.PromoLifeCycleReport" method="viewArticleMCWisePromoCycle" >
+            <result name="success">/jsp/Reports/promoLFArticleMc.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="viewPromoLifecycle" class="com.fks.ui.reports.action.PromoLifeCycleReport" method="viewPromoCycle" >
+            <result name="success">/jsp/Reports/promoLifeCycle.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+        <action name="submitReportRequest" class="com.fks.ui.reports.action.PromoLifeCycleReport" method="submitReportRequest" >
+            <interceptor-ref name="defaultSecurityManager" />
+            <interceptor-ref name="tokenStack" />
+            <result name="success">/jsp/Reports/promoLifeCycle.jsp</result>
+            <result name="input">/jsp/Reports/promoLifeCycle.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+            <result name="invalid.token"  type="redirect">viewArticleMcWisePromoLifecycle</result>
+        </action>
+        <action name="getAllReportMcWise" class="com.fks.ui.reports.action.PromoLifeCycleReport" method="getallRequestReportFields" />
+
+        <action name="submitReportRequestArticleMCLEvel" class="com.fks.ui.reports.action.PromoLifeCycleReport" method="submitReportRequestArticleMCLEvel" >
+            <interceptor-ref name="defaultSecurityManager" />
+            <interceptor-ref name="tokenStack" />
+            <result name="success">/jsp/Reports/promoLFArticleMc.jsp</result>
+            <result name="input">/jsp/Reports/promoLFArticleMc.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+            <result name="invalid.token"  type="redirect">viewArticleMcWisePromoLifecycle</result>
+        </action>
+        <action name="getallRequestReportFieldsForArticleMC" class="com.fks.ui.reports.action.PromoLifeCycleReport" method="getallRequestReportFieldsForArticleMC" />
+
+        <action name="viewStoreProposal" class="com.fks.ui.reports.action.StoreProposalReportAction" method="viewStorePRoposals" >
+            <result name="success">/jsp/Reports/storeProposal.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="submitStoreProposalRequest" class="com.fks.ui.reports.action.StoreProposalReportAction" method="submitReportRequest" >
+            <interceptor-ref name="defaultSecurityManager" />
+            <interceptor-ref name="tokenStack" />
+            <result name="success">/jsp/Reports/storeProposal.jsp</result>
+            <result name="input">/jsp/Reports/storeProposal.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+            <result name="invalid.token"  type="redirect">viewStoreProposal</result>
+        </action>
+        <action name="getAllReportForStoreProposal" class="com.fks.ui.reports.action.StoreProposalReportAction" method="getallRequestReportFields" />
+
+
+        <action name="viewinternalTask" class="com.fks.ui.reports.action.InternalTaskReportAction" method="view" >
+            <result name="success">/jsp/Reports/internalTask.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="submittaskReportRequest" class="com.fks.ui.reports.action.InternalTaskReportAction" method="submitInternalTaskReportRequest" >
+            <interceptor-ref name="defaultSecurityManager" />
+            <interceptor-ref name="tokenStack" />
+            <result name="success">/jsp/Reports/internalTask.jsp</result>
+            <result name="input">/jsp/Reports/internalTask.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+            <result name="invalid.token"  type="redirect">viewStoreProposal</result>
+        </action>
+        <action name="getAllReportForInternalTask" class="com.fks.ui.reports.action.InternalTaskReportAction" method="getallRequestReportFieldsOfInternalTask" />
+        <action name="viewPromoTeamDashBoardReport" class="com.fks.ui.reports.action.PromoTeamDashboardReport" method="viewPromoTeamDashboardReport" >
+            <result name="success">/jsp/Reports/promoTeamDashboard.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>
+
+        <action name="submitPromoTeamDashboardRequest" class="com.fks.ui.reports.action.PromoTeamDashboardReport" method="submitReportRequest" >
+            <interceptor-ref name="defaultSecurityManager" />
+            <interceptor-ref name="tokenStack" />
+            <result name="success">/jsp/Reports/promoTeamDashboard.jsp</result>
+            <result name="input">/jsp/Reports/promoTeamDashboard.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+            <result name="invalid.token"  type="redirect">viewPromoTeamDashBoard</result>
+        </action>
+        <action name="getAllReportForPromoTeamDashboard" class="com.fks.ui.reports.action.PromoTeamDashboardReport" method="getallRequestReportFields" />
+
+    </package>
+</struts>

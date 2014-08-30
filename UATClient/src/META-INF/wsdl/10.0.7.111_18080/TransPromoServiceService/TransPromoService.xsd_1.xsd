@@ -1,0 +1,603 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://init.promo.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://init.promo.fks.com/">
+
+<xs:element name="createCopyOFTransPromo" type="tns:createCopyOFTransPromo" />
+
+<xs:element name="createCopyOFTransPromoResponse" type="tns:createCopyOFTransPromoResponse" />
+
+<xs:element name="createTransPromo" type="tns:createTransPromo" />
+
+<xs:element name="createTransPromoForFileUpload" type="tns:createTransPromoForFileUpload" />
+
+<xs:element name="createTransPromoForFileUploadResponse" type="tns:createTransPromoForFileUploadResponse" />
+
+<xs:element name="createTransPromoList" type="tns:createTransPromoList" />
+
+<xs:element name="createTransPromoListResponse" type="tns:createTransPromoListResponse" />
+
+<xs:element name="createTransPromoResponse" type="tns:createTransPromoResponse" />
+
+<xs:element name="createTransPromoWithFile" type="tns:createTransPromoWithFile" />
+
+<xs:element name="createTransPromoWithFileResponse" type="tns:createTransPromoWithFileResponse" />
+
+<xs:element name="downloadSubPromoDtl" type="tns:downloadSubPromoDtl" />
+
+<xs:element name="downloadSubPromoDtlResponse" type="tns:downloadSubPromoDtlResponse" />
+
+<xs:element name="downloadSubPromoRequest" type="tns:downloadSubPromoRequest" />
+
+<xs:element name="downloadSubPromoRequestResponse" type="tns:downloadSubPromoRequestResponse" />
+
+<xs:element name="getExecutePromoDashBoardDtl" type="tns:getExecutePromoDashBoardDtl" />
+
+<xs:element name="getExecutePromoDashBoardDtlResponse" type="tns:getExecutePromoDashBoardDtlResponse" />
+
+<xs:element name="getallTransPromoforApproval" type="tns:getallTransPromoforApproval" />
+
+<xs:element name="getallTransPromoforApprovalBusinessEzigency" type="tns:getallTransPromoforApprovalBusinessEzigency" />
+
+<xs:element name="getallTransPromoforApprovalBusinessEzigencyResponse" type="tns:getallTransPromoforApprovalBusinessEzigencyResponse" />
+
+<xs:element name="getallTransPromoforApprovalResponse" type="tns:getallTransPromoforApprovalResponse" />
+
+<xs:element name="getallTransPromoforApprovalforLevel2" type="tns:getallTransPromoforApprovalforLevel2" />
+
+<xs:element name="getallTransPromoforApprovalforLevel2Response" type="tns:getallTransPromoforApprovalforLevel2Response" />
+
+<xs:element name="searchPromotion" type="tns:searchPromotion" />
+
+<xs:element name="searchPromotionByTransReqId" type="tns:searchPromotionByTransReqId" />
+
+<xs:element name="searchPromotionByTransReqIdResponse" type="tns:searchPromotionByTransReqIdResponse" />
+
+<xs:element name="searchPromotionResponse" type="tns:searchPromotionResponse" />
+
+<xs:element name="submitMultipleTransPromoFileUpload" type="tns:submitMultipleTransPromoFileUpload" />
+
+<xs:element name="submitMultipleTransPromoFileUploadResponse" type="tns:submitMultipleTransPromoFileUploadResponse" />
+
+<xs:element name="updateMasterPromoStatus" type="tns:updateMasterPromoStatus" />
+
+<xs:element name="updateMasterPromoStatusResponse" type="tns:updateMasterPromoStatusResponse" />
+
+<xs:element name="updateTransPromo" type="tns:updateTransPromo" />
+
+<xs:element name="updateTransPromoForFileUpload" type="tns:updateTransPromoForFileUpload" />
+
+<xs:element name="updateTransPromoForFileUploadResponse" type="tns:updateTransPromoForFileUploadResponse" />
+
+<xs:element name="updateTransPromoResponse" type="tns:updateTransPromoResponse" />
+
+<xs:complexType name="createTransPromoWithFile">
+<xs:sequence>
+<xs:element name="arg0" type="tns:createTransPromoReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTransPromoReq">
+<xs:sequence>
+<xs:element name="empId" type="xs:long" minOccurs="0" />
+<xs:element name="errorFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="errorMsg" type="xs:string" minOccurs="0" />
+<xs:element name="isError" type="xs:boolean" />
+<xs:element name="mstPromoId" type="xs:long" minOccurs="0" />
+<xs:element name="transPromoVO" type="tns:transPromoVO" minOccurs="0" />
+<xs:element name="typeId" type="xs:long" minOccurs="0" />
+<xs:element name="zoneId" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transPromoVO">
+<xs:sequence>
+<xs:element name="approverFrom" type="xs:string" minOccurs="0" />
+<xs:element name="approverName" type="xs:string" minOccurs="0" />
+<xs:element name="buyQty" type="xs:int" />
+<xs:element name="campaignName" type="xs:string" minOccurs="0" />
+<xs:element name="category" type="xs:string" minOccurs="0" />
+<xs:element name="contactNo" type="xs:string" minOccurs="0" />
+<xs:element name="creationDate" type="xs:string" minOccurs="0" />
+<xs:element name="date" type="xs:string" minOccurs="0" />
+<xs:element name="empCode" type="xs:string" minOccurs="0" />
+<xs:element name="event" type="xs:string" minOccurs="0" />
+<xs:element name="format" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="getQty" type="xs:int" />
+<xs:element name="initiatorLocation" type="xs:string" minOccurs="0" />
+<xs:element name="initiatorName" type="xs:string" minOccurs="0" />
+<xs:element name="lstStoreVOs" type="tns:storeVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="marketingType" type="xs:string" minOccurs="0" />
+<xs:element name="mstPromoId" type="xs:long" minOccurs="0" />
+<xs:element name="promoTypeDesc" type="xs:string" minOccurs="0" />
+<xs:element name="promoTypeId" type="xs:long" minOccurs="0" />
+<xs:element name="promotionType" type="xs:string" minOccurs="0" />
+<xs:element name="remark" type="xs:string" minOccurs="0" />
+<xs:element name="requestName" type="xs:string" minOccurs="0" />
+<xs:element name="status" type="xs:string" minOccurs="0" />
+<xs:element name="statusId" type="xs:string" minOccurs="0" />
+<xs:element name="subCategory" type="xs:string" minOccurs="0" />
+<xs:element name="teamAssignedBy" type="xs:string" minOccurs="0" />
+<xs:element name="teamAssignedTo" type="xs:string" minOccurs="0" />
+<xs:element name="teamAssignedToLocation" type="xs:string" minOccurs="0" />
+<xs:element name="teamAssignmentLocation" type="xs:string" minOccurs="0" />
+<xs:element name="teamMemberassigneDate" type="xs:string" minOccurs="0" />
+<xs:element name="time" type="xs:string" minOccurs="0" />
+<xs:element name="transPromoArticleList" type="tns:transPromoArticleVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="transPromoConfigList" type="tns:transPromoConfigVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="transPromoFileList" type="tns:transPromoFileVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="transPromoId" type="xs:long" minOccurs="0" />
+<xs:element name="updatedDate" type="xs:string" minOccurs="0" />
+<xs:element name="validFrom" type="xs:string" minOccurs="0" />
+<xs:element name="validTo" type="xs:string" minOccurs="0" />
+<xs:element name="zoneDesc" type="tns:mstZoneVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="storeVO">
+<xs:sequence>
+<xs:element name="city" type="xs:string" minOccurs="0" />
+<xs:element name="createdByID" type="xs:long" minOccurs="0" />
+<xs:element name="createdByName" type="xs:string" minOccurs="0" />
+<xs:element name="format" type="xs:string" minOccurs="0" />
+<xs:element name="isStoreBlocked" type="xs:boolean" minOccurs="0" />
+<xs:element name="locationID" type="xs:long" minOccurs="0" />
+<xs:element name="locationName" type="xs:string" minOccurs="0" />
+<xs:element name="region" type="xs:string" minOccurs="0" />
+<xs:element name="state" type="xs:string" minOccurs="0" />
+<xs:element name="storeClass" type="xs:string" minOccurs="0" />
+<xs:element name="storeDesc" type="xs:string" minOccurs="0" />
+<xs:element name="storeID" type="xs:string" minOccurs="0" />
+<xs:element name="zoneCode" type="xs:string" minOccurs="0" />
+<xs:element name="zoneId" type="xs:long" minOccurs="0" />
+<xs:element name="zoneName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transPromoArticleVO">
+<xs:sequence>
+<xs:element name="artCode" type="xs:string" minOccurs="0" />
+<xs:element name="artDesc" type="xs:string" minOccurs="0" />
+<xs:element name="brandCode" type="xs:string" minOccurs="0" />
+<xs:element name="brandDesc" type="xs:string" minOccurs="0" />
+<xs:element name="errMsg" type="xs:string" minOccurs="0" />
+<xs:element name="group" type="xs:string" minOccurs="0" />
+<xs:element name="isA" type="xs:boolean" />
+<xs:element name="isB" type="xs:boolean" />
+<xs:element name="isX" type="xs:boolean" />
+<xs:element name="isY" type="xs:boolean" />
+<xs:element name="isZ" type="xs:boolean" />
+<xs:element name="mcCode" type="xs:string" minOccurs="0" />
+<xs:element name="mcDesc" type="xs:string" minOccurs="0" />
+<xs:element name="mrp" type="xs:string" minOccurs="0" />
+<xs:element name="qty" type="xs:int" />
+<xs:element name="setId" type="xs:int" />
+<xs:element name="transPromoArticleId" type="xs:long" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transPromoConfigVO">
+<xs:sequence>
+<xs:element name="discConfig" type="xs:string" minOccurs="0" />
+<xs:element name="discValue" type="xs:double" />
+<xs:element name="errorMessage" type="xs:string" minOccurs="0" />
+<xs:element name="group" type="xs:string" minOccurs="0" />
+<xs:element name="growthCoversion" type="xs:double" />
+<xs:element name="isA" type="xs:boolean" />
+<xs:element name="isB" type="xs:boolean" />
+<xs:element name="isX" type="xs:boolean" />
+<xs:element name="isY" type="xs:boolean" />
+<xs:element name="isZ" type="xs:boolean" />
+<xs:element name="marginAchievement" type="xs:double" />
+<xs:element name="qty" type="xs:int" />
+<xs:element name="salesGrowth" type="xs:double" />
+<xs:element name="sellThruQty" type="xs:double" />
+<xs:element name="setId" type="xs:int" />
+<xs:element name="ticketDiscAmt" type="xs:double" />
+<xs:element name="ticketSizeGrowth" type="xs:double" />
+<xs:element name="ticketWorthAmt" type="xs:double" />
+<xs:element name="transPromoConfigId" type="xs:long" />
+<xs:element name="validFrom" type="xs:string" minOccurs="0" />
+<xs:element name="validTo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transPromoFileVO">
+<xs:sequence>
+<xs:element name="errorFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="filePath" type="xs:string" minOccurs="0" />
+<xs:element name="remarks" type="xs:string" minOccurs="0" />
+<xs:element name="setId" type="xs:int" />
+<xs:element name="transPromoFileId" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mstZoneVO">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0" />
+<xs:element name="isBlocked" type="xs:short" minOccurs="0" />
+<xs:element name="zonecode" type="xs:string" minOccurs="0" />
+<xs:element name="zonename" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTransPromoWithFileResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="pk" type="xs:long" minOccurs="0" />
+<xs:element name="redirect" type="xs:boolean" />
+<xs:element name="respCode" type="tns:respCode" minOccurs="0" />
+<xs:element name="suggestedDate" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getallTransPromoforApprovalBusinessEzigency">
+<xs:sequence>
+<xs:element name="arg0" type="tns:approvalLevelDashboardSearchReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="approvalLevelDashboardSearchReq">
+<xs:sequence>
+<xs:element name="categoryName" type="xs:string" minOccurs="0" />
+<xs:element name="empId" type="xs:string" minOccurs="0" />
+<xs:element name="endDate" type="xs:string" minOccurs="0" />
+<xs:element name="eventId" type="xs:long" minOccurs="0" />
+<xs:element name="isL1ByPassForL2" type="xs:boolean" />
+<xs:element name="l2EmpId" type="xs:string" minOccurs="0" />
+<xs:element name="marketingTypeId" type="xs:long" minOccurs="0" />
+<xs:element name="page" type="xs:int" />
+<xs:element name="promotionTypeId" type="xs:long" minOccurs="0" />
+<xs:element name="startDate" type="xs:string" minOccurs="0" />
+<xs:element name="storecode" type="xs:string" minOccurs="0" />
+<xs:element name="subCategoryName" type="xs:string" minOccurs="0" />
+<xs:element name="type" type="tns:approvalSearchType" minOccurs="0" />
+<xs:element name="zoneId" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getallTransPromoforApprovalBusinessEzigencyResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchPromotionSearchResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchPromotionSearchResp">
+<xs:sequence>
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+<xs:element name="totalCount" type="xs:int" />
+<xs:element name="transPromoList" type="tns:transPromoVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateTransPromoForFileUpload">
+<xs:sequence>
+<xs:element name="arg0" type="tns:updateTransPromoWithFileReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateTransPromoWithFileReq">
+<xs:sequence>
+<xs:element name="transPromoId" type="xs:long" minOccurs="0" />
+<xs:element name="uploadFilePath" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateTransPromoForFileUploadResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateTransPromo">
+<xs:sequence>
+<xs:element name="arg0" type="tns:createTransPromoReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateTransPromoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="downloadSubPromoDtl">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="arg1" type="xs:long" minOccurs="0" />
+<xs:element name="arg2" type="tns:downloadEnum" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="downloadSubPromoDtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitMultipleTransPromoFileUpload">
+<xs:sequence>
+<xs:element name="arg0" type="tns:createMultiPlePromoReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createMultiPlePromoReq">
+<xs:sequence>
+<xs:element name="empId" type="xs:string" minOccurs="0" />
+<xs:element name="errorFlag" type="xs:boolean" minOccurs="0" />
+<xs:element name="errorPath" type="xs:string" minOccurs="0" />
+<xs:element name="filePath" type="xs:string" minOccurs="0" />
+<xs:element name="mstPromoId" type="xs:string" minOccurs="0" />
+<xs:element name="transPromoVO" type="tns:transPromoVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="zoneId" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitMultipleTransPromoFileUploadResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getallTransPromoforApproval">
+<xs:sequence>
+<xs:element name="arg0" type="tns:approvalLevelDashboardSearchReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getallTransPromoforApprovalResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchPromotionSearchResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createCopyOFTransPromo">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+<xs:element name="arg1" type="xs:long" minOccurs="0" />
+<xs:element name="arg2" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createCopyOFTransPromoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchPromotionByTransReqId">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchPromotionByTransReqIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchPromotionSearchResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateMasterPromoStatus">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateMasterPromoStatusResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getallTransPromoforApprovalforLevel2">
+<xs:sequence>
+<xs:element name="arg0" type="tns:approvalLevelDashboardSearchReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getallTransPromoforApprovalforLevel2Response">
+<xs:sequence>
+<xs:element name="return" type="tns:searchPromotionSearchResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTransPromoForFileUpload">
+<xs:sequence>
+<xs:element name="arg0" type="tns:createTransPromoWithFileReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTransPromoWithFileReq">
+<xs:sequence>
+<xs:element name="empId" type="xs:long" minOccurs="0" />
+<xs:element name="mstPromoId" type="xs:long" minOccurs="0" />
+<xs:element name="uploadFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="zoneId" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTransPromoForFileUploadResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTransPromo">
+<xs:sequence>
+<xs:element name="arg0" type="tns:createTransPromoReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTransPromoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="downloadSubPromoRequest">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="downloadSubPromoRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:downloadSubPromoResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="downloadSubPromoResp">
+<xs:sequence>
+<xs:element name="downloadFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getExecutePromoDashBoardDtl">
+<xs:sequence>
+<xs:element name="arg0" type="tns:executePromoDashBaordReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="executePromoDashBaordReq">
+<xs:sequence>
+<xs:element name="empID" type="xs:string" minOccurs="0" />
+<xs:element name="endDate" type="xs:string" minOccurs="0" />
+<xs:element name="eventId" type="xs:long" minOccurs="0" />
+<xs:element name="executeEnum" type="tns:executePromoManagerEnum" minOccurs="0" />
+<xs:element name="markettingId" type="xs:long" minOccurs="0" />
+<xs:element name="promoDashboardCriteria" type="tns:searchPromoDashboardCriteria" minOccurs="0" />
+<xs:element name="promoDashboardEnum" type="tns:searchPromoDashboardEnum" minOccurs="0" />
+<xs:element name="promoTypeId" type="xs:long" minOccurs="0" />
+<xs:element name="startDate" type="xs:string" minOccurs="0" />
+<xs:element name="startIndex" type="xs:int" />
+<xs:element name="subCategoryName" type="xs:string" minOccurs="0" />
+<xs:element name="zoneId" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchPromoDashboardCriteria">
+<xs:sequence>
+<xs:element name="endDate" type="xs:string" minOccurs="0" />
+<xs:element name="eventId" type="xs:long" minOccurs="0" />
+<xs:element name="marketingTypeId" type="xs:long" minOccurs="0" />
+<xs:element name="promotionTypeId" type="xs:long" minOccurs="0" />
+<xs:element name="startDate" type="xs:string" minOccurs="0" />
+<xs:element name="statusId" type="xs:long" minOccurs="0" />
+<xs:element name="subCategoryName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getExecutePromoDashBoardDtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:executePromoDashBoardResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="executePromoDashBoardResp">
+<xs:sequence>
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+<xs:element name="totalCount" type="xs:long" minOccurs="0" />
+<xs:element name="transPromoList" type="tns:transPromoVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTransPromoList">
+<xs:sequence>
+<xs:element name="arg0" type="tns:createMultiPlePromoReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTransPromoListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchPromotion">
+<xs:sequence>
+<xs:element name="arg0" type="tns:searchPromoTransReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchPromoTransReq">
+<xs:sequence>
+<xs:element name="mstPromoId" type="xs:long" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchPromotionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchPromotionSearchResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="respCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="approvalSearchType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="STATUS" />
+<xs:enumeration value="ALL" />
+<xs:enumeration value="DATE" />
+<xs:enumeration value="CATEGORY" />
+<xs:enumeration value="CATEGORY_DATE" />
+<xs:enumeration value="PROMOTION_TYPE" />
+<xs:enumeration value="MARKETING_TYPE" />
+<xs:enumeration value="EVENT" />
+<xs:enumeration value="SUB_CATEGORY_DATE" />
+<xs:enumeration value="SUB_CATEGORY_DATE_EVENT_TYPE" />
+<xs:enumeration value="SUB_CATEGORY_DATE_MARKETTING_TYPE" />
+<xs:enumeration value="SUB_CATEGORY_DATE_PROMO_TYPE" />
+<xs:enumeration value="DATE_EVENT_TYPE" />
+<xs:enumeration value="DATE_MARKETTING_TYPE" />
+<xs:enumeration value="DATE_PROMO_TYPE" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="downloadEnum">
+<xs:restriction base="xs:string">
+<xs:enumeration value="INITIATOR_TO_EXIGENCY_DOWNLOAD" />
+<xs:enumeration value="MANAGER_EXECUTOR_DOWNLOAD" />
+<xs:enumeration value="COMMUNICATION_DOWNLOAD" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="executePromoManagerEnum">
+<xs:restriction base="xs:string">
+<xs:enumeration value="APPROVE_REJECT_DATA" />
+<xs:enumeration value="ALL" />
+<xs:enumeration value="TEAM_MEMBER" />
+<xs:enumeration value="DATE" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="searchPromoDashboardEnum">
+<xs:restriction base="xs:string">
+<xs:enumeration value="PROMOTION_TYPE" />
+<xs:enumeration value="MARKETING_TYPE" />
+<xs:enumeration value="EVENT" />
+<xs:enumeration value="DATE" />
+<xs:enumeration value="ALL" />
+<xs:enumeration value="CATEGORY_DATE" />
+<xs:enumeration value="DATE_EVENT" />
+<xs:enumeration value="DATE_MARKETING_TYPE" />
+<xs:enumeration value="DATE_PROMOTION_TPYE" />
+<xs:enumeration value="SUB_CATEGORY_DATE" />
+<xs:enumeration value="SUB_CATEGORY_DATE_EVENT_TYPE" />
+<xs:enumeration value="SUB_CATEGORY_DATE_MARKETTING_TYPE" />
+<xs:enumeration value="SUB_CATEGORY_DATE_PROMO_TYPE" />
+<xs:enumeration value="STATUS_DATE" />
+<xs:enumeration value="STATUS_DATE_EVENT_TYPE" />
+<xs:enumeration value="STATUS_DATE_MARKETTING_TYPE" />
+<xs:enumeration value="STATUS_DATE_PROMO_TYPE" />
+<xs:enumeration value="STATUS_DATE_SUB_CATEGORY" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

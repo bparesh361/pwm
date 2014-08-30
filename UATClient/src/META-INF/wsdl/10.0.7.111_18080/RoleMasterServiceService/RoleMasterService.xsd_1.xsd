@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.master.promo.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.master.promo.fks.com/">
+
+<xs:element name="SubmitRoleProfileMapping" type="tns:SubmitRoleProfileMapping" />
+
+<xs:element name="SubmitRoleProfileMappingResponse" type="tns:SubmitRoleProfileMappingResponse" />
+
+<xs:element name="createUpdateRole" type="tns:createUpdateRole" />
+
+<xs:element name="createUpdateRoleResponse" type="tns:createUpdateRoleResponse" />
+
+<xs:element name="getAllLocation" type="tns:getAllLocation" />
+
+<xs:element name="getAllLocationResponse" type="tns:getAllLocationResponse" />
+
+<xs:element name="getAllModule" type="tns:getAllModule" />
+
+<xs:element name="getAllModuleResponse" type="tns:getAllModuleResponse" />
+
+<xs:element name="getAllProfiles" type="tns:getAllProfiles" />
+
+<xs:element name="getAllProfilesResponse" type="tns:getAllProfilesResponse" />
+
+<xs:element name="getAllRoles" type="tns:getAllRoles" />
+
+<xs:element name="getAllRolesResponse" type="tns:getAllRolesResponse" />
+
+<xs:element name="getModuleProfileMapping" type="tns:getModuleProfileMapping" />
+
+<xs:element name="getModuleProfileMappingResponse" type="tns:getModuleProfileMappingResponse" />
+
+<xs:element name="getRoleWiseLocationandProfile" type="tns:getRoleWiseLocationandProfile" />
+
+<xs:element name="getRoleWiseLocationandProfileResponse" type="tns:getRoleWiseLocationandProfileResponse" />
+
+<xs:element name="submitProfileModuleDtl" type="tns:submitProfileModuleDtl" />
+
+<xs:element name="submitProfileModuleDtlResponse" type="tns:submitProfileModuleDtlResponse" />
+
+<xs:complexType name="getAllModule">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllModuleResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:moduleVo" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="moduleVo">
+<xs:sequence>
+<xs:element name="moduleDesc" type="xs:string" minOccurs="0" />
+<xs:element name="moduleID" type="xs:long" minOccurs="0" />
+<xs:element name="moduleName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRoleWiseLocationandProfile">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRoleWiseLocationandProfileResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:roleProfileMappingResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="roleProfileMappingResp">
+<xs:sequence>
+<xs:element name="locationId" type="xs:long" minOccurs="0" />
+<xs:element name="profileList" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="pk" type="xs:long" minOccurs="0" />
+<xs:element name="redirect" type="xs:boolean" />
+<xs:element name="respCode" type="tns:respCode" minOccurs="0" />
+<xs:element name="suggestedDate" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllProfiles">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllProfilesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:profileVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="profileVO">
+<xs:sequence>
+<xs:element name="levelAccessName" type="xs:string" minOccurs="0" />
+<xs:element name="moduleVo" type="tns:moduleVo" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="profileID" type="xs:long" minOccurs="0" />
+<xs:element name="profileName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SubmitRoleProfileMapping">
+<xs:sequence>
+<xs:element name="arg0" type="tns:roleProfileMappingReq" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="roleProfileMappingReq">
+<xs:sequence>
+<xs:element name="locationId" type="xs:long" minOccurs="0" />
+<xs:element name="profileID" type="xs:long" minOccurs="0" />
+<xs:element name="profileList" type="xs:long" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="roleID" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SubmitRoleProfileMappingResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getModuleProfileMapping">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getModuleProfileMappingResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:profileVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllLocation">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllLocationResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:locationVo" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="locationVo">
+<xs:sequence>
+<xs:element name="locationID" type="xs:long" minOccurs="0" />
+<xs:element name="locationName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitProfileModuleDtl">
+<xs:sequence>
+<xs:element name="arg0" type="tns:addUpProfileModuleRequest" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addUpProfileModuleRequest">
+<xs:sequence>
+<xs:element name="moduleList" type="tns:moduleVo" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="profileId" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="submitProfileModuleDtlResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createUpdateRole">
+<xs:sequence>
+<xs:element name="arg0" type="tns:roleVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="roleVO">
+<xs:sequence>
+<xs:element name="createdBy" type="xs:string" minOccurs="0" />
+<xs:element name="createdDate" type="xs:string" minOccurs="0" />
+<xs:element name="isBlocked" type="xs:short" minOccurs="0" />
+<xs:element name="operationCode" type="xs:int" />
+<xs:element name="roleId" type="xs:long" minOccurs="0" />
+<xs:element name="roleName" type="xs:string" minOccurs="0" />
+<xs:element name="updatedBy" type="xs:string" minOccurs="0" />
+<xs:element name="updatedDate" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createUpdateRoleResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllRoles">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllRolesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:roleVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="respCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

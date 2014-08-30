@@ -1,0 +1,663 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.master.promo.fks.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.master.promo.fks.com/">
+
+<xs:element name="check" type="tns:check" />
+
+<xs:element name="checkResponse" type="tns:checkResponse" />
+
+<xs:element name="createCampaign" type="tns:createCampaign" />
+
+<xs:element name="createCampaignResponse" type="tns:createCampaignResponse" />
+
+<xs:element name="createDepartment" type="tns:createDepartment" />
+
+<xs:element name="createDepartmentResponse" type="tns:createDepartmentResponse" />
+
+<xs:element name="createEventMaster" type="tns:createEventMaster" />
+
+<xs:element name="createEventMasterResponse" type="tns:createEventMasterResponse" />
+
+<xs:element name="createMartingType" type="tns:createMartingType" />
+
+<xs:element name="createMartingTypeResponse" type="tns:createMartingTypeResponse" />
+
+<xs:element name="createProblem" type="tns:createProblem" />
+
+<xs:element name="createProblemResponse" type="tns:createProblemResponse" />
+
+<xs:element name="createPromotionType" type="tns:createPromotionType" />
+
+<xs:element name="createPromotionTypeResponse" type="tns:createPromotionTypeResponse" />
+
+<xs:element name="createReasonForRejection" type="tns:createReasonForRejection" />
+
+<xs:element name="createReasonForRejectionResponse" type="tns:createReasonForRejectionResponse" />
+
+<xs:element name="createTaskMaster" type="tns:createTaskMaster" />
+
+<xs:element name="createTaskMasterResponse" type="tns:createTaskMasterResponse" />
+
+<xs:element name="createZoneMaster" type="tns:createZoneMaster" />
+
+<xs:element name="createZoneMasterResponse" type="tns:createZoneMasterResponse" />
+
+<xs:element name="deleteCalanderValue" type="tns:deleteCalanderValue" />
+
+<xs:element name="deleteCalanderValueResponse" type="tns:deleteCalanderValueResponse" />
+
+<xs:element name="getALLStatus" type="tns:getALLStatus" />
+
+<xs:element name="getALLStatusResponse" type="tns:getALLStatusResponse" />
+
+<xs:element name="getAllCalendar" type="tns:getAllCalendar" />
+
+<xs:element name="getAllCalendarByYearMonth" type="tns:getAllCalendarByYearMonth" />
+
+<xs:element name="getAllCalendarByYearMonthResponse" type="tns:getAllCalendarByYearMonthResponse" />
+
+<xs:element name="getAllCalendarResponse" type="tns:getAllCalendarResponse" />
+
+<xs:element name="getAllCampaign" type="tns:getAllCampaign" />
+
+<xs:element name="getAllCampaignResponse" type="tns:getAllCampaignResponse" />
+
+<xs:element name="getAllDepartments" type="tns:getAllDepartments" />
+
+<xs:element name="getAllDepartmentsResponse" type="tns:getAllDepartmentsResponse" />
+
+<xs:element name="getAllEventMaster" type="tns:getAllEventMaster" />
+
+<xs:element name="getAllEventMasterResponse" type="tns:getAllEventMasterResponse" />
+
+<xs:element name="getAllLeadTimeStatus" type="tns:getAllLeadTimeStatus" />
+
+<xs:element name="getAllLeadTimeStatusResponse" type="tns:getAllLeadTimeStatusResponse" />
+
+<xs:element name="getAllMarketingType" type="tns:getAllMarketingType" />
+
+<xs:element name="getAllMarketingTypeResponse" type="tns:getAllMarketingTypeResponse" />
+
+<xs:element name="getAllProblemMaster" type="tns:getAllProblemMaster" />
+
+<xs:element name="getAllProblemMasterResponse" type="tns:getAllProblemMasterResponse" />
+
+<xs:element name="getAllPromotionMaster" type="tns:getAllPromotionMaster" />
+
+<xs:element name="getAllPromotionMasterResponse" type="tns:getAllPromotionMasterResponse" />
+
+<xs:element name="getAllReasonForRejection" type="tns:getAllReasonForRejection" />
+
+<xs:element name="getAllReasonForRejectionResponse" type="tns:getAllReasonForRejectionResponse" />
+
+<xs:element name="getAllSet" type="tns:getAllSet" />
+
+<xs:element name="getAllSetResponse" type="tns:getAllSetResponse" />
+
+<xs:element name="getAllTaskMaster" type="tns:getAllTaskMaster" />
+
+<xs:element name="getAllTaskMasterResponse" type="tns:getAllTaskMasterResponse" />
+
+<xs:element name="getAllZone" type="tns:getAllZone" />
+
+<xs:element name="getAllZoneResponse" type="tns:getAllZoneResponse" />
+
+<xs:element name="getDateFromStr" type="tns:getDateFromStr" />
+
+<xs:element name="getDateFromStrResponse" type="tns:getDateFromStrResponse" />
+
+<xs:element name="getMstLeadTime" type="tns:getMstLeadTime" />
+
+<xs:element name="getMstLeadTimeResponse" type="tns:getMstLeadTimeResponse" />
+
+<xs:element name="getUserDepartments" type="tns:getUserDepartments" />
+
+<xs:element name="getUserDepartmentsResponse" type="tns:getUserDepartmentsResponse" />
+
+<xs:element name="insertCalendar" type="tns:insertCalendar" />
+
+<xs:element name="insertCalendarResponse" type="tns:insertCalendarResponse" />
+
+<xs:element name="sendArticleMCFileForvalidate" type="tns:sendArticleMCFileForvalidate" />
+
+<xs:element name="sendArticleMCFileForvalidateResponse" type="tns:sendArticleMCFileForvalidateResponse" />
+
+<xs:element name="updateMstLeadTime" type="tns:updateMstLeadTime" />
+
+<xs:element name="updateMstLeadTimeResponse" type="tns:updateMstLeadTimeResponse" />
+
+<xs:element name="updateStatus" type="tns:updateStatus" />
+
+<xs:element name="updateStatusResponse" type="tns:updateStatusResponse" />
+
+<xs:element name="validateMC" type="tns:validateMC" />
+
+<xs:element name="validateMCResponse" type="tns:validateMCResponse" />
+
+<xs:complexType name="createProblem">
+<xs:sequence>
+<xs:element name="arg0" type="tns:problemMasterVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="problemMasterVO">
+<xs:sequence>
+<xs:element name="isBlocked" type="xs:short" minOccurs="0" />
+<xs:element name="problemId" type="xs:long" minOccurs="0" />
+<xs:element name="problemName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createProblemResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resp">
+<xs:sequence>
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+<xs:element name="pk" type="xs:long" minOccurs="0" />
+<xs:element name="redirect" type="xs:boolean" />
+<xs:element name="respCode" type="tns:respCode" minOccurs="0" />
+<xs:element name="suggestedDate" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createDepartment">
+<xs:sequence>
+<xs:element name="arg0" type="tns:departmentVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="departmentVO">
+<xs:sequence>
+<xs:element name="departmentID" type="xs:long" minOccurs="0" />
+<xs:element name="departmentName" type="xs:string" minOccurs="0" />
+<xs:element name="isActive" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createDepartmentResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertCalendar">
+<xs:sequence>
+<xs:element name="arg0" type="tns:mstCalendarVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mstCalendarVO">
+<xs:sequence>
+<xs:element name="calendarId" type="xs:long" minOccurs="0" />
+<xs:element name="date" type="xs:string" minOccurs="0" />
+<xs:element name="description" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertCalendarResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createPromotionType">
+<xs:sequence>
+<xs:element name="arg0" type="tns:mstPromotionTypeVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mstPromotionTypeVO">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0" />
+<xs:element name="isBlocked" type="xs:short" minOccurs="0" />
+<xs:element name="promotionName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createPromotionTypeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserDepartments">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserDepartmentsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:departmentVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllSet">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllSetResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:setVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setVO">
+<xs:sequence>
+<xs:element name="setDesc" type="xs:string" minOccurs="0" />
+<xs:element name="setID" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createCampaign">
+<xs:sequence>
+<xs:element name="arg0" type="tns:mstCampaignVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mstCampaignVO">
+<xs:sequence>
+<xs:element name="campaignID" type="xs:long" minOccurs="0" />
+<xs:element name="campaignName" type="xs:string" minOccurs="0" />
+<xs:element name="isActive" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createCampaignResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllMarketingType">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllMarketingTypeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mstMktgVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mstMktgVO">
+<xs:sequence>
+<xs:element name="isBlocked" type="xs:short" minOccurs="0" />
+<xs:element name="mktgName" type="xs:string" minOccurs="0" />
+<xs:element name="mktgTyped" type="xs:long" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTaskMaster">
+<xs:sequence>
+<xs:element name="arg0" type="tns:mstTaskVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mstTaskVO">
+<xs:sequence>
+<xs:element name="isBlocked" type="xs:short" minOccurs="0" />
+<xs:element name="taskId" type="xs:long" minOccurs="0" />
+<xs:element name="taskName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTaskMasterResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createEventMaster">
+<xs:sequence>
+<xs:element name="arg0" type="tns:mstEventVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mstEventVO">
+<xs:sequence>
+<xs:element name="eventId" type="xs:long" minOccurs="0" />
+<xs:element name="eventName" type="xs:string" minOccurs="0" />
+<xs:element name="isBlocked" type="xs:short" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createEventMasterResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllLeadTimeStatus">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllLeadTimeStatusResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mstStatusVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mstStatusVO">
+<xs:sequence>
+<xs:element name="isLeadTime" type="xs:short" minOccurs="0" />
+<xs:element name="l1" type="xs:string" minOccurs="0" />
+<xs:element name="l2" type="xs:string" minOccurs="0" />
+<xs:element name="l5" type="xs:string" minOccurs="0" />
+<xs:element name="statusId" type="xs:long" minOccurs="0" />
+<xs:element name="statusName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getALLStatus">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getALLStatusResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mstStatusVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllCalendar">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllCalendarResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mstCalendarVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllProblemMaster">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllProblemMasterResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:problemMasterVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDateFromStr">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDateFromStrResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:dateTime" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createReasonForRejection">
+<xs:sequence>
+<xs:element name="arg0" type="tns:mstReasonRejectionVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mstReasonRejectionVO">
+<xs:sequence>
+<xs:element name="isApprover" type="xs:short" minOccurs="0" />
+<xs:element name="isBlocked" type="xs:short" minOccurs="0" />
+<xs:element name="reasonId" type="xs:long" minOccurs="0" />
+<xs:element name="reasonName" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createReasonForRejectionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllTaskMaster">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllTaskMasterResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mstTaskVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllDepartments">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllDepartmentsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:departmentVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateMC">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:long" minOccurs="0" />
+<xs:element name="arg2" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateMCResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:validateMCResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateMCResp">
+<xs:sequence>
+<xs:element name="mcCode" type="xs:string" minOccurs="0" />
+<xs:element name="mcDesc" type="xs:string" minOccurs="0" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllCampaign">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllCampaignResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mstCampaignVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createZoneMaster">
+<xs:sequence>
+<xs:element name="arg0" type="tns:mstZoneVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mstZoneVO">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0" />
+<xs:element name="isBlocked" type="xs:short" minOccurs="0" />
+<xs:element name="zonecode" type="xs:string" minOccurs="0" />
+<xs:element name="zonename" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createZoneMasterResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="check">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="checkResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllZone">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllZoneResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mstZoneVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllCalendarByYearMonth">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllCalendarByYearMonthResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mstCalendarVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllEventMaster">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllEventMasterResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mstEventVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllPromotionMaster">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllPromotionMasterResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mstPromotionTypeVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStatus">
+<xs:sequence>
+<xs:element name="arg0" type="tns:mstStatusVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStatusResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createMartingType">
+<xs:sequence>
+<xs:element name="arg0" type="tns:mstMktgVO" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createMartingTypeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCalanderValue">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCalanderValueResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateMstLeadTime">
+<xs:sequence>
+<xs:element name="arg0" type="tns:mstLeadTime" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mstLeadTime">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0" />
+<xs:element name="mstLeadTimeDesc" type="xs:string" minOccurs="0" />
+<xs:element name="value" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateMstLeadTimeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllReasonForRejection">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllReasonForRejectionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mstReasonRejectionVO" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMstLeadTime">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getMstLeadTimeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mstLeadTime" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sendArticleMCFileForvalidate">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:string" minOccurs="0" />
+<xs:element name="arg2" type="xs:long" minOccurs="0" />
+<xs:element name="arg3" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sendArticleMCFileForvalidateResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:validateArticleMCResp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateArticleMCResp">
+<xs:sequence>
+<xs:element name="articleMCList" type="tns:validateArticleMCVO" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="errorFilePath" type="xs:string" minOccurs="0" />
+<xs:element name="resp" type="tns:resp" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validateArticleMCVO">
+<xs:sequence>
+<xs:element name="articleCode" type="xs:string" minOccurs="0" />
+<xs:element name="articleDesc" type="xs:string" minOccurs="0" />
+<xs:element name="brandCode" type="xs:string" minOccurs="0" />
+<xs:element name="brandDesc" type="xs:string" minOccurs="0" />
+<xs:element name="errorMsg" type="xs:string" minOccurs="0" />
+<xs:element name="isErrorStatus" type="xs:boolean" />
+<xs:element name="mcCode" type="xs:string" minOccurs="0" />
+<xs:element name="mcDesc" type="xs:string" minOccurs="0" />
+<xs:element name="mrp" type="xs:string" minOccurs="0" />
+<xs:element name="qty" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="respCode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS" />
+<xs:enumeration value="FAILURE" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

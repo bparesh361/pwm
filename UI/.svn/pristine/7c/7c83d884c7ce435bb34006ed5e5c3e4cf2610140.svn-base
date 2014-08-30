@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="mapping" extends="promoDefault" namespace="/">
+  
+<!--     Login Action Start
+        <action name="doLogin" class="com.ndil.ui.login.action.UserLogin">
+            <result name="success">jsp/welcome.jsp</result>
+            <result name="input">jsp/index.jsp</result>
+            <result name="changepass">/jsp/Others/changePassword.jsp</result>
+            <result name="error">jsp/error.jsp</result>
+        </action>-->
+
+  <action name="HelloWorld" class="example.HelloWorld">
+            <result>/example/HelloWorld.jsp</result>
+        </action>
+  <action name="rolemaster_jsp" class="com.fks.ui.master.action.RoleMasterAction">
+            <result>/jsp/master/rolemaster.jsp</result>
+        </action>
+    </package>
+</struts>
+

@@ -1,0 +1,33 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+#PromoLifeCycleArticleMCRept=C:/folderB/promotion/report/promo_life_cycle_article/
+PromoLifeCycleArticleMCRept=/data/apps/data/promotion/report/promo_life_cycle_article/
+#PromoLifeCycleArticleMCRept=/data/app/promotion/report/promo_life_cycle_article/
+#PromoLifeCycleArticleMCRept=/apps/data/promotion/report/promo_life_cycle_article/
+
+#PromoLifeCycleRept=C:/folderB/promotion/report/promo_life_cycle/
+PromoLifeCycleRept=/data/apps/data/promotion/report/promo_life_cycle/
+#PromoLifeCycleRept=/data/app/promotion/report/promo_life_cycle/
+#PromoLifeCycleRept=/apps/data/promotion/report/promo_life_cycle/
+
+#StoreProposalRept=C:/folderB/promotion/report/store_proposal/
+StoreProposalRept=/data/apps/data/promotion/report/store_proposal/
+#StoreProposalRept=/data/app/promotion/report/store_proposal/
+#StoreProposalRept=/apps/data/promotion/report/store_proposal/
+
+#InternalTaskRept=C:/folderB/promotion/report/internal_task/
+InternalTaskRept=/data/apps/data/promotion/report/internal_task/
+#InternalTaskRept=/data/app/promotion/report/internal_task/
+#InternalTaskRept=/apps/data/promotion/report/internal_task/
+
+#PromoTeamDashboardRept=C:/folderB/promotion/report/promo_team_dashboard/
+PromoTeamDashboardRept=/data/apps/data/promotion/report/promo_team_dashboard/
+#PromoTeamDashboardRept=/data/app/promotion/report/promo_team_dashboard/
+#PromoTeamDashboardRept=/apps/data/promotion/report/promo_team_dashboard/
+
+#StoreProposalPendingAutomatedRept=C:/folderB/promotion/report/store_proposal_pending/
+StoreProposalPendingAutomatedRept=/data/apps/data/promotion/report/store_proposal_pending/
+#StoreProposalPendingAutomatedRept=/data/app/promotion/report/store_proposal_pending/
+#StoreProposalPendingAutomatedRept=/apps/data/promotion/report/store_proposal_pending/
+

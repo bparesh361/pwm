@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!-- Author: krutij -->
+<struts>
+    <package name="mapping" extends="promoDefault" namespace="/">
+
+
+        <action name="getAllMarketingTypes" class="com.fks.ui.master.action.MarketingMasterAction" method="getAllMarketingTypes">
+        </action>
+        <action name="marketingtype_jsp" class="com.fks.ui.master.action.MarketingMasterAction">
+            <result name="success">/jsp/master/other/marketing.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+
+        <action name="submitMktgMaster" class="com.fks.ui.master.action.MarketingMasterAction" method="submitMarketingType">
+            <result name="success">/jsp/master/other/marketing.jsp</result>
+            <result name="input">/jsp/master/other/marketing.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <!-- Action Mapping for Marketing Type -->
+        <action name="rejection_jsp" class="com.fks.ui.master.action.ReasonRejectionAction">
+            <result name="success">/jsp/master/other/rejection.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="getAllRejection" class="com.fks.ui.master.action.ReasonRejectionAction" method="getAllRejection">
+        </action>
+        <action name="submitRejectionMaster" class="com.fks.ui.master.action.ReasonRejectionAction" method="submitRejectionMaster">
+            <result name="success">/jsp/master/other/rejection.jsp</result>
+            <result name="input">/jsp/master/other/rejection.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        
+        <action name="submitRejectionMasterForApprover" class="com.fks.ui.master.action.ReasonRejectionAction" method="submitRejectionMasterForApprover">
+            <result name="success">/jsp/master/other/rejection.jsp</result>
+            <result name="input">/jsp/master/other/rejection.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <!-- Action Mapping for Problem Type -->
+        <action name="problem_jsp" class="com.fks.ui.master.action.ProblemAction">
+            <result name="success">/jsp/master/other/problem.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="getAllProblem" class="com.fks.ui.master.action.ProblemAction" method="getAllProblem">
+        </action>
+        <action name="submitProblemMaster" class="com.fks.ui.master.action.ProblemAction" method="submitProblemMaster">
+            <result name="success">/jsp/master/other/problem.jsp</result>
+            <result name="input">/jsp/master/other/problem.jsp</result>
+            <result name="error">/jsp/problem.jsp</result>
+        </action>
+        
+        <!-- Action Mapping for Promotion Type -->
+        <action name="promotion_jsp" class="com.fks.ui.master.action.PromotionTypeAction">
+            <result name="success">/jsp/master/other/promotiontype.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="getAllPromotionType" class="com.fks.ui.master.action.PromotionTypeAction" method="getAllPromotionType">
+        </action>
+        <action name="submitPromotionMaster" class="com.fks.ui.master.action.PromotionTypeAction" method="submitPromotionMaster">
+            <result name="success">/jsp/master/other/promotiontype.jsp</result>
+            <result name="input">/jsp/master/other/promotiontype.jsp</result>
+            <result name="error">/jsp/promotiontype.jsp</result>
+        </action>
+        
+        <!-- Action Mapping for Task Type -->
+        <action name="task_jsp" class="com.fks.ui.master.action.TaskTypeAction">
+            <result name="success">/jsp/master/other/task.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="getAllTaskType" class="com.fks.ui.master.action.TaskTypeAction" method="getAllTaskType">
+        </action>
+        <action name="submitTaskMaster" class="com.fks.ui.master.action.TaskTypeAction" method="submitTaskMaster">
+            <result name="success">/jsp/master/other/task.jsp</result>
+            <result name="input">/jsp/master/other/task.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        
+        <!-- Action Mapping for Event Type -->
+        <action name="event_jsp" class="com.fks.ui.master.action.EventTypeAction">
+            <result name="success">/jsp/master/other/event.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="getAllEventType" class="com.fks.ui.master.action.EventTypeAction" method="getAllEventType">
+        </action>
+        <action name="submitEventMaster" class="com.fks.ui.master.action.EventTypeAction" method="submitEventMaster">
+            <result name="success">/jsp/master/other/event.jsp</result>
+            <result name="input">/jsp/master/other/event.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        
+        <!-- Action Mapping for Lead Time -->
+        <action name="leadtime_jsp" class="com.fks.ui.master.action.LeadTimeAction">
+            <result name="success">/jsp/master/other/leadtime.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="getStatusForLeadTime" class="com.fks.ui.master.action.LeadTimeAction" method="getStatusForLeadTime"></action>
+        <action name="getLeadTimeForPromoSetUp" class="com.fks.ui.master.action.LeadTimeAction" method="getLeadTimeForPromoSetUp"></action>
+        <action name="updateLeadTime" class="com.fks.ui.master.action.LeadTimeAction" method="updateLeadTime">
+            <result name="success">/jsp/master/other/leadtime.jsp</result>
+            <result name="input">/jsp/master/other/leadtime.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+         <!-- Action Mapping for Promo Time -->
+        <action name="updateLeadTimeForPromoSetUp" class="com.fks.ui.master.action.LeadTimeAction" method="updateLeadTimeForPromoSetUp">
+            <result name="success">/jsp/master/other/leadtime.jsp</result>
+            <result name="input">/jsp/master/other/leadtime.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+       
+        <action name="downloadSampleCalendarFile" class="com.fks.ui.master.action.LeadTimeAction" method="downloadSampleCalendarFile" />
+        
+        <!-- Action Mapping for Zone -->
+        <action name="zone_jsp" class="com.fks.ui.master.action.ZoneAction">
+            <result name="success">/jsp/master/other/zone.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="submitZone" class="com.fks.ui.master.action.ZoneAction" method="submitZone">
+            <result name="success">/jsp/master/other/zone.jsp</result>
+            <result name="input">/jsp/master/other/zone.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+       
+        <action name="getAllZone" class="com.fks.ui.master.action.ZoneAction" method="getAllZone">
+        </action>
+        
+        <!-- Calender Actions -->
+        <action name="cal_jsp" class="com.fks.ui.master.action.CalenderAction">
+            <result name="success">/jsp/master/other/calender.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="getAllCalender" class="com.fks.ui.master.action.CalenderAction" method="getAllCalender" />
+        
+        <action name="submitCalendar" class="com.fks.ui.master.action.CalenderAction" method="submitCalendar">
+            <result name="success">/jsp/master/other/calender.jsp</result>
+            <result name="input">/jsp/master/other/calender.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+
+        <action name="deleteCalander" class="com.fks.ui.master.action.CalenderAction" method="deleteCalander">
+            <result name="success">/jsp/master/other/calender.jsp</result>
+            <result name="input">/jsp/master/other/calender.jsp</result>
+        </action>
+        
+        <action name="getAllCalendarByYear" class="com.fks.ui.master.action.CalenderAction" method="getAllCalendarByYear" />
+        
+        <action name="submitCalendarFile" class="com.fks.ui.master.action.CalenderAction" method="submitCalendarFile" >
+            <result name="success">/jsp/master/other/calender.jsp</result>
+            <result name="input">/jsp/master/other/calender.jsp</result>
+            <result name="error">/jsp/master/other/calender.jsp</result>
+        </action>
+        
+        <action name="getAllCalendarByYearAndMonth" class="com.fks.ui.master.action.CalenderAction" method="getAllCalendarByYearAndMonth" />
+
+        <action name="validateArticleORMCCode" class="com.fks.ui.other.action.OtherAction" method="validateArticleORMCCode" />
+
+        <action name="downloadSampleArticleMCFile" class="com.fks.ui.other.action.OtherAction" method="downloadSampleArticleMCFile" />
+        <action name="downloadTemplatePromotionFile" class="com.fks.ui.other.action.OtherAction" method="downloadSamplePromotionFile" />
+        <action name="getArticleSearchDetail" class="com.fks.ui.other.action.ArticleSearchAction" method="getArticleSearchDetail" />
+        <action name="downloadArticleSearchdtl" class="com.fks.ui.other.action.ArticleSearchAction" method="downloadArticleSearchdtl" >
+               
+        </action>
+
+
+        <action name="downloadIntiationSampleArticleMCFile" class="com.fks.ui.other.action.OtherAction" method="downloadIntiationSampleArticleMCFile" />
+
+        <action name="downloadErrorArticleMCFile" class="com.fks.ui.other.action.OtherAction" method="downloadErrorArticleMCFile" />
+
+        <action name="downloadFileFromPath" class="com.fks.ui.other.action.OtherAction" method="downloadFileFromFilePath" />
+
+<!--        <action name="downloadTransPromoDtl" class="com.fks.ui.other.action.OtherAction" method="downloadPromontiondtl" />-->
+
+        <action name="downloadTransPromoDtl" class="com.fks.ui.other.action.OtherAction" method="downloadMultiPromontiondtl" />
+
+        <action name="downloadTransPromoDtlForUpdate" class="com.fks.ui.other.action.OtherAction" method="downloadSubPromotionRequestForUpdate" />
+
+        <action name="getTeamMemberFlexBox" class="com.fks.ui.other.action.OtherAction" method="flexBoxTeamMember"></action>
+
+        <action name="viewArticleMCSearch_action" class="com.fks.ui.other.action.ArticleSearchAction" method="viewArticleMCSearch" >
+            <result name="success">/jsp/master/article_mc_search.jsp</result>
+            <result name="error">/jsp/master/article_mc_search.jsp</result>
+        </action>
+
+        <action name="viewHelpInitiator" class="com.fks.ui.other.action.OtherAction" method="viewInitiationHelp" >
+            <result name="success">/jsp/help/initiator.jsp</result>
+            <result name="error">/jsp/help/initiator.jsp</result>
+        </action>
+        <action name="viewHelpl2" class="com.fks.ui.other.action.OtherAction" method="viewInitiationHelp" >
+            <result name="success">/jsp/help/approverl2.jsp</result>
+            <result name="error">/jsp/help/approverl2.jsp</result>
+        </action>
+        <action name="viewCommunicationHelp" class="com.fks.ui.other.action.OtherAction" method="viewInitiationHelp" >
+            <result name="success">/jsp/help/communication.jsp</result>
+            <result name="error">/jsp/help/communication.jsp</result>
+        </action>
+        <action name="viewProposalDashboard" class="com.fks.ui.other.action.OtherAction" method="viewInitiationHelp" >
+            <result name="success">/jsp/help/proposalDashboard.jsp</result>
+            <result name="error">/jsp/help/proposalDashboard.jsp</result>
+        </action>
+        <action name="viewHelpl1" class="com.fks.ui.other.action.OtherAction" method="viewInitiationHelp" >
+            <result name="success">/jsp/help/leadtime.jsp</result>
+            <result name="error">/jsp/help/leadtime.jsp</result>
+        </action>
+     
+        <action name="viewSubPromoHelp" class="com.fks.ui.other.action.OtherAction" method="viewInitiationHelp" >
+            <result name="success">/jsp/help/subPromoIntiate.jsp</result>
+            <result name="error">/jsp/help/subPromoIntiate.jsp</result>
+        </action>
+
+        <action name="viewSubPromoUploadHelp" class="com.fks.ui.other.action.OtherAction" method="viewInitiationHelp" >
+            <result name="success">/jsp/help/subPromoUpload.jsp</result>
+            <result name="error">/jsp/help/subPromoUpload.jsp</result>
+        </action>
+
+        <action name="viewModifyPromoHelp" class="com.fks.ui.other.action.OtherAction" method="viewInitiationHelp" >
+            <result name="success">/jsp/help/view_modify_promo.jsp</result>
+            <result name="error">/jsp/help/view_modify_promo.jsp</result>
+        </action>
+
+        <action name="organizationPromoHelp" class="com.fks.ui.other.action.OtherAction" method="viewInitiationHelp" >
+            <result name="success">/jsp/help/organization.jsp</result>
+            <result name="error">/jsp/help/organization.jsp</result>
+        </action>
+
+        <action name="proposalHelp" class="com.fks.ui.other.action.OtherAction" method="viewInitiationHelp" >
+            <result name="success">/jsp/help/proposal.jsp</result>
+            <result name="error">/jsp/help/proposal.jsp</result>
+        </action>
+
+        <action name="viewModifyProposalHelp" class="com.fks.ui.other.action.OtherAction" method="viewInitiationHelp" >
+            <result name="success">/jsp/help/view_modify_proposal.jsp</result>
+            <result name="error">/jsp/help/view_modify_proposal.jsp</result>
+        </action>
+
+        <action name="downloadfile" class="com.fks.ui.constants.DownloadAction" method="downloadfile">
+        </action>
+
+        <action name="downloadExcelfile" class="com.fks.ui.constants.DownloadAction" method="downloadExcelfile">
+        </action>
+        <action name="downloadMultipleExcel" class="com.fks.ui.other.action.OtherAction" method="downloadMultipleTransPromoINExcel">
+        </action>
+        <action name="downloadMultipleProposalExcel" class="com.fks.ui.other.action.OtherAction" method="downloadMultipleProposalsINExcel">
+        </action>
+
+        <action name="downloadMultiplePromoTemplateFile" class="com.fks.ui.constants.DownloadAction" method="downloadMultiplePromoTemplateFile">
+        </action>
+
+        <action name="downloadProposalArticleMCFile" class="com.fks.ui.other.action.OtherAction" method="downloadProposalArticleMCFile" />
+
+        <action name="viewMChUserDownloadhtm" class="com.fks.ui.user.action.MCHWiseUserDownloadAction" method="viewMCHUserDownloadjsp" >
+            <result name="success">/jsp/user/mchUserdownload.jsp</result>
+            <result name="error">/jsp/user/mchUserdownload.jsp</result>
+        </action>
+
+        <action name="downloaduserMchdetail" class="com.fks.ui.user.action.MCHWiseUserDownloadAction" method="downloaduserMchdetail" />
+        <action name="getmchUserdata" class="com.fks.ui.user.action.MCHWiseUserDownloadAction" method="getmchUserdata" />
+
+        <action name="viewArticleDownload" class="com.fks.ui.other.action.ArticleDownloadAction" method="viewArticleMCSearch" >
+            <result name="success">/jsp/article/articleSearch.jsp</result>
+            <result name="error">/jsp/article/articleSearch.jsp</result>
+            <result name="login">/login.jsp</result>
+        </action>
+        <action name="viewArticleDownloadData" class="com.fks.ui.other.action.ArticleDownloadAction" method="getArticleDownlodDtl" />
+        <action name="downloadfileartilcle" class="com.fks.ui.constants.DownloadAction" method="downloadfile" />
+        <action name="submitArticleDownloadreq" class="com.fks.ui.other.action.ArticleDownloadAction" method="submitArticleDownloadReq" >
+            <result name="success">/jsp/article/articleSearch.jsp</result>
+            <result name="input">/jsp/article/articleSearch.jsp</result>
+            <result name="error">/login.jsp</result>
+        </action>
+
+
+
+        <!-- Campaign Master
+                -->
+        <action name="getAllCampaignDetail" class="com.fks.ui.master.action.CampaignMasterAction" method="getAllCampaignDetail">
+        </action>
+        <action name="campaign_jsp" class="com.fks.ui.master.action.CampaignMasterAction">
+            <result name="success">/jsp/master/other/campaign.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+
+        <action name="submitCampaignMaster" class="com.fks.ui.master.action.CampaignMasterAction" method="submitCampaignMaster">
+            <result name="success">/jsp/master/other/campaign.jsp</result>
+            <result name="input">/jsp/master/other/campaign.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+
+
+         <!-- Department Master
+                -->
+        <action name="getAlldepartmentDetail" class="com.fks.ui.master.action.DepartmentMasterAction" method="getAllDepartmentDetail">
+        </action>
+        <action name="dept_jsp" class="com.fks.ui.master.action.DepartmentMasterAction">
+            <result name="success">/jsp/master/other/department.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+
+        <action name="submitdepartmentMaster" class="com.fks.ui.master.action.DepartmentMasterAction" method="submitDepartmentMaster">
+            <result name="success">/jsp/master/other/department.jsp</result>
+            <result name="input">/jsp/master/other/department.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+
+
+        <action name="showStoreProposalPendingList" class="com.fks.ui.master.action.MapUserStoreProposalPendingReport" method="viewMapUserStoreProposalPendingReport">
+            <result name="success">/jsp/master/other/mapProposalUserRpt.jsp</result>
+            <result name="input">/jsp/master/other/mapProposalUserRpt.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+
+        <action name="getAllUsersForStorePRndingProposal" class="com.fks.ui.master.action.MapUserStoreProposalPendingReport" method="getAllUsersForProposalPendingReports">
+        </action>
+
+        <action name="submitUserPendingProposal" class="com.fks.ui.master.action.MapUserStoreProposalPendingReport" method="submitStoreProposalPendingReportUsers">
+            <result name="success">/jsp/master/other/mapProposalUserRpt.jsp</result>
+            <result name="input">/jsp/master/other/mapProposalUserRpt.jsp</result>
+            <result name="error">/jsp/error.jsp</result>
+        </action>
+        <action name="deleteUserPendingProposal" class="com.fks.ui.master.action.MapUserStoreProposalPendingReport" method="deleteStoreProposalPendingReportUserID">
+            <result name="success">/jsp/master/other/mapProposalUserRpt.jsp</result>
+            <result name="input">/jsp/master/other/mapProposalUserRpt.jsp</result>
+        </action>
+    </package>
+</struts>
+
