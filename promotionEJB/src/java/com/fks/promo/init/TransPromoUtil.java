@@ -184,7 +184,12 @@ public class TransPromoUtil {
         transpromo.setZoneName(zone.getZoneName());
         transpromo.setMstEmployee4(emp);
         transpromo.setRemarks(vo.getRemark());
-        transpromo.setIsHo(false);
+        // brand backed promo
+        if(mstpromo!=null && mstpromo.getVendorBacked().equals("1")){
+            transpromo.setIsHo(true);
+        } else {
+            transpromo.setIsHo(false);
+        }
         transpromo.setValidFrom(CommonUtil.getDBDate(vo.getValidFrom()));
         transpromo.setValidTo(CommonUtil.getDBDate(vo.getValidTo()));
         if (type.getPromoTypeId().equals(new Long("7"))) {
